@@ -15,6 +15,7 @@ Develop a model that ranks potential Super Bowl halftime performers for a given 
 The project will rely on two primary datasets:
 1. Historical Super Bowl Halftime Performer Data: A dataset containing past Super Bowl halftime performers and event metadata (e.g., year, artist, special guests). This data will be used to label which artists were selected in each year.
 2. Spotify Most-Listened Artist Data: A publicly available Kaggle dataset containing Spotify streaming statistics such as total streams, popularity scores, and artist-level metadata. This dataset will show artist popularity and mainstream relevance.
+
 Data Collection Methods
 - Downloading and versioning datasets directly from Kaggle
 - Basic preprocessing and normalization to align artist names across datasets
