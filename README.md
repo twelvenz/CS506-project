@@ -50,3 +50,11 @@ Data Collection Methods
 - Temporal filtering to ensure that only Spotify data available prior to each Super Bowl is used for modeling
 - (Extra) Using the Spotify Web API to collect up-to-date data
 
+# Modeling Approach:
+We are still deciding on modeling approach. We have considered XGBoost, but we need more time to decide.
+
+# Data Visualization Plan:
+We have planned time-series plots to examine artist popularity trends over time and summary charts to compare characteristics of past performers.
+
+# Test Plan:
+Data from earlier Super Bowl years will be used for training, while a subset of more recent years will be withheld for testing. The model will be scored on how well it ranks the correct halftime performer near the top.
