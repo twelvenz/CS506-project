@@ -90,7 +90,7 @@ df_billboard_artists.to_csv('billboard_artists_master.csv', index=False)
 df_albums = pd.read_csv('billboard_albums_master.csv')
 df_songs = pd.read_csv('billboard_songs_master.csv')
 df_artists = pd.read_csv('billboard_artists_master.csv')
-df_sb = pd.read_csv('data/superbowl_halftime_Headliners/superbowl_halftime_performers.csv')
+df_sb = pd.read_csv('data/superbowl_halftime_shows/superbowl_halftime_performers.csv')
 
 def get_headliners(performer_str):
     """Splits comma-separated headliners into a clean list."""
@@ -98,14 +98,45 @@ def get_headliners(performer_str):
     return [h.strip().lower() for h in str(performer_str).split(',')]
 
 def calculate_score(rank):
-    """Assigns 100 points for rank 1, 1 point for rank 100."""
+    """Assigns 100 points for rank 1, ..., 1 point for rank 100."""
     return 101 - rank
 
-def analyze_claim(sb_start_year, match_type='exact'):
+# 3 different approaches to explore the scoring system
+def get_artist_avg(scores):
     """
+    Strategy A (Democratizer): Average score per artist.
+    Treats all headliners equally, regardless of how many songs they have on the charts
+    """
+    return np.mean(scores) if scores else 0
+
+def get_artist_peak(scores):
+    """
+    Strategy B (Superstar Rule): Highest score achieved.
+    Only care about the headliners' biggest peaks
+    """
+    return np.max(scores) if scores else 0
+
+def get_artist_cumulative(scores):
+    """
+    Strategy C (Total Dominance): Sum of all scores.
+    Actively rewards artists for numerous massive hits; Indicating of massive cultural dominance
+    """
+    return np.sum(scores) if scores else 0
+
+def analyze_claim(sb_start_year, match_type='exact', strategy='peak'):
+    """
+    Claim: Every superbowl headliner shows promising success on Billboard songs and albums
     Analyzes headliner success for a specific SB cohort.
     match_type: 'exact' (for exact matching) or 'partial' (for partial partching; ex. "The Weeknd" --> "The Weeknd & Ariana Grande")
     """
+    # Map the string input to our helper functions
+    strategy_map = {
+        'average': get_artist_avg,
+        'peak': get_artist_peak,
+        'cumulative': get_artist_cumulative
+    }
+    calc_func = strategy_map.get(strategy, get_artist_peak)
+
     # Filter Super Bowls for the requested cohort
     cohort = df_sb[(df_sb['year'] >= sb_start_year) & (df_sb['year'] <= 2025)].copy()
     
@@ -149,21 +180,29 @@ def analyze_claim(sb_start_year, match_type='exact'):
             if not artist_songs.empty:
                 if (artist_songs['rank'] == 1).any(): show_stats['has_rank1_song'] = True
                 if (artist_songs['rank'] <= 10).any(): show_stats['has_top10_song'] = True
-                show_stats['scores_songs'].extend(artist_songs['rank'].apply(calculate_score).tolist())
+                # Calculate scores for ALL this artist's songs
+                all_scores = artist_songs['rank'].apply(calculate_score).tolist()
+                # Apply the strategy (Peak/Avg/Cumulative) to get ONE number for this artist
+                artist_final_score = calc_func(all_scores)
+                show_stats['scores_songs'].append(artist_final_score)
             
             # 2. Album Stats
             artist_albums = hist_albums[a_mask]
             if not artist_albums.empty:
                 if (artist_albums['rank'] == 1).any(): show_stats['has_rank1_album'] = True
                 if (artist_albums['rank'] <= 10).any(): show_stats['has_top10_album'] = True
-                show_stats['scores_albums'].extend(artist_albums['rank'].apply(calculate_score).tolist())
+                all_scores = artist_albums['rank'].apply(calculate_score).tolist()
+                artist_final_score = calc_func(all_scores)
+                show_stats['scores_albums'].append(artist_final_score)
                 
             # 3. Artist Stats (2017-2025)
             artist_rankings = hist_artists[ar_mask]
             if not artist_rankings.empty:
                 if (artist_rankings['rank'] == 1).any(): show_stats['has_rank1_artist'] = True
                 if (artist_rankings['rank'] <= 10).any(): show_stats['has_top10_artist'] = True
-                show_stats['scores_artists'].extend(artist_rankings['rank'].apply(calculate_score).tolist())
+                all_scores = artist_rankings['rank'].apply(calculate_score).tolist()
+                artist_final_score = calc_func(all_scores)
+                show_stats['scores_artists'].append(artist_final_score)
         
         results.append(show_stats)
     
@@ -171,6 +210,7 @@ def analyze_claim(sb_start_year, match_type='exact'):
     res_df = pd.DataFrame(results)
     summary = {
         "Cohort": f"{sb_start_year}-2025",
+        "Strategy": strategy.capitalize(),
         "Match Type": match_type.capitalize(),
         "% Headliners with #1 Song": res_df['has_rank1_song'].mean() * 100,
         "% Headliners with Top 10 Song": res_df['has_top10_song'].mean() * 100,
@@ -186,9 +226,11 @@ def analyze_claim(sb_start_year, match_type='exact'):
 
 # Run analysis for all permutations requested
 final_stats = []
-for year in [2019, 2020]:
-    for m_type in ['exact', 'partial']:
-        final_stats.append(analyze_claim(year, m_type))
+for strat in ['peak', 'average', 'cumulative']:  # You can choose one or all
+    for year in [2019, 2020]:
+        for m_type in ['exact', 'partial']:
+            # Ensure your analyze_claim function returns 'Strategy' in its dict
+            final_stats.append(analyze_claim(year, m_type, strategy=strat))
 
 # Display the results
 df_final = pd.DataFrame(final_stats).round(2)
@@ -197,7 +239,6 @@ print(df_final.to_string(index=False))
 
 # Set the visual style
 sns.set_theme(style="whitegrid")
-plt.rcParams['figure.figsize'] = [12, 7]
 
 def plot_billboard_exploration(df):
     # 1. Visualize Percentages (Success Rate)
@@ -208,8 +249,8 @@ def plot_billboard_exploration(df):
         '% Headliners with #1 Artist', '% Headliners with Top 10 Artist'
     ]
     
-    df_melted = df.melt(
-        id_vars=['Cohort', 'Match Type'], 
+    df_pct_melted = df.melt(
+        id_vars=['Cohort', 'Match Type', 'Strategy'], 
         value_vars=pct_cols, 
         var_name='Metric', 
         value_name='Percentage'
@@ -217,7 +258,7 @@ def plot_billboard_exploration(df):
 
     plt.figure(figsize=(14, 8))
     sns.barplot(
-        data=df_melted, 
+        data=df_pct_melted[df_pct_melted['Strategy'] == 'Peak'],
         x='Metric', 
         y='Percentage', 
         hue='Cohort', 
@@ -226,32 +267,43 @@ def plot_billboard_exploration(df):
     plt.xticks(rotation=45, ha='right')
     plt.title('Billboard Success Rates: 2019-2025 vs 2020-2025 Cohorts', fontsize=15)
     plt.ylabel('Percentage of Headliners (%)')
+    plt.ylim(0, 105)
     plt.legend(title='Start Year')
     plt.tight_layout()
     plt.show()
 
     # 2. Visualize Average Scores (Pedigree/Strength)
     score_cols = ['Avg Song Score', 'Avg Album Score', 'Avg Artist Score']
-    df_scores = df.melt(
-        id_vars=['Cohort', 'Match Type'], 
+    df_scores_melted = df.melt(
+        id_vars=['Cohort', 'Match Type', 'Strategy'], 
         value_vars=score_cols, 
         var_name='Category', 
         value_name='Score'
     )
 
-    plt.figure(figsize=(12, 6))
-    sns.barplot(
-        data=df_scores, 
-        x='Category', 
-        y='Score', 
-        hue='Match Type', 
-        palette='magma'
-    )
-    plt.title('Average "Power Score" of Headliners (100 = Rank 1, 1 = Rank 100)', fontsize=15)
-    plt.ylabel('Mean Normalized Score')
-    plt.ylim(0, 100)
-    plt.tight_layout()
-    plt.show()
+    for strat in df['Strategy'].unique():
+        plt.figure(figsize=(12, 6))
+        
+        # Filter the melted data for the current strategy
+        strat_data = df_scores_melted[df_scores_melted['Strategy'] == strat]
+        
+        sns.barplot(
+            data=strat_data, 
+            x='Category', 
+            y='Score', 
+            hue='Match Type', 
+            palette='magma'
+        )
+        
+        plt.title(f'Pedigree Analysis: {strat.capitalize()} Strategy', fontsize=15)
+        plt.ylabel('Score Value')
+        
+        # Logic: Peak and Average are 0-100. Cumulative can be much higher.
+        if strat != 'Cumulative':
+            plt.ylim(0, 100)
+            
+        plt.tight_layout()
+        plt.show()
 
 # Execute the plots
 plot_billboard_exploration(df_final)
@@ -266,7 +318,7 @@ SPOTIFY_FILES = [
     'data/spotify_music_dataset/spotify_2015_2025_85k.csv', 
     'data/spotify_music_dataset/spotify-tracks-dataset-detailed.csv'
 ]
-SUPERBOWL_FILE = 'data/superbowl_halftime_Headliners/superbowl_halftime_performers.csv'
+SUPERBOWL_FILE = 'data/superbowl_halftime_shows/superbowl_halftime_performers.csv'
 
 # Step 1: Identify data quality issues
 def data_quality_check(df, stage="Initial"):
