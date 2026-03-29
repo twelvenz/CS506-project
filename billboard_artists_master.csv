@@ -1,0 +1,901 @@
+rank,artist,year
+1,ed sheeran,2017
+2,bruno mars,2017
+3,drake,2017
+4,kendrick lamar,2017
+5,the weeknd,2017
+6,the chainsmokers,2017
+7,justin bieber,2017
+8,future,2017
+9,shawn mendes,2017
+10,bts,2017
+11,coldplay,2017
+12,lil uzi vert,2017
+13,migos,2017
+14,imagine dragons,2017
+15,ariana grande,2017
+16,guns n' roses,2017
+17,post malone,2017
+18,u2,2017
+19,rihanna,2017
+20,dj khaled,2017
+21,khalid,2017
+22,j. cole,2017
+23,metallica,2017
+24,halsey,2017
+25,taylor swift,2017
+26,lady gaga,2017
+27,alessia cara,2017
+28,sam hunt,2017
+29,niall horan,2017
+30,rae sremmurd,2017
+31,twenty one pilots,2017
+32,big sean,2017
+33,kodak black,2017
+34,travis scott,2017
+35,selena gomez,2017
+36,21 savage,2017
+37,gucci mane,2017
+38,james arthur,2017
+39,demi lovato,2017
+40,childish gambino,2017
+41,chris stapleton,2017
+42,pentatonix,2017
+43,logic,2017
+44,chris brown,2017
+45,florida georgia line,2017
+46,charlie puth,2017
+47,adele,2017
+48,maroon 5,2017
+49,katy perry,2017
+50,nicki minaj,2017
+51,cardi b,2017
+52,the rolling stones,2017
+53,thomas rhett,2017
+54,luke bryan,2017
+55,xxxtentacion,2017
+56,harry styles,2017
+57,sza,2017
+58,eminem,2017
+59,beyonce,2017
+60,depeche mode,2017
+61,luis fonsi,2017
+62,maluma,2017
+63,keith urban,2017
+64,miley cyrus,2017
+65,french montana,2017
+66,brett young,2017
+67,daddy yankee,2017
+68,camila cabello,2017
+69,liam payne,2017
+70,calvin harris,2017
+71,blake shelton,2017
+72,zayn,2017
+73,celine dion,2017
+74,luke combs,2017
+75,julia michaels,2017
+76,sam smith,2017
+77,linkin park,2017
+78,p!nk,2017
+79,jon pardi,2017
+80,chance the rapper,2017
+81,bryson tiller,2017
+82,quavo,2017
+83,red hot chili peppers,2017
+84,a boogie wit da hoodie,2017
+85,eric church,2017
+86,jason aldean,2017
+87,tom petty and the heartbreakers,2017
+88,roger waters,2017
+89,portugal. the man,2017
+90,playboi carti,2017
+91,billy joel,2017
+92,john mayer,2017
+93,2 chainz,2017
+94,zac brown band,2017
+95,kesha,2017
+96,justin timberlake,2017
+97,sia,2017
+98,jay-z,2017
+99,kane brown,2017
+100,zedd,2017
+1,drake,2018
+2,post malone,2018
+3,cardi b,2018
+4,ed sheeran,2018
+5,imagine dragons,2018
+6,camila cabello,2018
+7,xxxtentacion,2018
+8,ariana grande,2018
+9,migos,2018
+10,maroon 5,2018
+11,juice wrld,2018
+12,dua lipa,2018
+13,travis scott,2018
+14,halsey,2018
+15,khalid,2018
+16,6ix9ine,2018
+17,florida georgia line,2018
+18,ella mai,2018
+19,kendrick lamar,2018
+20,taylor swift,2018
+21,nicki minaj,2018
+22,bebe rexha,2018
+23,bazzi,2018
+24,marshmello,2018
+25,eminem,2018
+26,lil pump,2018
+27,21 savage,2018
+28,nf,2018
+29,demi lovato,2018
+30,selena gomez,2018
+31,charlie puth,2018
+32,g-eazy,2018
+33,the weeknd,2018
+34,lil baby,2018
+35,dan + shay,2018
+36,kane brown,2018
+37,j balvin,2018
+38,youngboy never broke again,2018
+39,bruno mars,2018
+40,shawn mendes,2018
+41,j. cole,2018
+42,rich the kid,2018
+43,bad bunny,2018
+44,lil wayne,2018
+45,5 seconds of summer,2018
+46,sza,2018
+47,portugal. the man,2018
+48,luke combs,2018
+49,lauv,2018
+50,thomas rhett,2018
+51,childish gambino,2018
+52,blocboy jb,2018
+53,sam smith,2018
+54,maren morris,2018
+55,jason aldean,2018
+56,offset,2018
+57,luke bryan,2018
+58,kodak black,2018
+59,young thug,2018
+60,kanye west,2018
+61,ty dolla $ign,2018
+62,tyga,2018
+63,logic,2018
+64,brett young,2018
+65,zedd,2018
+66,normani,2018
+67,old dominion,2018
+68,grey,2018
+69,famous dex,2018
+70,kenny chesney,2018
+71,lil uzi vert,2018
+72,metro boomin,2018
+73,justin timberlake,2018
+74,daddy yankee,2018
+75,russell dickerson,2018
+76,anne-marie,2018
+77,lil dicky,2018
+78,yg,2018
+79,beyonce,2018
+80,dj khaled,2018
+81,chris brown,2018
+82,blake shelton,2018
+83,gucci mane,2018
+84,quavo,2018
+85,the carters,2018
+86,lil skies,2018
+87,chris stapleton,2018
+88,max,2018
+89,ozuna,2018
+90,p!nk,2018
+91,miguel,2018
+92,calvin harris,2018
+93,panic! at the disco,2018
+94,lovelytheband,2018
+95,foster the people,2018
+96,eric church,2018
+97,chris young,2018
+98,a$ap ferg,2018
+99,a$ap rocky,2018
+100,queen naija,2018
+1,post malone,2019
+2,ariana grande,2019
+3,billie ellish,2019
+4,khalid,2019
+5,drake,2019
+6,travis scott,2019
+7,ed sheeran,2019
+8,taylor swift,2019
+9,lil nas x,2019
+10,halsey,2019
+11,jonas borthers,2019
+12,juice wrld,2019
+13,cardi b,2019
+14,dababy,2019
+15,bts,2019
+16,panic! at the disco,2019
+17,luke combs,2019
+18,lil baby,2019
+19,shawn mendes,2019
+20,lizzo,2019
+21,meek mill,2019
+22,queen,2019
+23,dan + shay,2019
+24,a boogie wit da hoodie,2019
+25,p!nk,2019
+26,chris brown,2019
+27,xxxtentacion,2019
+28,j. cole,2019
+29,elton john,2019
+30,imagine dragons,2019
+31,bad bunny,2019
+32,kodak black,2019
+33,21 savage,2019
+34,youngboy never broke again,2019
+35,gunna,2019
+36,kane brown,2019
+37,lady gaga,2019
+38,marshmellow,2019
+39,thomas rhett,2019
+40,maroon 5,2019
+41,swae lee,2019
+42,camilia cabello,2019
+43,sam smith,2019
+44,ynw melly,2019
+45,the rolling stones,2019
+46,5 seconds of summer,2019
+47,lauren daigie,2019
+48,lil tecca,2019
+49,metallica,2019
+50,bruno mars,2019
+51,young thug,2019
+52,ella mai,2019
+53,bradley cooper,2019
+54,lewis capaldi,2019
+55,eminem,2019
+56,jason aldean,2019
+57,nf,2019
+58,michael buble,2019
+59,ava max,2019
+60,the beatles,2019
+61,normani,2019
+62,florida georgia line,2019
+63,twenty one pilots,2019
+64,billy rae cyrus,2019
+65,chris stapleton,2019
+66,summer walker,2019
+67,morgan wallen,2019
+68,bastille,2019
+69,offset,2019
+70,trippie redd,2019
+71,"tyler, the creator",2019
+72,future,2019
+73,lil wayne,2019
+74,blake shelton,2019
+75,justin bieber,2019
+76,city girls,2019
+77,blueface,2019
+78,carrie underwood,2019
+79,kanye west,2019
+80,dj khaled,2019
+81,billy joel,2019
+82,eagles,2019
+83,backstreet boys,2019
+84,paul mccartney,2019
+85,megan thee stallion,2019
+86,maren morris,2019
+87,bazzi,2019
+88,mustard,2019
+89,6ix9ine,2019
+90,kendrick lamar,2019
+91,polo g,2019
+92,sheck wes,2019
+93,migos,2019
+94,lil uzi vert,2019
+95,nipsey hussle,2019
+96,fleetwood mac,2019
+97,the weeknd,2019
+98,eric church,2019
+99,benny blanco,2019
+100,luke bryan,2019
+1,post malone,2020
+2,juice wrld,2020
+3,taylor swift,2020
+4,drake,2020
+5,luke combs,2020
+6,dababy,2020
+7,lil baby,2020
+8,the weeknd,2020
+9,pop smoke,2020
+10,billie eilish,2020
+11,lil uzi vert,2020
+12,roddy ricch,2020
+13,youngboy never broke again,2020
+14,harry styles,2020
+15,bad bunny,2020
+16,rod wave,2020
+17,eminem,2020
+18,bts,2020
+19,ed sheeran,2020
+20,travis scott,2020
+21,khalid,2020
+22,polo g,2020
+23,xxxtentacion,2020
+24,a boogie wit da hoodie,2020
+25,the beatles,2020
+26,summer walker,2020
+27,trippie redd,2020
+28,gunna,2020
+29,young thug,2020
+30,queen,2020
+31,ariana grande,2020
+32,justin bieber,2020
+33,mac miller,2020
+34,kendrick lamar,2020
+35,kane brown,2020
+36,lewis capaldi,2020
+37,halsey,2020
+38,lady gaga,2020
+39,morgan wallen,2020
+40,nf,2020
+41,doja cat,2020
+42,jhene aiko,2020
+43,lizzo,2020
+44,fleetwood mac,2020
+45,jackboys,2020
+46,blake shelton,2020
+47,chris brown,2020
+48,elton john,2020
+49,moneybagg yo,2020
+50,future,2020
+51,michael jackson,2020
+52,megan thee stallion,2020
+53,tory lanez,2020
+54,camila cabello,2020
+55,imagine dragons,2020
+56,bob marley and the wailers,2020
+57,dua lipa,2020
+58,creedence clearwater revival,2020
+59,jason aldean,2020
+60,lil wayne,2020
+61,lil durk,2020
+62,lil tjay,2020
+63,chris stapleton,2020
+64,tom petty and the heartbreakers,2020
+65,journey,2020
+66,lil mosey,2020
+67,mustard,2020
+68,cardi b,2020
+69,lil nas x,2020
+70,ynw melly,2020
+71,frank sinatra,2020
+72,2pac,2020
+73,maren morris,2020
+74,lauren daigle,2020
+75,ac/dc,2020
+76,shawn mendes,2020
+77,j. cole,2020
+78,eagles,2020
+79,tones and i,2020
+80,dan + shay,2020
+81,jack harlow,2020
+82,elvis presley,2020
+83,lil tecca,2020
+84,sam hunt,2020
+85,selena gomez,2020
+86,guns n' roses,2020
+87,sza,2020
+88,bruno mars,2020
+89,nirvana,2020
+90,pentatonix,2020
+91,adele,2020
+92,billy joel,2020
+93,the notorious b.i.g.,2020
+94,don toliver,2020
+95,the beach boys,2020
+96,g herbo,2020
+97,frank ocean,2020
+98,"tyler, the creator",2020
+99,old dominion,2020
+100,meek mill,2020
+1,drake,2021
+2,olivia rodrigo,2021
+3,the weeknd,2021
+4,taylor swift,2021
+5,morgan wallen,2021
+6,ariana grande,2021
+7,doja cat,2021
+8,justin bieber,2021
+9,luke combs,2021
+10,pop smoke,2021
+11,dua lipa,2021
+12,bts,2021
+13,billie eilish,2021
+14,lil baby,2021
+15,the kid laroi,2021
+16,bad bunny,2021
+17,lil durk,2021
+18,polo g,2021
+19,lil nas x,2021
+20,juice wrld,2021
+21,megan thee stallion,2021
+22,rod wave,2021
+23,dababy,2021
+24,kanye west,2021
+25,moneybagg yo,2021
+26,post malone,2021
+27,chris stapleton,2021
+28,ed sheeran,2021
+29,j. cole,2021
+30,harry styles,2021
+31,youngboy never broke again,2021
+32,giveon,2021
+33,sza,2021
+34,young thug,2021
+35,cardi b,2021
+36,jack harlow,2021
+37,lil uzi vert,2021
+38,glass animals,2021
+39,bruno mars,2021
+40,gabby barrett,2021
+41,machine gun kelly,2021
+42,pooh shiesty,2021
+43,future,2021
+44,travis scott,2021
+45,24kgoldn,2021
+46,lil tjay,2021
+47,eminem,2021
+48,roddy ricch,2021
+49,luke bryan,2021
+50,kendrick lamar,2021
+51,walker hayes,2021
+52,masked wolf,2021
+53,"tyler, the creator",2021
+54,dan + shay,2021
+55,fleetwood mac,2021
+56,thomas rhett,2021
+57,chris brown,2021
+58,ajr,2021
+59,the beatles,2021
+60,kid cudi,2021
+61,h.e.r.,2021
+62,dj khaled,2021
+63,florida georgia line,2021
+64,gunna,2021
+65,anderson .paak,2021
+66,khalid,2021
+67,maroon 5,2021
+68,lewis capaldi,2021
+69,queen,2021
+70,ava max,2021
+71,tate mcrae,2021
+72,jason aldean,2021
+73,kane brown,2021
+74,migos,2021
+75,elton john,2021
+76,carrie underwood,2021
+77,king von,2021
+78,saweetie,2021
+79,michael jackson,2021
+80,ac/dc,2021
+81,kali uchis,2021
+82,xxxtentacion,2021
+83,miley cyrus,2021
+84,blackbear,2021
+85,lee brice,2021
+86,guns n' roses,2021
+87,mariah carey,2021
+88,eagles,2021
+89,sam smith,2021
+90,yung bleu,2021
+91,miranda lambert,2021
+92,imagine dragons,2021
+93,trippie redd,2021
+94,cj,2021
+95,playboi carti,2021
+96,sam hunt,2021
+97,jhene aiko,2021
+98,eric church,2021
+99,adele,2021
+100,creedence clearwater revival,2021
+1,bad bunny,2022
+2,taylor swift,2022
+3,harry styles,2022
+4,drake,2022
+5,morgan wallen,2022
+6,doja cat,2022
+7,ed sheeran,2022
+8,adele,2022
+9,the weeknd,2022
+10,lil baby,2022
+11,future,2022
+12,justin bieber,2022
+13,post malone,2022
+14,jack harlow,2022
+15,kendrick lamar,2022
+16,luke combs,2022
+17,juice wrld,2022
+18,glass animals,2022
+19,lil durk,2022
+20,lil nas x,2022
+21,dua lipa,2022
+22,elton john,2022
+23,youngboy never broke again,2022
+24,rod wave,2022
+25,kanye west,2022
+26,olivia rodrigo,2022
+27,beyonce,2022
+28,the kid laroi,2022
+29,billie eilish,2022
+30,kodak black,2022
+31,lizzo,2022
+32,gunna,2022
+33,imagine dragons,2022
+34,latto,2022
+35,chris stapleton,2022
+36,summer walker,2022
+37,walker hayes,2022
+38,polo g,2022
+39,sza,2022
+40,bruno mars,2022
+41,zach bryan,2022
+42,steve lacy,2022
+43,eminem,2022
+44,bailey zimmerman,2022
+45,"tyler, the creator",2022
+46,kate bush,2022
+47,karol g,2022
+48,kane brown,2022
+49,gayle,2022
+50,nardo wick,2022
+51,cole swindell,2022
+52,ariana grande,2022
+53,lil uzi vert,2022
+54,bts,2022
+55,cody johnson,2022
+56,j. cole,2022
+57,megan thee stallion,2022
+58,nicki minaj,2022
+59,chris brown,2022
+60,xxxtentacion,2022
+61,anderson .paak,2022
+62,machine gun kelly,2022
+63,pop smoke,2022
+64,the beatles,2022
+65,moneybagg yo,2022
+66,fleetwood mac,2022
+67,queen,2022
+68,jason aldean,2022
+69,em beihold,2022
+70,michael jackson,2022
+71,onerepublic,2022
+72,travis scott,2022
+73,playboi carti,2022
+74,giveon,2022
+75,mariah carey,2022
+76,lady gaga,2022
+77,frank ocean,2022
+78,yeat,2022
+79,red hot chili peppers,2022
+80,andy williams,2022
+81,jordan davis,2022
+82,dj khaled,2022
+83,j.i.d,2022
+84,guns n' roses,2022
+85,joji,2022
+86,charlie puth,2022
+87,michael buble,2022
+88,carrie underwood,2022
+89,metallica,2022
+90,dove cameron,2022
+91,stephanie beatriz,2022
+92,baby keem,2022
+93,rauw alejandro,2022
+94,brent faiyaz,2022
+95,jessica darrow,2022
+96,chencho corleone,2022
+97,coldplay,2022
+98,ckay,2022
+99,nirvana,2022
+100,21 savage,2022
+1,taylor swift,2023
+2,morgan wallen,2023
+3,sza,2023
+4,drake,2023
+5,luke combs,2023
+6,zach bryan,2023
+7,the weeknd,2023
+8,21 savage,2023
+9,miley cyrus,2023
+10,post malone,2023
+11,metro boomin,2023
+12,peso pluma,2023
+13,travis scott,2023
+14,harry styles,2023
+15,bad bunny,2023
+16,olivia rodrigo,2023
+17,bailey zimmerman,2023
+18,rod wave,2023
+19,lil baby,2023
+20,beyonce,2023
+21,lil uzi vert,2023
+22,ed sheeran,2023
+23,karol g,2023
+24,lil durk,2023
+25,ice spice,2023
+26,gunna,2023
+27,chris brown,2023
+28,doja cat,2023
+29,kendrick lamar,2023
+30,"tyler, the creator",2023
+31,jelly roll,2023
+32,future,2023
+33,juice wrld,2023
+34,kane brown,2023
+35,nicki minaj,2023
+36,lainey wilson,2023
+37,jordan davis,2023
+38,fuerza regida,2023
+39,grupo frontera,2023
+40,rihanna,2023
+41,rema,2023
+42,elton john,2023
+43,billie eilish,2023
+44,dua lipa,2023
+45,miguel,2023
+46,selena gomez,2023
+47,chris stapleton,2023
+48,hardy,2023
+49,toosii,2023
+50,eminem,2023
+51,steve lacy,2023
+52,fleetwood mac,2023
+53,sam smith,2023
+54,jvke,2023
+55,lana del rey,2023
+56,noah kahan,2023
+57,coi leray,2023
+58,j. cole,2023
+59,ariana grande,2023
+60,lizzo,2023
+61,eslabon armado,2023
+62,david guetta,2023
+63,michael jackson,2023
+64,mariah carey,2023
+65,lady gaga,2023
+66,kanye west,2023
+67,meghan trainor,2023
+68,frank ocean,2023
+69,bebe rexha,2023
+70,kim petras,2023
+71,tyler hubbard,2023
+72,nat king cole,2023
+73,metallica,2023
+74,youngboy never broke again,2023
+75,fifty fifty,2023
+76,brenda lee,2023
+77,queen,2023
+78,jason aldean,2023
+79,stephen sanchez,2023
+80,megan moroney,2023
+81,tyler childers,2023
+82,brent faiyaz,2023
+83,michael buble,2023
+84,bruno mars,2023
+85,elvis presley,2023
+86,newjeans,2023
+87,young thug,2023
+88,creedence clearwater revival,2023
+89,burl ives,2023
+90,melanie martinez,2023
+91,bobby helms,2023
+92,kali uchis,2023
+93,p!nk,2023
+94,imagine dragons,2023
+95,guns n' roses,2023
+96,coldplay,2023
+97,andy williams,2023
+98,the kid laroi,2023
+99,kelly clarkson,2023
+100,polo g,2023
+1,taylor swift,2024
+2,morgan wallen,2024
+3,zach bryan,2024
+4,drake,2024
+5,sabrina carpenter,2024
+6,billie eilish,2024
+7,sza,2024
+8,luke combs,2024
+9,post malone,2024
+10,kendrick lamar,2024
+11,chappell roan,2024
+12,teddy swims,2024
+13,noah kahan,2024
+14,olivia rodrigo,2024
+15,benson boone,2024
+16,doja cat,2024
+17,future,2024
+18,ariana grande,2024
+19,travis scott,2024
+20,bad bunny,2024
+21,hozier,2024
+22,shaboozey,2024
+23,jelly roll,2024
+24,metro boomin,2024
+25,tate mcrae,2024
+26,beyonce,2024
+27,21 savage,2024
+28,chris stapleton,2024
+29,eminem,2024
+30,the weeknd,2024
+31,dua lipa,2024
+32,tommy richman,2024
+33,nicki minaj,2024
+34,jack harlow,2024
+35,ye,2024
+36,peso pluma,2024
+37,fuerza regida,2024
+38,karol g,2024
+39,glorilla,2024
+40,gunna,2024
+41,rod wave,2024
+42,sexyy red,2024
+43,bailey zimmerman,2024
+44,charli xcx,2024
+45,megan thee stallion,2024
+46,cody johnson,2024
+47,miley cyrus,2024
+48,bryson tiller,2024
+49,j. cole,2024
+50,tyla,2024
+51,lainey wilson,2024
+52,frank ocean,2024
+53,lil baby,2024
+54,dasha,2024
+55,fleetwood mac,2024
+56,juice wrld,2024
+57,hardy,2024
+58,bruno mars,2024
+59,nate smith,2024
+60,jung kook,2024
+61,thomas rhett,2024
+62,linkin park,2024
+63,"tyler, the creator",2024
+64,bigxthaplug,2024
+65,mariah carey,2024
+66,ty dolla $ign,2024
+67,xavi,2024
+68,michael jackson,2024
+69,usher,2024
+70,bossman dlow,2024
+71,chris brown,2024
+72,elton john,2024
+73,stray kids,2024
+74,lana del rey,2024
+75,kacey musgraves,2024
+76,eagles,2024
+77,warren zeiders,2024
+78,tucker wetmore,2024
+79,rihanna,2024
+80,nat king cole,2024
+81,djo,2024
+82,don toliver,2024
+83,summer walker,2024
+84,creedence clearwater revival,2024
+85,coldplay,2024
+86,queen,2024
+87,lady gaga,2024
+88,brenda lee,2024
+89,gracie abrams,2024
+90,jessie murph,2024
+91,kane brown,2024
+92,the kid laroi,2024
+93,flo milli,2024
+94,playboi carti,2024
+95,lil uzi vert,2024
+96,ed sheeran,2024
+97,lil wayne,2024
+98,bob marley and the wailers,2024
+99,the rolling stones,2024
+100,bobby helms,2024
+1,morgan wallen,2025
+2,kendrick lamar,2025
+3,taylor swift,2025
+4,sabrina carpenter,2025
+5,sza,2025
+6,drake,2025
+7,bad bunny,2025
+8,billie eilish,2025
+9,"tyler, the creator",2025
+10,the weeknd,2025
+11,shaboozey,2025
+12,benson boone,2025
+13,chappell roan,2025
+14,teddy swims,2025
+15,post malone,2025
+16,lady gaga,2025
+17,tate mcrae,2025
+18,alex warren,2025
+19,bruno mars,2025
+20,gracie abrams,2025
+21,zach bryan,2025
+22,playboi carti,2025
+23,jelly roll,2025
+24,"huntr/x:ejae, audrey nuna & rei ami",2025
+25,bigxthaplug,2025
+26,luke combs,2025
+27,ariana grande,2025
+28,hozier,2025
+29,justin bieber,2025
+30,doechii,2025
+31,fuerza regida,2025
+32,sombr,2025
+33,rod wave,2025
+34,chris stapleton,2025
+35,the marias,2025
+36,glorilla,2025
+37,riley green,2025
+38,travis scott,2025
+39,ed sheeran,2025
+40,leon thomas,2025
+41,zach top,2025
+42,charli xcx,2025
+43,megan moroney,2025
+44,rose,2025
+45,jessie murph,2025
+46,lola young,2025
+47,partynextdoor,2025
+48,myles smith,2025
+49,future,2025
+50,chris brown,2025
+51,lil baby,2025
+52,olivia rodrigo,2025
+53,peso pluma,2025
+54,tito double p,2025
+55,juice wrld,2025
+56,bailey zimmerman,2025
+57,"saja boys: andrew choi, neckwav, danny chung, kevin woo & samuil lee",2025
+58,ella langley,2025
+59,linkin park,2025
+60,fleetwood mac,2025
+61,frank ocean,2025
+62,thomas rhett,2025
+63,noah kahan,2025
+64,forrest frank,2025
+65,ravyn lenae,2025
+66,rauw alejandro,2025
+67,cardi b,2025
+68,neton vega,2025
+69,stray kids,2025
+70,coldplay,2025
+71,lil wayne,2025
+72,sam barber,2025
+73,gigi perez,2025
+74,mariah carey,2025
+75,gunna,2025
+76,michael jackson,2025
+77,eminem,2025
+78,beyonce,2025
+79,don toliver,2025
+80,summer walker,2025
+81,jimin,2025
+82,mariah the scientist,2025
+83,rihanna,2025
+84,sleep token,2025
+85,elton john,2025
+86,cody johnson,2025
+87,tucker wetmore,2025
+88,metro boomin,2025
+89,lainey wilson,2025
+90,nat king cole,2025
+91,brenda lee,2025
+92,kane brown,2025
+93,eagles,2025
+94,ye,2025
+95,wham!,2025
+96,lil tecca,2025
+97,bobby helms,2025
+98,michael buble,2025
+99,creedence clearwater revival,2025
+100,creed,2025
