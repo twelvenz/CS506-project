@@ -6,6 +6,7 @@ import glob
 import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime
+
 '''
 # Code for combining the Billboard data into master datasets; Created billboard_albums_master.csv, billboard_artists_master.csv, billboard_songs_master.csv
 
@@ -84,7 +85,7 @@ df_billboard_songs.to_csv('billboard_songs_master.csv', index=False)
 df_billboard_artists.to_csv('billboard_artists_master.csv', index=False)
 '''
 
-# Data Exploration: Billboard master datasets and Superbowl Halftime Performers
+# Data Exploration: Billboard master datasets and Superbowl Halftime Headliners
 
 # Load the master datasets (assuming they are in the project root)
 df_albums = pd.read_csv('billboard_albums_master.csv')
@@ -123,7 +124,8 @@ def get_artist_cumulative(scores):
     """
     return np.sum(scores) if scores else 0
 
-def analyze_claim(sb_start_year, match_type='exact', strategy='peak'):
+def analyze_claim(sb_start_year, match_type='exact', strategy='peak', 
+                  incl_guests=False, incl_declined_headliners=False, incl_declined_guests=False):
     """
     Claim: Every superbowl headliner shows promising success on Billboard songs and albums
     Analyzes headliner success for a specific SB cohort.
@@ -144,7 +146,19 @@ def analyze_claim(sb_start_year, match_type='exact', strategy='peak'):
     
     for _, row in cohort.iterrows():
         sb_year = row['year']
-        headliners = get_headliners(row['headliners'])
+        target_artists = get_headliners(row['headliners'])
+
+        if incl_guests and pd.notna(row['guest performers']):
+            target_artists += get_headliners(row['guest performers'])
+            
+        if incl_declined_headliners and pd.notna(row['declined headliners']):
+            target_artists += get_headliners(row['declined headliners'])
+            
+        if incl_declined_guests and pd.notna(row['declined guest performers']):
+            target_artists += get_headliners(row['declined guest performers'])
+
+        # Deduplicate names just in case
+        target_artists = list(set(target_artists))
         
         # We only consider Billboard data BEFORE the Super Bowl year
         hist_songs = df_songs[df_songs['year'] < sb_year]
@@ -164,7 +178,7 @@ def analyze_claim(sb_start_year, match_type='exact', strategy='peak'):
             'scores_artists': []
         }
         
-        for artist in headliners:
+        for artist in target_artists:
             # Matching logic
             if match_type == 'exact':
                 s_mask = hist_songs['artist'] == artist
@@ -208,8 +222,19 @@ def analyze_claim(sb_start_year, match_type='exact', strategy='peak'):
     
     # Aggregating final percentages for the cohort
     res_df = pd.DataFrame(results)
+
+    # Create a dynamic label for the Cohort based on what was included
+    label_suffix = ""
+    if incl_guests: 
+        label_suffix += " + Guest Performers"
+    if incl_declined_headliners: 
+        label_suffix += " + Declined Headliners"
+    if incl_declined_guests: 
+        label_suffix += " + Declined Guest Performers"
+
+
     summary = {
-        "Cohort": f"{sb_start_year}-2025",
+        "Cohort": f"{sb_start_year}-2025{label_suffix}",
         "Strategy": strategy.capitalize(),
         "Match Type": match_type.capitalize(),
         "% Headliners with #1 Song": res_df['has_rank1_song'].mean() * 100,
@@ -232,82 +257,165 @@ for strat in ['peak', 'average', 'cumulative']:  # You can choose one or all
             # Ensure your analyze_claim function returns 'Strategy' in its dict
             final_stats.append(analyze_claim(year, m_type, strategy=strat))
 
-# Display the results
-df_final = pd.DataFrame(final_stats).round(2)
-print("--- Roc Nation Era Super Bowl Data Exploration ---")
-print(df_final.to_string(index=False))
+def create_Billboard_graphs(final_stats):
+    # Display the results
+    df_final = pd.DataFrame(final_stats).round(2)
+    print("--- Roc Nation Era Super Bowl Data Exploration ---")
+    print(df_final.to_string(index=False))
 
-# Set the visual style
-sns.set_theme(style="whitegrid")
+    # Set the visual style
+    sns.set_theme(style="whitegrid")
 
-def plot_billboard_exploration(df):
-    # 1. Visualize Percentages (Success Rate)
-    # We melt the dataframe to make it "long-form" for Seaborn
-    pct_cols = [
-        '% Headliners with #1 Song', '% Headliners with Top 10 Song',
-        '% Headliners with #1 Album', '% Headliners with Top 10 Album',
-        '% Headliners with #1 Artist', '% Headliners with Top 10 Artist'
-    ]
-    
-    df_pct_melted = df.melt(
-        id_vars=['Cohort', 'Match Type', 'Strategy'], 
-        value_vars=pct_cols, 
-        var_name='Metric', 
-        value_name='Percentage'
-    )
-
-    plt.figure(figsize=(14, 8))
-    sns.barplot(
-        data=df_pct_melted[df_pct_melted['Strategy'] == 'Peak'],
-        x='Metric', 
-        y='Percentage', 
-        hue='Cohort', 
-        palette='viridis'
-    )
-    plt.xticks(rotation=45, ha='right')
-    plt.title('Billboard Success Rates: 2019-2025 vs 2020-2025 Cohorts', fontsize=15)
-    plt.ylabel('Percentage of Headliners (%)')
-    plt.ylim(0, 105)
-    plt.legend(title='Start Year')
-    plt.tight_layout()
-    plt.show()
-
-    # 2. Visualize Average Scores (Pedigree/Strength)
-    score_cols = ['Avg Song Score', 'Avg Album Score', 'Avg Artist Score']
-    df_scores_melted = df.melt(
-        id_vars=['Cohort', 'Match Type', 'Strategy'], 
-        value_vars=score_cols, 
-        var_name='Category', 
-        value_name='Score'
-    )
-
-    for strat in df['Strategy'].unique():
-        plt.figure(figsize=(12, 6))
+    def plot_billboard_exploration(df):
+        # 1. Visualize Percentages (Success Rate)
+        # We melt the dataframe to make it "long-form" for Seaborn
+        pct_cols = [
+            '% Headliners with #1 Song', '% Headliners with Top 10 Song',
+            '% Headliners with #1 Album', '% Headliners with Top 10 Album',
+            '% Headliners with #1 Artist', '% Headliners with Top 10 Artist'
+        ]
         
-        # Filter the melted data for the current strategy
-        strat_data = df_scores_melted[df_scores_melted['Strategy'] == strat]
-        
-        sns.barplot(
-            data=strat_data, 
-            x='Category', 
-            y='Score', 
-            hue='Match Type', 
-            palette='magma'
+        df_pct_melted = df.melt(
+            id_vars=['Cohort', 'Match Type', 'Strategy'], 
+            value_vars=pct_cols, 
+            var_name='Metric', 
+            value_name='Percentage'
         )
-        
-        plt.title(f'Pedigree Analysis: {strat.capitalize()} Strategy', fontsize=15)
-        plt.ylabel('Score Value')
-        
-        # Logic: Peak and Average are 0-100. Cumulative can be much higher.
-        if strat != 'Cumulative':
-            plt.ylim(0, 100)
-            
+
+        plt.figure(figsize=(14, 8))
+        sns.barplot(
+            data=df_pct_melted[df_pct_melted['Strategy'] == 'Peak'],
+            x='Metric', 
+            y='Percentage', 
+            hue='Cohort', 
+            palette='viridis'
+        )
+        plt.xticks(rotation=45, ha='right')
+        plt.title('Billboard Success Rates: 2019-2025 vs 2020-2025 Cohorts', fontsize=15)
+        plt.ylabel('Percentage of Headliners (%)')
+        plt.ylim(0, 105)
+        plt.legend(title='Start Year')
         plt.tight_layout()
         plt.show()
 
-# Execute the plots
-plot_billboard_exploration(df_final)
+        # 2. Visualize Average Scores (Pedigree/Strength)
+        score_cols = ['Avg Song Score', 'Avg Album Score', 'Avg Artist Score']
+        df_scores_melted = df.melt(
+            id_vars=['Cohort', 'Match Type', 'Strategy'], 
+            value_vars=score_cols, 
+            var_name='Category', 
+            value_name='Score'
+        )
 
+        for strat in df['Strategy'].unique():
+            plt.figure(figsize=(12, 6))
+            
+            # Filter the melted data for the current strategy
+            strat_data = df_scores_melted[df_scores_melted['Strategy'] == strat]
+            
+            sns.barplot(
+                data=strat_data, 
+                x='Category', 
+                y='Score', 
+                hue='Match Type', 
+                palette='magma'
+            )
+            
+            plt.title(f'Pedigree Analysis: {strat.capitalize()} Strategy', fontsize=15)
+            plt.ylabel('Score Value')
+            
+            # Logic: Peak and Average are 0-100. Cumulative can be much higher.
+            if strat != 'Cumulative':
+                plt.ylim(0, 100)
+                
+            plt.tight_layout()
+            plt.show()
+
+    # Execute the plots
+    plot_billboard_exploration(df_final)
+
+create_Billboard_graphs(final_stats)
+
+'''
+---- Observations (After Exploring Billboard data vs. Superbowl (Confirmed) Headliners) ----
+1. % Headliners with Top 10 Song: Partial >>> Exact
+    - It is better for an artist to collaborate with others to make top songs; Roc Nation
+    is looking for more than just "solo stars". They want headliners who have high-profile
+    collaborations
+
+2. % Headliners with #1 Artist: 0%
+    - Billboard's "Artist of the Year" is less important to Roc Nation than having top album
+    or top song. Roc Nation cares more about the headliner having a "defining moment" (i.e. a
+    #1 song/album or top 10 song/album)
+
+3. Cummulative Song Score: 650+ (Partial)
+    - It is important for headliners to have multiple songs within the top 100 hot hits (i.e.
+    recognizable songs to perform). "One-hit Wonders" and artists with few songs are very unlikely
+    to be chosen.
+
+4. "Peak" (77-79) vs. "Average" (50-51): ~27 point gap
+    - An artist with one massive hit (i.e. the Peak) with many "flops" is better than an artist with
+    consistent average results. We should weight the Peak Strategy more heavily than the Average Strategy.
+    We can also use the Average score as the floor value and the Peak score as the ceiling value in selecting
+    artists for the talent_pool_negatives.csv file.
+
+---- Improvement Plans ----
+1. A big issue with this project is still the very small sample set on the Superbowl Headliners.
+    In response to this, we decided to add in "negative samples" (i.e. artists who received offers
+    to perform in the Superbowl but declined), reflected in superbowl_halftime_performers.csv file.
+    Additionally, we will explore using guest performers as "Headliners-in-training", a popular trend
+    as shown with Bad Bunny and Kendrick Lamar. 
+    
+    Furthermore, we added talent_pool_negatives.csv file which reflects the artists who have
+    consistently perform well on Billboard but have never performed due to never receiving an offer
+    (i.e. the "Look-Alike" Strategy)
+
+'''
+
+# Run analysis for all permutations requested (including confirmed guest performers into the data)
+final_stats = []
+for strat in ['peak', 'average', 'cumulative']:  # You can choose one or all
+    for year in [2019, 2020]:
+        for m_type in ['exact', 'partial']:
+            # Ensure your analyze_claim function returns 'Strategy' in its dict
+            final_stats.append(analyze_claim(year, m_type, strategy=strat,incl_guests=True))
+
+create_Billboard_graphs(final_stats)
+
+# Run analysis for all permutations requested (including confirmed guest performers, declined headliners, declined guest performers)
+final_stats = []
+for strat in ['peak', 'average', 'cumulative']:  # You can choose one or all
+    for year in [2019, 2020]:
+        for m_type in ['exact', 'partial']:
+            # Ensure your analyze_claim function returns 'Strategy' in its dict
+            final_stats.append(analyze_claim(year, m_type, strategy=strat,incl_guests=True,
+                                             incl_declined_guests=True,incl_declined_headliners=True))
+
+create_Billboard_graphs(final_stats)
+
+'''
+---- Observations (After Exploring Billboard data vs. Superbowl Performers (Confirmed, Guest Performers, Declined)) ----
+1. % Headliners with Top 10 Song: 100% (Partial)
+    - All of the graphs suggest that Roc Nation always target performers with a top hit (even if it meant 
+    through features or collaborations). We can use this as a filter on the potential artist candidates
+    in order to narrow down the Spotify dataset.
+
+2. % Headliners with #1 Song (2019-2025): Confirmed Only (14.29%) vs. All Inclusive (28.57%)
+    - Artists who turned down the Superbowl offers performed better on the Billboard data. This suggests that
+    Roc Nation targets the absolute best artists first based on Billboard data, suggesting some correlation
+
+3. Average Score Stability
+    - Confirmed Headliners Only, Confirmed (Headliners + Guest Performers), and All Inclusive have very stable
+    range for the Average Score (81-91). This suggests the usage of the Average Score as a floor value to filter
+    out artists that would even be considered for the Superbowl.
+
+---- Summary ----
+Our analysis demonstrates that the 'Roc Nation Era' operates on a High-Peak, High-Collaboration model. While 
+confirmed headliners maintain elite status, the 'Target Pool' (including those who declined) represents an even 
+higher tier of Billboard dominance (i.e. the confirmed headliners are only the baseline). This suggests that the
+Superbowl selection process is a filter applied to an already existing 'Super-Elite' tier of artists identified 
+by Billboard longevity.
+'''
 
 '''
 # --- CONFIGURATION ---

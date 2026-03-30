@@ -1,9 +1,9 @@
-year,headliners,guest performers
-2019,Maroon 5,"Travis Scott, Big Boi"
-2020,"Shakira, Jennifer Lopez","Bad Bunny, J Balvin"
+year,headliners,guest performers,declined headliners,declined guest performers
+2019,Maroon 5,"Travis Scott, Big Boi","Rihanna,P!nk,Cardi B"
+2020,"Shakira, Jennifer Lopez","Bad Bunny, J Balvin","Gloria Estefan"
 2021,The Weeknd
 2022,"Dr. Dre, Snoop Dogg, Eminem, Mary J. Blige, Kendrick Lamar",50 Cent
-2023,Rihanna
-2024,Usher,"Alicia Keys, H.E.R., Lil Jon, will.i.am"
-2025,Kendrick Lamar,"SZA, Mustard"
-2026,Bad Bunny,"Lady Gaga, Ricky Martin, Los Pleneros de la Cresta"
+2023,Rihanna,,Taylor Swift
+2024,Usher,"Alicia Keys, H.E.R., Lil Jon, will.i.am",,Justin Bieber
+2025,Kendrick Lamar,"SZA"
+2026,Bad Bunny,"Lady Gaga, Ricky Martin",Adele
