@@ -34,17 +34,17 @@ Week 8: Final report and presentation preparation
 
 # Project Goals:
 Develop a model that ranks potential Super Bowl halftime performers for a given year using historical and contemporary music-industry data.
-- Build a labeled dataset of past Super Bowl halftime performers (post-1991 because it was marching bands before that) with associated artist-level features, treating all top-charting artists each year as candidates
+- Build a labeled dataset of past Super Bowl halftime performers (post-2019 because thats when Roc Nation took over) with associated artist-level features, treating all top-charting artists each year as candidates
 - Train a model that ranks the true performer within the top 5 predictions for at least X% of withheld test years
 - Identify and analyze the most influential features contributing to performer selection
 - (Extra) Create a responsive time-series data interface to predict the top 5 most likely Super Bowl performers with up-to-date Spotify information 
 
 # Data Collection Plan:
 The project will rely on two primary datasets:
-1. Historical Super Bowl Halftime Performer Data (i.e. "TV, Halftime Shows, and the Big Game"): A dataset containing past Super Bowl halftime performers and event metadata (e.g., year, artist, special guests). This data will be used to label which artists were selected in each year. We limit this to post-1991 Super Bowls to exclude the marching band era and focus on mainstream headliners.
+1. Historical Super Bowl Halftime Performer Data (i.e. "TV, Halftime Shows, and the Big Game"): A dataset containing past Super Bowl halftime performers and event metadata (e.g., year, artist, special guests). This data will be used to label which artists were selected in each year. We limit this to post-2019 Super Bowls to exclude the marching band era and non-Roc Nation era to focus on mainstream headliners.
 2. Spotify Most-Listened Artist Data (i.e. "Spotify Global Music Dataset (2009-2025)"): A publicly available Kaggle dataset containing Spotify streaming statistics such as total streams, popularity scores, and artist-level metadata. This dataset will show artist popularity and mainstream relevance.
 
-To address the limited number of Super Bowl events (~30 usable years post-1991), we expand our dataset by treating every top-charting artist in a given year as a candidate, labeling whether they performed at the halftime show or not. This transforms the problem from ~30 data points into thousands of artist-year observations, giving us a much more workable training set. Billboard chart data, which extends back decades, serves as our primary historical signal, while Spotify data supplements the more recent years.
+To address the limited number of Super Bowl events, we expand our dataset by treating every top-charting artist in a given year as a candidate, labeling whether they performed at the halftime show or not. This gives us thousands of artist-year observations, giving us a much more workable training set. Billboard chart data, which extends back decades, serves as our primary historical signal, while Spotify data supplements the more recent years.
 Our focus for this project is primarily on Billboard data and Spotify data to predict the next Super Bowl halftime performer. We spent a significant amount of time collecting, filtering, and verifying the Billboard data to ensure it accurately reflects what is represented on the Billboard website. 
 Our sources came from free sites, but we still cross-checked what we could against Billboard directly. We then converted the data into CSV format to facilitate data exploration. Through this process, we found that Super Bowl halftime headliners typically have top-charting songs and albums, which will be a crucial factor when we build our ranking system.
 
