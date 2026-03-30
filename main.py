@@ -336,6 +336,7 @@ def create_Billboard_graphs(final_stats):
 
 create_Billboard_graphs(final_stats)
 
+
 '''
 ---- Observations (After Exploring Billboard data vs. Superbowl (Confirmed) Headliners) ----
 1. % Headliners with Top 10 Song: Partial >>> Exact
@@ -372,6 +373,7 @@ create_Billboard_graphs(final_stats)
 
 '''
 
+
 # Run analysis for all permutations requested (including confirmed guest performers into the data)
 final_stats = []
 for strat in ['peak', 'average', 'cumulative']:  # You can choose one or all
@@ -392,6 +394,7 @@ for strat in ['peak', 'average', 'cumulative']:  # You can choose one or all
                                              incl_declined_guests=True,incl_declined_headliners=True))
 
 create_Billboard_graphs(final_stats)
+
 
 '''
 ---- Observations (After Exploring Billboard data vs. Superbowl Performers (Confirmed, Guest Performers, Declined)) ----
@@ -415,6 +418,45 @@ confirmed headliners maintain elite status, the 'Target Pool' (including those w
 higher tier of Billboard dominance (i.e. the confirmed headliners are only the baseline). This suggests that the
 Superbowl selection process is a filter applied to an already existing 'Super-Elite' tier of artists identified 
 by Billboard longevity.
+'''
+
+'''
+# Generate a list of artists that have a top 10 song from 2006-2025
+
+# Load Billboard master songs dataset
+df_songs = pd.read_csv('billboard_songs_master.csv')
+
+# 2. Filter for Top 10 songs (Rank 1 through 10)
+# This captures the "entry fee" for Super Bowl consideration
+df_top10 = df_songs[df_songs['rank'] <= 10].copy()
+
+# 3. Extract unique artists from the Top 10 list
+def split_artists(artist_string):
+    # Regex handles features and collaborations (from billboard_songs_master.csv)
+    delimiters = r' feat\.? | featuring\.? | & | and | with | x | \+ | / | duet with | , | ; '
+    # Replace all delimiters with a unique separator
+    standardized = re.sub(delimiters, '|', artist_string, flags=re.IGNORECASE)
+    # Remove any stray characters like quotes or parentheses sometimes found in CSVs
+    standardized = standardized.replace('"', '').replace('(', '').replace(')', '')
+    # Split into a list and strip whitespace
+    return [a.strip() for a in standardized.split('|') if a.strip()]
+
+# Apply the split to songs with multiple artists (ex. rihanna feat. jay-z --> rihanna,jay-z)
+df_top10['artist_split'] = df_top10['artist'].apply(split_artists)
+df_individual_artists = df_top10.explode('artist_split')
+
+# 4. Get unique names and clean up
+# We use the exploded column now
+potential_artists = sorted(df_individual_artists['artist_split'].unique())
+potential_artist_candidates = df_top10['artist'].unique()
+
+# 5. Create final DataFrame and Save
+df_final = pd.DataFrame(potential_artists, columns=['artist'])
+df_final.to_csv('potential_artists_candidates.csv', index=False)
+
+print(f"Cleaned! Created 'potential_artists_candidates.csv' with {len(df_final)} unique individuals.")
+print("\nFirst 10 artists in your new pool:")
+print(df_final.head(10))
 '''
 
 '''
