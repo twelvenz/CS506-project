@@ -459,7 +459,6 @@ print("\nFirst 10 artists in your new pool:")
 print(df_final.head(10))
 '''
 
-'''
 # --- CONFIGURATION ---
 SPOTIFY_FILES = [
     'data/spotify_music_dataset/spotify_data_clean.csv', 
@@ -469,6 +468,7 @@ SPOTIFY_FILES = [
     'data/spotify_music_dataset/spotify-tracks-dataset-detailed.csv'
 ]
 SUPERBOWL_FILE = 'data/superbowl_halftime_shows/superbowl_halftime_performers.csv'
+POTENTIAL_ARTISTS_FILE = 'potential_artists_candidates.csv'
 
 # Step 1: Identify data quality issues
 def data_quality_check(df, stage="Initial"):
@@ -506,7 +506,6 @@ def load_and_merge():
     df_merged = pd.concat(dfs, ignore_index=True)
     
     # Sort by track_popularity and release_date to keep the best quality metadata when deduplicating
-    # i.e. if there are duplicates of a track, you would want TODO: what is the code doing here?
     sort_cols = [c for c in ['track_id', 'track_popularity', 'release_date'] if c in df_merged.columns]
     df_merged = df_merged.sort_values(sort_cols, ascending=False)
     
@@ -605,5 +604,5 @@ if __name__ == "__main__":
     # Save Output
     main_df.to_csv('complete_training_table.csv', index=False)
     print("\nPipeline Complete. Saved to 'complete_training_table.csv'")
-'''
+
     
