@@ -1,0 +1,901 @@
+rank,artist,year,artist_normalized
+1,ed sheeran,2017,ed sheeran
+2,bruno mars,2017,bruno mars
+3,drake,2017,drake
+4,kendrick lamar,2017,kendrick lamar
+5,the weeknd,2017,the weeknd
+6,the chainsmokers,2017,the chainsmokers
+7,justin bieber,2017,justin bieber
+8,future,2017,future
+9,shawn mendes,2017,shawn mendes
+10,bts,2017,bts
+11,coldplay,2017,coldplay
+12,lil uzi vert,2017,lil uzi vert
+13,migos,2017,migos
+14,imagine dragons,2017,imagine dragons
+15,ariana grande,2017,ariana grande
+16,guns n' roses,2017,guns n' roses
+17,post malone,2017,post malone
+18,u2,2017,u2
+19,rihanna,2017,rihanna
+20,dj khaled,2017,dj khaled
+21,khalid,2017,khalid
+22,j. cole,2017,j. cole
+23,metallica,2017,metallica
+24,halsey,2017,halsey
+25,taylor swift,2017,taylor swift
+26,lady gaga,2017,lady gaga
+27,alessia cara,2017,alessia cara
+28,sam hunt,2017,sam hunt
+29,niall horan,2017,niall horan
+30,rae sremmurd,2017,rae sremmurd
+31,twenty one pilots,2017,twenty one pilots
+32,big sean,2017,big sean
+33,kodak black,2017,kodak black
+34,travis scott,2017,travis scott
+35,selena gomez,2017,selena gomez
+36,21 savage,2017,21 savage
+37,gucci mane,2017,gucci mane
+38,james arthur,2017,james arthur
+39,demi lovato,2017,demi lovato
+40,childish gambino,2017,childish gambino
+41,chris stapleton,2017,chris stapleton
+42,pentatonix,2017,pentatonix
+43,logic,2017,logic
+44,chris brown,2017,chris brown
+45,florida georgia line,2017,florida georgia line
+46,charlie puth,2017,charlie puth
+47,adele,2017,adele
+48,maroon 5,2017,maroon 5
+49,katy perry,2017,katy perry
+50,nicki minaj,2017,nicki minaj
+51,cardi b,2017,cardi b
+52,the rolling stones,2017,the rolling stones
+53,thomas rhett,2017,thomas rhett
+54,luke bryan,2017,luke bryan
+55,xxxtentacion,2017,xxxtentacion
+56,harry styles,2017,harry styles
+57,sza,2017,sza
+58,eminem,2017,eminem
+59,beyonce,2017,beyonce
+60,depeche mode,2017,depeche mode
+61,luis fonsi,2017,luis fonsi
+62,maluma,2017,maluma
+63,keith urban,2017,keith urban
+64,miley cyrus,2017,miley cyrus
+65,french montana,2017,french montana
+66,brett young,2017,brett young
+67,daddy yankee,2017,daddy yankee
+68,camila cabello,2017,camila cabello
+69,liam payne,2017,liam payne
+70,calvin harris,2017,calvin harris
+71,blake shelton,2017,blake shelton
+72,zayn,2017,zayn
+73,celine dion,2017,celine dion
+74,luke combs,2017,luke combs
+75,julia michaels,2017,julia michaels
+76,sam smith,2017,sam smith
+77,linkin park,2017,linkin park
+78,p!nk,2017,p!nk
+79,jon pardi,2017,jon pardi
+80,chance the rapper,2017,chance the rapper
+81,bryson tiller,2017,bryson tiller
+82,quavo,2017,quavo
+83,red hot chili peppers,2017,red hot chili peppers
+84,a boogie wit da hoodie,2017,a boogie wit da hoodie
+85,eric church,2017,eric church
+86,jason aldean,2017,jason aldean
+87,tom petty and the heartbreakers,2017,tom petty and the heartbreakers
+88,roger waters,2017,roger waters
+89,portugal. the man,2017,portugal. the man
+90,playboi carti,2017,playboi carti
+91,billy joel,2017,billy joel
+92,john mayer,2017,john mayer
+93,2 chainz,2017,2 chainz
+94,zac brown band,2017,zac brown band
+95,kesha,2017,kesha
+96,justin timberlake,2017,justin timberlake
+97,sia,2017,sia
+98,jay-z,2017,jay-z
+99,kane brown,2017,kane brown
+100,zedd,2017,zedd
+1,drake,2018,drake
+2,post malone,2018,post malone
+3,cardi b,2018,cardi b
+4,ed sheeran,2018,ed sheeran
+5,imagine dragons,2018,imagine dragons
+6,camila cabello,2018,camila cabello
+7,xxxtentacion,2018,xxxtentacion
+8,ariana grande,2018,ariana grande
+9,migos,2018,migos
+10,maroon 5,2018,maroon 5
+11,juice wrld,2018,juice wrld
+12,dua lipa,2018,dua lipa
+13,travis scott,2018,travis scott
+14,halsey,2018,halsey
+15,khalid,2018,khalid
+16,6ix9ine,2018,6ix9ine
+17,florida georgia line,2018,florida georgia line
+18,ella mai,2018,ella mai
+19,kendrick lamar,2018,kendrick lamar
+20,taylor swift,2018,taylor swift
+21,nicki minaj,2018,nicki minaj
+22,bebe rexha,2018,bebe rexha
+23,bazzi,2018,bazzi
+24,marshmello,2018,marshmello
+25,eminem,2018,eminem
+26,lil pump,2018,lil pump
+27,21 savage,2018,21 savage
+28,nf,2018,nf
+29,demi lovato,2018,demi lovato
+30,selena gomez,2018,selena gomez
+31,charlie puth,2018,charlie puth
+32,g-eazy,2018,g-eazy
+33,the weeknd,2018,the weeknd
+34,lil baby,2018,lil baby
+35,dan + shay,2018,dan + shay
+36,kane brown,2018,kane brown
+37,j balvin,2018,j balvin
+38,youngboy never broke again,2018,youngboy never broke again
+39,bruno mars,2018,bruno mars
+40,shawn mendes,2018,shawn mendes
+41,j. cole,2018,j. cole
+42,rich the kid,2018,rich the kid
+43,bad bunny,2018,bad bunny
+44,lil wayne,2018,lil wayne
+45,5 seconds of summer,2018,5 seconds of summer
+46,sza,2018,sza
+47,portugal. the man,2018,portugal. the man
+48,luke combs,2018,luke combs
+49,lauv,2018,lauv
+50,thomas rhett,2018,thomas rhett
+51,childish gambino,2018,childish gambino
+52,blocboy jb,2018,blocboy jb
+53,sam smith,2018,sam smith
+54,maren morris,2018,maren morris
+55,jason aldean,2018,jason aldean
+56,offset,2018,offset
+57,luke bryan,2018,luke bryan
+58,kodak black,2018,kodak black
+59,young thug,2018,young thug
+60,kanye west,2018,kanye west
+61,ty dolla $ign,2018,ty dolla $ign
+62,tyga,2018,tyga
+63,logic,2018,logic
+64,brett young,2018,brett young
+65,zedd,2018,zedd
+66,normani,2018,normani
+67,old dominion,2018,old dominion
+68,grey,2018,grey
+69,famous dex,2018,famous dex
+70,kenny chesney,2018,kenny chesney
+71,lil uzi vert,2018,lil uzi vert
+72,metro boomin,2018,metro boomin
+73,justin timberlake,2018,justin timberlake
+74,daddy yankee,2018,daddy yankee
+75,russell dickerson,2018,russell dickerson
+76,anne-marie,2018,anne-marie
+77,lil dicky,2018,lil dicky
+78,yg,2018,yg
+79,beyonce,2018,beyonce
+80,dj khaled,2018,dj khaled
+81,chris brown,2018,chris brown
+82,blake shelton,2018,blake shelton
+83,gucci mane,2018,gucci mane
+84,quavo,2018,quavo
+85,the carters,2018,the carters
+86,lil skies,2018,lil skies
+87,chris stapleton,2018,chris stapleton
+88,max,2018,max
+89,ozuna,2018,ozuna
+90,p!nk,2018,p!nk
+91,miguel,2018,miguel
+92,calvin harris,2018,calvin harris
+93,panic! at the disco,2018,panic! at the disco
+94,lovelytheband,2018,lovelytheband
+95,foster the people,2018,foster the people
+96,eric church,2018,eric church
+97,chris young,2018,chris young
+98,a$ap ferg,2018,a$ap ferg
+99,a$ap rocky,2018,a$ap rocky
+100,queen naija,2018,queen naija
+1,post malone,2019,post malone
+2,ariana grande,2019,ariana grande
+3,billie ellish,2019,billie ellish
+4,khalid,2019,khalid
+5,drake,2019,drake
+6,travis scott,2019,travis scott
+7,ed sheeran,2019,ed sheeran
+8,taylor swift,2019,taylor swift
+9,lil nas x,2019,lil nas x
+10,halsey,2019,halsey
+11,jonas borthers,2019,jonas borthers
+12,juice wrld,2019,juice wrld
+13,cardi b,2019,cardi b
+14,dababy,2019,dababy
+15,bts,2019,bts
+16,panic! at the disco,2019,panic! at the disco
+17,luke combs,2019,luke combs
+18,lil baby,2019,lil baby
+19,shawn mendes,2019,shawn mendes
+20,lizzo,2019,lizzo
+21,meek mill,2019,meek mill
+22,queen,2019,queen
+23,dan + shay,2019,dan + shay
+24,a boogie wit da hoodie,2019,a boogie wit da hoodie
+25,p!nk,2019,p!nk
+26,chris brown,2019,chris brown
+27,xxxtentacion,2019,xxxtentacion
+28,j. cole,2019,j. cole
+29,elton john,2019,elton john
+30,imagine dragons,2019,imagine dragons
+31,bad bunny,2019,bad bunny
+32,kodak black,2019,kodak black
+33,21 savage,2019,21 savage
+34,youngboy never broke again,2019,youngboy never broke again
+35,gunna,2019,gunna
+36,kane brown,2019,kane brown
+37,lady gaga,2019,lady gaga
+38,marshmellow,2019,marshmellow
+39,thomas rhett,2019,thomas rhett
+40,maroon 5,2019,maroon 5
+41,swae lee,2019,swae lee
+42,camilia cabello,2019,camilia cabello
+43,sam smith,2019,sam smith
+44,ynw melly,2019,ynw melly
+45,the rolling stones,2019,the rolling stones
+46,5 seconds of summer,2019,5 seconds of summer
+47,lauren daigie,2019,lauren daigie
+48,lil tecca,2019,lil tecca
+49,metallica,2019,metallica
+50,bruno mars,2019,bruno mars
+51,young thug,2019,young thug
+52,ella mai,2019,ella mai
+53,bradley cooper,2019,bradley cooper
+54,lewis capaldi,2019,lewis capaldi
+55,eminem,2019,eminem
+56,jason aldean,2019,jason aldean
+57,nf,2019,nf
+58,michael buble,2019,michael buble
+59,ava max,2019,ava max
+60,the beatles,2019,the beatles
+61,normani,2019,normani
+62,florida georgia line,2019,florida georgia line
+63,twenty one pilots,2019,twenty one pilots
+64,billy rae cyrus,2019,billy rae cyrus
+65,chris stapleton,2019,chris stapleton
+66,summer walker,2019,summer walker
+67,morgan wallen,2019,morgan wallen
+68,bastille,2019,bastille
+69,offset,2019,offset
+70,trippie redd,2019,trippie redd
+71,"tyler, the creator",2019,"tyler, the creator"
+72,future,2019,future
+73,lil wayne,2019,lil wayne
+74,blake shelton,2019,blake shelton
+75,justin bieber,2019,justin bieber
+76,city girls,2019,city girls
+77,blueface,2019,blueface
+78,carrie underwood,2019,carrie underwood
+79,kanye west,2019,kanye west
+80,dj khaled,2019,dj khaled
+81,billy joel,2019,billy joel
+82,eagles,2019,eagles
+83,backstreet boys,2019,backstreet boys
+84,paul mccartney,2019,paul mccartney
+85,megan thee stallion,2019,megan thee stallion
+86,maren morris,2019,maren morris
+87,bazzi,2019,bazzi
+88,mustard,2019,mustard
+89,6ix9ine,2019,6ix9ine
+90,kendrick lamar,2019,kendrick lamar
+91,polo g,2019,polo g
+92,sheck wes,2019,sheck wes
+93,migos,2019,migos
+94,lil uzi vert,2019,lil uzi vert
+95,nipsey hussle,2019,nipsey hussle
+96,fleetwood mac,2019,fleetwood mac
+97,the weeknd,2019,the weeknd
+98,eric church,2019,eric church
+99,benny blanco,2019,benny blanco
+100,luke bryan,2019,luke bryan
+1,post malone,2020,post malone
+2,juice wrld,2020,juice wrld
+3,taylor swift,2020,taylor swift
+4,drake,2020,drake
+5,luke combs,2020,luke combs
+6,dababy,2020,dababy
+7,lil baby,2020,lil baby
+8,the weeknd,2020,the weeknd
+9,pop smoke,2020,pop smoke
+10,billie eilish,2020,billie eilish
+11,lil uzi vert,2020,lil uzi vert
+12,roddy ricch,2020,roddy ricch
+13,youngboy never broke again,2020,youngboy never broke again
+14,harry styles,2020,harry styles
+15,bad bunny,2020,bad bunny
+16,rod wave,2020,rod wave
+17,eminem,2020,eminem
+18,bts,2020,bts
+19,ed sheeran,2020,ed sheeran
+20,travis scott,2020,travis scott
+21,khalid,2020,khalid
+22,polo g,2020,polo g
+23,xxxtentacion,2020,xxxtentacion
+24,a boogie wit da hoodie,2020,a boogie wit da hoodie
+25,the beatles,2020,the beatles
+26,summer walker,2020,summer walker
+27,trippie redd,2020,trippie redd
+28,gunna,2020,gunna
+29,young thug,2020,young thug
+30,queen,2020,queen
+31,ariana grande,2020,ariana grande
+32,justin bieber,2020,justin bieber
+33,mac miller,2020,mac miller
+34,kendrick lamar,2020,kendrick lamar
+35,kane brown,2020,kane brown
+36,lewis capaldi,2020,lewis capaldi
+37,halsey,2020,halsey
+38,lady gaga,2020,lady gaga
+39,morgan wallen,2020,morgan wallen
+40,nf,2020,nf
+41,doja cat,2020,doja cat
+42,jhene aiko,2020,jhene aiko
+43,lizzo,2020,lizzo
+44,fleetwood mac,2020,fleetwood mac
+45,jackboys,2020,jackboys
+46,blake shelton,2020,blake shelton
+47,chris brown,2020,chris brown
+48,elton john,2020,elton john
+49,moneybagg yo,2020,moneybagg yo
+50,future,2020,future
+51,michael jackson,2020,michael jackson
+52,megan thee stallion,2020,megan thee stallion
+53,tory lanez,2020,tory lanez
+54,camila cabello,2020,camila cabello
+55,imagine dragons,2020,imagine dragons
+56,bob marley and the wailers,2020,bob marley and the wailers
+57,dua lipa,2020,dua lipa
+58,creedence clearwater revival,2020,creedence clearwater revival
+59,jason aldean,2020,jason aldean
+60,lil wayne,2020,lil wayne
+61,lil durk,2020,lil durk
+62,lil tjay,2020,lil tjay
+63,chris stapleton,2020,chris stapleton
+64,tom petty and the heartbreakers,2020,tom petty and the heartbreakers
+65,journey,2020,journey
+66,lil mosey,2020,lil mosey
+67,mustard,2020,mustard
+68,cardi b,2020,cardi b
+69,lil nas x,2020,lil nas x
+70,ynw melly,2020,ynw melly
+71,frank sinatra,2020,frank sinatra
+72,2pac,2020,2pac
+73,maren morris,2020,maren morris
+74,lauren daigle,2020,lauren daigle
+75,ac/dc,2020,ac/dc
+76,shawn mendes,2020,shawn mendes
+77,j. cole,2020,j. cole
+78,eagles,2020,eagles
+79,tones and i,2020,tones and i
+80,dan + shay,2020,dan + shay
+81,jack harlow,2020,jack harlow
+82,elvis presley,2020,elvis presley
+83,lil tecca,2020,lil tecca
+84,sam hunt,2020,sam hunt
+85,selena gomez,2020,selena gomez
+86,guns n' roses,2020,guns n' roses
+87,sza,2020,sza
+88,bruno mars,2020,bruno mars
+89,nirvana,2020,nirvana
+90,pentatonix,2020,pentatonix
+91,adele,2020,adele
+92,billy joel,2020,billy joel
+93,the notorious b.i.g.,2020,the notorious b.i.g.
+94,don toliver,2020,don toliver
+95,the beach boys,2020,the beach boys
+96,g herbo,2020,g herbo
+97,frank ocean,2020,frank ocean
+98,"tyler, the creator",2020,"tyler, the creator"
+99,old dominion,2020,old dominion
+100,meek mill,2020,meek mill
+1,drake,2021,drake
+2,olivia rodrigo,2021,olivia rodrigo
+3,the weeknd,2021,the weeknd
+4,taylor swift,2021,taylor swift
+5,morgan wallen,2021,morgan wallen
+6,ariana grande,2021,ariana grande
+7,doja cat,2021,doja cat
+8,justin bieber,2021,justin bieber
+9,luke combs,2021,luke combs
+10,pop smoke,2021,pop smoke
+11,dua lipa,2021,dua lipa
+12,bts,2021,bts
+13,billie eilish,2021,billie eilish
+14,lil baby,2021,lil baby
+15,the kid laroi,2021,the kid laroi
+16,bad bunny,2021,bad bunny
+17,lil durk,2021,lil durk
+18,polo g,2021,polo g
+19,lil nas x,2021,lil nas x
+20,juice wrld,2021,juice wrld
+21,megan thee stallion,2021,megan thee stallion
+22,rod wave,2021,rod wave
+23,dababy,2021,dababy
+24,kanye west,2021,kanye west
+25,moneybagg yo,2021,moneybagg yo
+26,post malone,2021,post malone
+27,chris stapleton,2021,chris stapleton
+28,ed sheeran,2021,ed sheeran
+29,j. cole,2021,j. cole
+30,harry styles,2021,harry styles
+31,youngboy never broke again,2021,youngboy never broke again
+32,giveon,2021,giveon
+33,sza,2021,sza
+34,young thug,2021,young thug
+35,cardi b,2021,cardi b
+36,jack harlow,2021,jack harlow
+37,lil uzi vert,2021,lil uzi vert
+38,glass animals,2021,glass animals
+39,bruno mars,2021,bruno mars
+40,gabby barrett,2021,gabby barrett
+41,machine gun kelly,2021,machine gun kelly
+42,pooh shiesty,2021,pooh shiesty
+43,future,2021,future
+44,travis scott,2021,travis scott
+45,24kgoldn,2021,24kgoldn
+46,lil tjay,2021,lil tjay
+47,eminem,2021,eminem
+48,roddy ricch,2021,roddy ricch
+49,luke bryan,2021,luke bryan
+50,kendrick lamar,2021,kendrick lamar
+51,walker hayes,2021,walker hayes
+52,masked wolf,2021,masked wolf
+53,"tyler, the creator",2021,"tyler, the creator"
+54,dan + shay,2021,dan + shay
+55,fleetwood mac,2021,fleetwood mac
+56,thomas rhett,2021,thomas rhett
+57,chris brown,2021,chris brown
+58,ajr,2021,ajr
+59,the beatles,2021,the beatles
+60,kid cudi,2021,kid cudi
+61,h.e.r.,2021,h.e.r.
+62,dj khaled,2021,dj khaled
+63,florida georgia line,2021,florida georgia line
+64,gunna,2021,gunna
+65,anderson .paak,2021,anderson .paak
+66,khalid,2021,khalid
+67,maroon 5,2021,maroon 5
+68,lewis capaldi,2021,lewis capaldi
+69,queen,2021,queen
+70,ava max,2021,ava max
+71,tate mcrae,2021,tate mcrae
+72,jason aldean,2021,jason aldean
+73,kane brown,2021,kane brown
+74,migos,2021,migos
+75,elton john,2021,elton john
+76,carrie underwood,2021,carrie underwood
+77,king von,2021,king von
+78,saweetie,2021,saweetie
+79,michael jackson,2021,michael jackson
+80,ac/dc,2021,ac/dc
+81,kali uchis,2021,kali uchis
+82,xxxtentacion,2021,xxxtentacion
+83,miley cyrus,2021,miley cyrus
+84,blackbear,2021,blackbear
+85,lee brice,2021,lee brice
+86,guns n' roses,2021,guns n' roses
+87,mariah carey,2021,mariah carey
+88,eagles,2021,eagles
+89,sam smith,2021,sam smith
+90,yung bleu,2021,yung bleu
+91,miranda lambert,2021,miranda lambert
+92,imagine dragons,2021,imagine dragons
+93,trippie redd,2021,trippie redd
+94,cj,2021,cj
+95,playboi carti,2021,playboi carti
+96,sam hunt,2021,sam hunt
+97,jhene aiko,2021,jhene aiko
+98,eric church,2021,eric church
+99,adele,2021,adele
+100,creedence clearwater revival,2021,creedence clearwater revival
+1,bad bunny,2022,bad bunny
+2,taylor swift,2022,taylor swift
+3,harry styles,2022,harry styles
+4,drake,2022,drake
+5,morgan wallen,2022,morgan wallen
+6,doja cat,2022,doja cat
+7,ed sheeran,2022,ed sheeran
+8,adele,2022,adele
+9,the weeknd,2022,the weeknd
+10,lil baby,2022,lil baby
+11,future,2022,future
+12,justin bieber,2022,justin bieber
+13,post malone,2022,post malone
+14,jack harlow,2022,jack harlow
+15,kendrick lamar,2022,kendrick lamar
+16,luke combs,2022,luke combs
+17,juice wrld,2022,juice wrld
+18,glass animals,2022,glass animals
+19,lil durk,2022,lil durk
+20,lil nas x,2022,lil nas x
+21,dua lipa,2022,dua lipa
+22,elton john,2022,elton john
+23,youngboy never broke again,2022,youngboy never broke again
+24,rod wave,2022,rod wave
+25,kanye west,2022,kanye west
+26,olivia rodrigo,2022,olivia rodrigo
+27,beyonce,2022,beyonce
+28,the kid laroi,2022,the kid laroi
+29,billie eilish,2022,billie eilish
+30,kodak black,2022,kodak black
+31,lizzo,2022,lizzo
+32,gunna,2022,gunna
+33,imagine dragons,2022,imagine dragons
+34,latto,2022,latto
+35,chris stapleton,2022,chris stapleton
+36,summer walker,2022,summer walker
+37,walker hayes,2022,walker hayes
+38,polo g,2022,polo g
+39,sza,2022,sza
+40,bruno mars,2022,bruno mars
+41,zach bryan,2022,zach bryan
+42,steve lacy,2022,steve lacy
+43,eminem,2022,eminem
+44,bailey zimmerman,2022,bailey zimmerman
+45,"tyler, the creator",2022,"tyler, the creator"
+46,kate bush,2022,kate bush
+47,karol g,2022,karol g
+48,kane brown,2022,kane brown
+49,gayle,2022,gayle
+50,nardo wick,2022,nardo wick
+51,cole swindell,2022,cole swindell
+52,ariana grande,2022,ariana grande
+53,lil uzi vert,2022,lil uzi vert
+54,bts,2022,bts
+55,cody johnson,2022,cody johnson
+56,j. cole,2022,j. cole
+57,megan thee stallion,2022,megan thee stallion
+58,nicki minaj,2022,nicki minaj
+59,chris brown,2022,chris brown
+60,xxxtentacion,2022,xxxtentacion
+61,anderson .paak,2022,anderson .paak
+62,machine gun kelly,2022,machine gun kelly
+63,pop smoke,2022,pop smoke
+64,the beatles,2022,the beatles
+65,moneybagg yo,2022,moneybagg yo
+66,fleetwood mac,2022,fleetwood mac
+67,queen,2022,queen
+68,jason aldean,2022,jason aldean
+69,em beihold,2022,em beihold
+70,michael jackson,2022,michael jackson
+71,onerepublic,2022,onerepublic
+72,travis scott,2022,travis scott
+73,playboi carti,2022,playboi carti
+74,giveon,2022,giveon
+75,mariah carey,2022,mariah carey
+76,lady gaga,2022,lady gaga
+77,frank ocean,2022,frank ocean
+78,yeat,2022,yeat
+79,red hot chili peppers,2022,red hot chili peppers
+80,andy williams,2022,andy williams
+81,jordan davis,2022,jordan davis
+82,dj khaled,2022,dj khaled
+83,j.i.d,2022,j.i.d
+84,guns n' roses,2022,guns n' roses
+85,joji,2022,joji
+86,charlie puth,2022,charlie puth
+87,michael buble,2022,michael buble
+88,carrie underwood,2022,carrie underwood
+89,metallica,2022,metallica
+90,dove cameron,2022,dove cameron
+91,stephanie beatriz,2022,stephanie beatriz
+92,baby keem,2022,baby keem
+93,rauw alejandro,2022,rauw alejandro
+94,brent faiyaz,2022,brent faiyaz
+95,jessica darrow,2022,jessica darrow
+96,chencho corleone,2022,chencho corleone
+97,coldplay,2022,coldplay
+98,ckay,2022,ckay
+99,nirvana,2022,nirvana
+100,21 savage,2022,21 savage
+1,taylor swift,2023,taylor swift
+2,morgan wallen,2023,morgan wallen
+3,sza,2023,sza
+4,drake,2023,drake
+5,luke combs,2023,luke combs
+6,zach bryan,2023,zach bryan
+7,the weeknd,2023,the weeknd
+8,21 savage,2023,21 savage
+9,miley cyrus,2023,miley cyrus
+10,post malone,2023,post malone
+11,metro boomin,2023,metro boomin
+12,peso pluma,2023,peso pluma
+13,travis scott,2023,travis scott
+14,harry styles,2023,harry styles
+15,bad bunny,2023,bad bunny
+16,olivia rodrigo,2023,olivia rodrigo
+17,bailey zimmerman,2023,bailey zimmerman
+18,rod wave,2023,rod wave
+19,lil baby,2023,lil baby
+20,beyonce,2023,beyonce
+21,lil uzi vert,2023,lil uzi vert
+22,ed sheeran,2023,ed sheeran
+23,karol g,2023,karol g
+24,lil durk,2023,lil durk
+25,ice spice,2023,ice spice
+26,gunna,2023,gunna
+27,chris brown,2023,chris brown
+28,doja cat,2023,doja cat
+29,kendrick lamar,2023,kendrick lamar
+30,"tyler, the creator",2023,"tyler, the creator"
+31,jelly roll,2023,jelly roll
+32,future,2023,future
+33,juice wrld,2023,juice wrld
+34,kane brown,2023,kane brown
+35,nicki minaj,2023,nicki minaj
+36,lainey wilson,2023,lainey wilson
+37,jordan davis,2023,jordan davis
+38,fuerza regida,2023,fuerza regida
+39,grupo frontera,2023,grupo frontera
+40,rihanna,2023,rihanna
+41,rema,2023,rema
+42,elton john,2023,elton john
+43,billie eilish,2023,billie eilish
+44,dua lipa,2023,dua lipa
+45,miguel,2023,miguel
+46,selena gomez,2023,selena gomez
+47,chris stapleton,2023,chris stapleton
+48,hardy,2023,hardy
+49,toosii,2023,toosii
+50,eminem,2023,eminem
+51,steve lacy,2023,steve lacy
+52,fleetwood mac,2023,fleetwood mac
+53,sam smith,2023,sam smith
+54,jvke,2023,jvke
+55,lana del rey,2023,lana del rey
+56,noah kahan,2023,noah kahan
+57,coi leray,2023,coi leray
+58,j. cole,2023,j. cole
+59,ariana grande,2023,ariana grande
+60,lizzo,2023,lizzo
+61,eslabon armado,2023,eslabon armado
+62,david guetta,2023,david guetta
+63,michael jackson,2023,michael jackson
+64,mariah carey,2023,mariah carey
+65,lady gaga,2023,lady gaga
+66,kanye west,2023,kanye west
+67,meghan trainor,2023,meghan trainor
+68,frank ocean,2023,frank ocean
+69,bebe rexha,2023,bebe rexha
+70,kim petras,2023,kim petras
+71,tyler hubbard,2023,tyler hubbard
+72,nat king cole,2023,nat king cole
+73,metallica,2023,metallica
+74,youngboy never broke again,2023,youngboy never broke again
+75,fifty fifty,2023,fifty fifty
+76,brenda lee,2023,brenda lee
+77,queen,2023,queen
+78,jason aldean,2023,jason aldean
+79,stephen sanchez,2023,stephen sanchez
+80,megan moroney,2023,megan moroney
+81,tyler childers,2023,tyler childers
+82,brent faiyaz,2023,brent faiyaz
+83,michael buble,2023,michael buble
+84,bruno mars,2023,bruno mars
+85,elvis presley,2023,elvis presley
+86,newjeans,2023,newjeans
+87,young thug,2023,young thug
+88,creedence clearwater revival,2023,creedence clearwater revival
+89,burl ives,2023,burl ives
+90,melanie martinez,2023,melanie martinez
+91,bobby helms,2023,bobby helms
+92,kali uchis,2023,kali uchis
+93,p!nk,2023,p!nk
+94,imagine dragons,2023,imagine dragons
+95,guns n' roses,2023,guns n' roses
+96,coldplay,2023,coldplay
+97,andy williams,2023,andy williams
+98,the kid laroi,2023,the kid laroi
+99,kelly clarkson,2023,kelly clarkson
+100,polo g,2023,polo g
+1,taylor swift,2024,taylor swift
+2,morgan wallen,2024,morgan wallen
+3,zach bryan,2024,zach bryan
+4,drake,2024,drake
+5,sabrina carpenter,2024,sabrina carpenter
+6,billie eilish,2024,billie eilish
+7,sza,2024,sza
+8,luke combs,2024,luke combs
+9,post malone,2024,post malone
+10,kendrick lamar,2024,kendrick lamar
+11,chappell roan,2024,chappell roan
+12,teddy swims,2024,teddy swims
+13,noah kahan,2024,noah kahan
+14,olivia rodrigo,2024,olivia rodrigo
+15,benson boone,2024,benson boone
+16,doja cat,2024,doja cat
+17,future,2024,future
+18,ariana grande,2024,ariana grande
+19,travis scott,2024,travis scott
+20,bad bunny,2024,bad bunny
+21,hozier,2024,hozier
+22,shaboozey,2024,shaboozey
+23,jelly roll,2024,jelly roll
+24,metro boomin,2024,metro boomin
+25,tate mcrae,2024,tate mcrae
+26,beyonce,2024,beyonce
+27,21 savage,2024,21 savage
+28,chris stapleton,2024,chris stapleton
+29,eminem,2024,eminem
+30,the weeknd,2024,the weeknd
+31,dua lipa,2024,dua lipa
+32,tommy richman,2024,tommy richman
+33,nicki minaj,2024,nicki minaj
+34,jack harlow,2024,jack harlow
+35,ye,2024,ye
+36,peso pluma,2024,peso pluma
+37,fuerza regida,2024,fuerza regida
+38,karol g,2024,karol g
+39,glorilla,2024,glorilla
+40,gunna,2024,gunna
+41,rod wave,2024,rod wave
+42,sexyy red,2024,sexyy red
+43,bailey zimmerman,2024,bailey zimmerman
+44,charli xcx,2024,charli xcx
+45,megan thee stallion,2024,megan thee stallion
+46,cody johnson,2024,cody johnson
+47,miley cyrus,2024,miley cyrus
+48,bryson tiller,2024,bryson tiller
+49,j. cole,2024,j. cole
+50,tyla,2024,tyla
+51,lainey wilson,2024,lainey wilson
+52,frank ocean,2024,frank ocean
+53,lil baby,2024,lil baby
+54,dasha,2024,dasha
+55,fleetwood mac,2024,fleetwood mac
+56,juice wrld,2024,juice wrld
+57,hardy,2024,hardy
+58,bruno mars,2024,bruno mars
+59,nate smith,2024,nate smith
+60,jung kook,2024,jung kook
+61,thomas rhett,2024,thomas rhett
+62,linkin park,2024,linkin park
+63,"tyler, the creator",2024,"tyler, the creator"
+64,bigxthaplug,2024,bigxthaplug
+65,mariah carey,2024,mariah carey
+66,ty dolla $ign,2024,ty dolla $ign
+67,xavi,2024,xavi
+68,michael jackson,2024,michael jackson
+69,usher,2024,usher
+70,bossman dlow,2024,bossman dlow
+71,chris brown,2024,chris brown
+72,elton john,2024,elton john
+73,stray kids,2024,stray kids
+74,lana del rey,2024,lana del rey
+75,kacey musgraves,2024,kacey musgraves
+76,eagles,2024,eagles
+77,warren zeiders,2024,warren zeiders
+78,tucker wetmore,2024,tucker wetmore
+79,rihanna,2024,rihanna
+80,nat king cole,2024,nat king cole
+81,djo,2024,djo
+82,don toliver,2024,don toliver
+83,summer walker,2024,summer walker
+84,creedence clearwater revival,2024,creedence clearwater revival
+85,coldplay,2024,coldplay
+86,queen,2024,queen
+87,lady gaga,2024,lady gaga
+88,brenda lee,2024,brenda lee
+89,gracie abrams,2024,gracie abrams
+90,jessie murph,2024,jessie murph
+91,kane brown,2024,kane brown
+92,the kid laroi,2024,the kid laroi
+93,flo milli,2024,flo milli
+94,playboi carti,2024,playboi carti
+95,lil uzi vert,2024,lil uzi vert
+96,ed sheeran,2024,ed sheeran
+97,lil wayne,2024,lil wayne
+98,bob marley and the wailers,2024,bob marley and the wailers
+99,the rolling stones,2024,the rolling stones
+100,bobby helms,2024,bobby helms
+1,morgan wallen,2025,morgan wallen
+2,kendrick lamar,2025,kendrick lamar
+3,taylor swift,2025,taylor swift
+4,sabrina carpenter,2025,sabrina carpenter
+5,sza,2025,sza
+6,drake,2025,drake
+7,bad bunny,2025,bad bunny
+8,billie eilish,2025,billie eilish
+9,"tyler, the creator",2025,"tyler, the creator"
+10,the weeknd,2025,the weeknd
+11,shaboozey,2025,shaboozey
+12,benson boone,2025,benson boone
+13,chappell roan,2025,chappell roan
+14,teddy swims,2025,teddy swims
+15,post malone,2025,post malone
+16,lady gaga,2025,lady gaga
+17,tate mcrae,2025,tate mcrae
+18,alex warren,2025,alex warren
+19,bruno mars,2025,bruno mars
+20,gracie abrams,2025,gracie abrams
+21,zach bryan,2025,zach bryan
+22,playboi carti,2025,playboi carti
+23,jelly roll,2025,jelly roll
+24,"huntr/x:ejae, audrey nuna & rei ami",2025,"huntr/x:ejae, audrey nuna & rei ami"
+25,bigxthaplug,2025,bigxthaplug
+26,luke combs,2025,luke combs
+27,ariana grande,2025,ariana grande
+28,hozier,2025,hozier
+29,justin bieber,2025,justin bieber
+30,doechii,2025,doechii
+31,fuerza regida,2025,fuerza regida
+32,sombr,2025,sombr
+33,rod wave,2025,rod wave
+34,chris stapleton,2025,chris stapleton
+35,the marias,2025,the marias
+36,glorilla,2025,glorilla
+37,riley green,2025,riley green
+38,travis scott,2025,travis scott
+39,ed sheeran,2025,ed sheeran
+40,leon thomas,2025,leon thomas
+41,zach top,2025,zach top
+42,charli xcx,2025,charli xcx
+43,megan moroney,2025,megan moroney
+44,rose,2025,rose
+45,jessie murph,2025,jessie murph
+46,lola young,2025,lola young
+47,partynextdoor,2025,partynextdoor
+48,myles smith,2025,myles smith
+49,future,2025,future
+50,chris brown,2025,chris brown
+51,lil baby,2025,lil baby
+52,olivia rodrigo,2025,olivia rodrigo
+53,peso pluma,2025,peso pluma
+54,tito double p,2025,tito double p
+55,juice wrld,2025,juice wrld
+56,bailey zimmerman,2025,bailey zimmerman
+57,"saja boys: andrew choi, neckwav, danny chung, kevin woo & samuil lee",2025,"saja boys: andrew choi, neckwav, danny chung, kevin woo & samuil lee"
+58,ella langley,2025,ella langley
+59,linkin park,2025,linkin park
+60,fleetwood mac,2025,fleetwood mac
+61,frank ocean,2025,frank ocean
+62,thomas rhett,2025,thomas rhett
+63,noah kahan,2025,noah kahan
+64,forrest frank,2025,forrest frank
+65,ravyn lenae,2025,ravyn lenae
+66,rauw alejandro,2025,rauw alejandro
+67,cardi b,2025,cardi b
+68,neton vega,2025,neton vega
+69,stray kids,2025,stray kids
+70,coldplay,2025,coldplay
+71,lil wayne,2025,lil wayne
+72,sam barber,2025,sam barber
+73,gigi perez,2025,gigi perez
+74,mariah carey,2025,mariah carey
+75,gunna,2025,gunna
+76,michael jackson,2025,michael jackson
+77,eminem,2025,eminem
+78,beyonce,2025,beyonce
+79,don toliver,2025,don toliver
+80,summer walker,2025,summer walker
+81,jimin,2025,jimin
+82,mariah the scientist,2025,mariah the scientist
+83,rihanna,2025,rihanna
+84,sleep token,2025,sleep token
+85,elton john,2025,elton john
+86,cody johnson,2025,cody johnson
+87,tucker wetmore,2025,tucker wetmore
+88,metro boomin,2025,metro boomin
+89,lainey wilson,2025,lainey wilson
+90,nat king cole,2025,nat king cole
+91,brenda lee,2025,brenda lee
+92,kane brown,2025,kane brown
+93,eagles,2025,eagles
+94,ye,2025,ye
+95,wham!,2025,wham!
+96,lil tecca,2025,lil tecca
+97,bobby helms,2025,bobby helms
+98,michael buble,2025,michael buble
+99,creedence clearwater revival,2025,creedence clearwater revival
+100,creed,2025,creed

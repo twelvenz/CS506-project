@@ -1,0 +1,901 @@
+year,rank,artist,artist_normalized,has_spotify_match,artist_followers_max,artist_popularity_max,explicit_track_share,mean_track_duration_min,n_tracks_in_dataset,n_tracks_released_in_chart_year,primary_genre,spotify_display_name,track_popularity_max,track_popularity_mean,track_popularity_mean_in_chart_year,track_popularity_min
+2017,1,ed sheeran,ed sheeran,True,122802777.0,88.0,0.018867924528301886,3.8866037735849064,53.0,17.0,soft pop,Ed Sheeran,88.0,60.283018867924525,65.0,1.0
+2017,2,bruno mars,bruno mars,True,75513910.0,90.0,0.037037037037037035,3.681111111111111,27.0,1.0,,Bruno Mars,88.0,66.4074074074074,75.0,0.0
+2017,3,drake,drake,True,103126025.0,95.0,0.8690476190476191,3.8779761904761907,84.0,3.0,rap,Drake,85.0,65.89285714285714,73.66666666666667,0.0
+2017,4,kendrick lamar,kendrick lamar,True,44606446.0,89.0,0.7272727272727273,3.427272727272727,11.0,3.0,hip hop,Kendrick Lamar,89.0,72.54545454545455,80.66666666666667,2.0
+2017,5,the weeknd,the weeknd,True,113039308.0,94.0,0.49645390070921985,4.3803546099290775,141.0,,r&b pop,The Weeknd,91.0,60.787234042553195,,1.0
+2017,6,the chainsmokers,the chainsmokers,True,21360805.0,80.0,0.15789473684210525,3.6215789473684206,19.0,12.0,,The Chainsmokers,86.0,57.73684210526316,55.583333333333336,1.0
+2017,7,justin bieber,justin bieber,True,85050158.0,91.0,0.18181818181818182,3.001636363636363,55.0,1.0,pop,Justin Bieber,91.0,66.27272727272727,69.0,0.0
+2017,8,future,future,True,22688560.0,88.0,1.0,3.5849999999999995,24.0,2.0,rap,Future,82.0,66.16666666666667,70.5,53.0
+2017,9,shawn mendes,shawn mendes,True,45710657.0,81.0,0.043478260869565216,3.2399999999999998,23.0,5.0,,Shawn Mendes,86.0,58.78260869565217,73.0,0.0
+2017,10,bts,bts,True,81197976.0,85.0,0.0,3.9226666666666667,30.0,,k-pop,BTS,79.0,57.43333333333333,,0.0
+2017,11,coldplay,coldplay,True,60830643.0,88.0,0.0,4.307435897435898,39.0,,,Coldplay,90.0,67.2051282051282,,37.0
+2017,12,lil uzi vert,lil uzi vert,True,19260805.0,82.0,1.0,2.9666666666666663,3.0,2.0,melodic rap,Lil Uzi Vert,80.0,66.0,63.0,46.0
+2017,13,migos,migos,True,14641094.0,74.0,1.0,4.8919999999999995,5.0,3.0,trap,Migos,71.0,28.4,1.6666666666666667,1.0
+2017,14,imagine dragons,imagine dragons,True,58375520.0,85.0,0.0,3.2058823529411766,17.0,3.0,,Imagine Dragons,84.0,56.294117647058826,56.666666666666664,0.0
+2017,15,ariana grande,ariana grande,True,107418606.0,90.0,0.4148936170212766,3.3245744680851064,94.0,,pop,Ariana Grande,85.0,63.91489361702128,,0.0
+2017,16,guns n' roses,guns n' roses,True,35214496.0,80.0,0.6666666666666666,6.126666666666666,6.0,,rock,Guns N' Roses,82.0,19.333333333333332,,1.0
+2017,17,post malone,post malone,True,47726839.0,86.0,0.7108433734939759,3.3266265060240965,83.0,1.0,pop,Post Malone,85.0,61.69879518072289,3.0,0.0
+2017,18,u2,u2,True,13593848.0,75.0,0.0,4.14,1.0,,rock,U2,73.0,73.0,,73.0
+2017,19,rihanna,rihanna,True,69050055.0,90.0,0.3269230769230769,3.88,52.0,,pop,Rihanna,87.0,65.57692307692308,,0.0
+2017,20,dj khaled,dj khaled,True,12343335.0,73.0,1.0,3.9685714285714284,7.0,2.0,,DJ Khaled,72.0,65.42857142857143,65.0,60.0
+2017,21,khalid,khalid,True,16946293.0,82.0,0.2222222222222222,3.3755555555555556,9.0,2.0,,Khalid,81.0,66.0,79.0,42.0
+2017,22,j. cole,j. cole,True,27077429.0,82.0,1.0,4.1466666666666665,9.0,,rap,J. Cole,85.0,67.44444444444444,,1.0
+2017,23,metallica,metallica,True,32177831.0,82.0,0.0,6.3374999999999995,4.0,,metal,Metallica,71.0,37.25,,2.0
+2017,24,halsey,halsey,True,22397897.0,80.0,0.3157894736842105,3.4200000000000004,19.0,6.0,,Halsey,83.0,40.89473684210526,25.833333333333332,0.0
+2017,25,taylor swift,taylor swift,True,145542136.0,100.0,0.1419753086419753,3.89679012345679,324.0,58.0,country,Taylor Swift,97.0,60.04938271604938,41.03448275862069,0.0
+2017,26,lady gaga,lady gaga,True,42298315.0,89.0,0.15714285714285714,3.857,70.0,,art pop,Lady Gaga,91.0,57.18571428571428,,0.0
+2017,27,alessia cara,alessia cara,True,12275134.0,72.0,0.0,3.6333333333333333,15.0,,,Alessia Cara,78.0,46.2,,0.0
+2017,28,sam hunt,sam hunt,True,2473903.0,65.0,0.0,3.6075,4.0,1.0,country,Sam Hunt,66.0,53.0,66.0,38.0
+2017,29,niall horan,niall horan,True,10238134.0,70.0,0.2,3.2920000000000003,5.0,3.0,,Niall Horan,77.0,54.4,70.66666666666667,1.0
+2017,30,rae sremmurd,rae sremmurd,True,7767429.0,69.0,1.0,4.138,5.0,,,Rae Sremmurd,77.0,71.0,,61.0
+2017,31,twenty one pilots,twenty one pilots,True,25762646.0,83.0,0.0,3.8514285714285714,14.0,,,Twenty One Pilots,84.0,68.07142857142857,,39.0
+2017,32,big sean,big sean,True,11543082.0,74.0,1.0,4.033333333333333,3.0,1.0,,Big Sean,74.0,65.66666666666667,63.0,60.0
+2017,33,kodak black,kodak black,True,12478974.0,79.0,0.7142857142857143,3.5714285714285716,7.0,2.0,,Kodak Black,77.0,64.28571428571429,72.5,50.0
+2017,34,travis scott,travis scott,True,41131037.0,89.0,0.9090909090909091,3.610606060606061,33.0,,rap,Travis Scott,84.0,69.9090909090909,,34.0
+2017,35,selena gomez,selena gomez,True,53267200.0,81.0,0.0,3.436,20.0,4.0,,Selena Gomez,77.0,56.7,49.75,0.0
+2017,36,21 savage,21 savage,True,23822155.0,84.0,1.0,4.135714285714285,7.0,2.0,,21 Savage,78.0,62.285714285714285,34.5,3.0
+2017,37,gucci mane,gucci mane,True,5987438.0,76.0,1.0,3.364,5.0,1.0,southern hip hop,Gucci Mane,75.0,66.2,70.0,49.0
+2017,38,james arthur,james arthur,True,20854863.0,79.0,0.09090909090909091,3.6409090909090907,11.0,1.0,soft pop,James Arthur,85.0,70.9090909090909,71.0,41.0
+2017,39,demi lovato,demi lovato,True,27289523.0,78.0,0.5384615384615384,3.443076923076923,13.0,2.0,,Demi Lovato,80.0,59.76923076923077,36.5,2.0
+2017,40,childish gambino,childish gambino,True,14561716.0,78.0,0.8333333333333334,4.864999999999999,6.0,,,Childish Gambino,66.0,14.0,,1.0
+2017,41,chris stapleton,chris stapleton,True,9020741.0,81.0,0.0,4.88,1.0,,country,Chris Stapleton,84.0,84.0,,84.0
+2017,42,pentatonix,pentatonix,False,,,,,,,,,,,,
+2017,43,logic,logic,True,6141719.0,71.0,1.0,4.12,2.0,1.0,,Logic,76.0,71.0,76.0,66.0
+2017,44,chris brown,chris brown,True,28338976.0,87.0,0.7333333333333333,3.858,15.0,1.0,r&b,Chris Brown,83.0,59.333333333333336,64.0,0.0
+2017,45,florida georgia line,florida georgia line,True,5589342.0,70.0,0.0,3.5119999999999996,10.0,,country,Florida Georgia Line,69.0,48.3,,0.0
+2017,46,charlie puth,charlie puth,True,25310805.0,80.0,0.0,3.217,10.0,1.0,soft pop,Charlie Puth,87.0,54.9,4.0,2.0
+2017,47,adele,adele,True,66751662.0,83.0,0.0,4.496829268292683,41.0,,soft pop,Adele,85.0,58.78048780487805,,0.0
+2017,48,maroon 5,maroon 5,True,45777722.0,85.0,0.25,3.5746428571428575,28.0,1.0,pop,Maroon 5,84.0,56.892857142857146,0.0,0.0
+2017,49,katy perry,katy perry,True,38409786.0,83.0,0.05357142857142857,3.8501785714285717,56.0,2.0,pop,Katy Perry,78.0,55.75,66.0,26.0
+2017,50,nicki minaj,nicki minaj,True,34297934.0,84.0,0.8888888888888888,3.506111111111111,18.0,,,Nicki Minaj,78.0,53.55555555555556,,0.0
+2017,51,cardi b,cardi b,True,25960760.0,81.0,1.0,3.491818181818182,22.0,,,Cardi B,79.0,64.77272727272727,,44.0
+2017,52,the rolling stones,the rolling stones,True,15714574.0,77.0,0.0,4.46,3.0,,classic rock,The Rolling Stones,82.0,70.0,,56.0
+2017,53,thomas rhett,thomas rhett,True,4984665.0,73.0,0.0,3.793333333333333,3.0,,country,Thomas Rhett,72.0,59.0,,43.0
+2017,54,luke bryan,luke bryan,True,9408174.0,74.0,0.0,3.6487499999999997,16.0,1.0,country,Luke Bryan,75.0,50.625,60.0,32.0
+2017,55,xxxtentacion,xxxtentacion,True,51727329.0,83.0,0.875,2.0925,8.0,3.0,emo rap,XXXTENTACION,82.0,77.75,79.66666666666667,68.0
+2017,56,harry styles,harry styles,True,34139515.0,80.0,0.0,3.5541935483870977,31.0,4.0,pop rock,Harry Styles,87.0,66.29032258064517,71.5,2.0
+2017,57,sza,sza,True,33068979.0,87.0,0.625,3.028125,16.0,1.0,r&b,SZA,85.0,70.875,69.0,56.0
+2017,58,eminem,eminem,True,104584370.0,88.0,0.9850746268656716,4.441940298507464,67.0,1.0,rap,Eminem,87.0,56.25373134328358,71.0,10.0
+2017,59,beyonce,beyonce,False,,,,,,,,,,,,
+2017,60,depeche mode,depeche mode,True,7379623.0,73.0,0.0,4.123333333333334,3.0,,new wave,Depeche Mode,77.0,69.66666666666667,,62.0
+2017,61,luis fonsi,luis fonsi,True,10982585.0,73.0,0.0,3.3525,4.0,2.0,latin,Luis Fonsi,80.0,70.5,64.5,59.0
+2017,62,maluma,maluma,True,38568546.0,83.0,0.0,3.31,1.0,,reggaeton,Maluma,78.0,78.0,,78.0
+2017,63,keith urban,keith urban,True,5273567.0,67.0,0.0,4.464,5.0,,country,Keith Urban,69.0,45.8,,32.0
+2017,64,miley cyrus,miley cyrus,True,26568626.0,81.0,0.22580645161290322,3.451935483870968,62.0,2.0,country pop,Miley Cyrus,84.0,50.596774193548384,59.0,0.0
+2017,65,french montana,french montana,True,5838449.0,73.0,1.0,3.89,1.0,1.0,,French Montana,85.0,85.0,85.0,85.0
+2017,66,brett young,brett young,False,,,,,,,,,,,,
+2017,67,daddy yankee,daddy yankee,True,37813429.0,85.0,0.0,3.275,2.0,,reggaeton,Daddy Yankee,69.0,37.5,,6.0
+2017,68,camila cabello,camila cabello,True,35582423.0,78.0,0.0,3.382,20.0,3.0,,Camila Cabello,79.0,55.5,38.0,3.0
+2017,69,liam payne,liam payne,True,10241850.0,62.0,0.0,3.38,2.0,1.0,,Liam Payne,68.0,65.5,63.0,63.0
+2017,70,calvin harris,calvin harris,True,23079295.0,84.0,0.23809523809523808,3.6533333333333338,21.0,3.0,edm,Calvin Harris,85.0,69.52380952380952,71.33333333333333,3.0
+2017,71,blake shelton,blake shelton,True,7507062.0,69.0,0.0,3.62875,8.0,,country,Blake Shelton,66.0,58.25,,36.0
+2017,72,zayn,zayn,True,24114464.0,77.0,0.375,3.5774999999999997,8.0,3.0,,ZAYN,81.0,64.5,65.33333333333333,45.0
+2017,73,celine dion,celine dion,False,,,,,,,,,,,,
+2017,74,luke combs,luke combs,True,13402920.0,83.0,0.0,3.8375,4.0,1.0,country,Luke Combs,82.0,77.25,76.0,75.0
+2017,75,julia michaels,julia michaels,True,5292876.0,69.0,0.25,2.9375,4.0,3.0,,Julia Michaels,73.0,50.75,43.333333333333336,0.0
+2017,76,sam smith,sam smith,True,26278854.0,81.0,0.0,3.253846153846154,39.0,2.0,soft pop,Sam Smith,85.0,37.58974358974359,0.0,0.0
+2017,77,linkin park,linkin park,True,31819030.0,88.0,0.07894736842105263,3.3223684210526314,38.0,3.0,nu metal,Linkin Park,88.0,66.07894736842105,59.0,44.0
+2017,78,p!nk,p!nk,True,18208465.0,78.0,0.5714285714285714,3.7085714285714286,14.0,1.0,,P!nk,82.0,49.42857142857143,78.0,0.0
+2017,79,jon pardi,jon pardi,True,2339392.0,73.0,0.0,3.404,5.0,,country,Jon Pardi,75.0,50.0,,37.0
+2017,80,chance the rapper,chance the rapper,True,6033166.0,74.0,1.0,2.35,1.0,,,Chance the Rapper,60.0,60.0,,60.0
+2017,81,bryson tiller,bryson tiller,True,10566213.0,80.0,0.75,3.3425,4.0,,trap soul,Bryson Tiller,83.0,79.0,,76.0
+2017,82,quavo,quavo,True,8083202.0,76.0,0.6666666666666666,2.94,3.0,,,Quavo,70.0,61.0,,50.0
+2017,83,red hot chili peppers,red hot chili peppers,True,23226759.0,83.0,0.0,4.508888888888889,9.0,,funk rock,Red Hot Chili Peppers,85.0,80.88888888888889,,76.0
+2017,84,a boogie wit da hoodie,a boogie wit da hoodie,True,8987309.0,77.0,1.0,2.6633333333333336,3.0,,melodic rap,A Boogie Wit da Hoodie,76.0,74.66666666666667,,73.0
+2017,85,eric church,eric church,True,4141160.0,71.0,0.0,3.646,5.0,,country,Eric Church,78.0,60.6,,40.0
+2017,86,jason aldean,jason aldean,True,7054208.0,75.0,0.0,3.6281818181818184,11.0,,country,Jason Aldean,76.0,58.81818181818182,,0.0
+2017,87,tom petty and the heartbreakers,tom petty and the heartbreakers,False,,,,,,,,,,,,
+2017,88,roger waters,roger waters,False,,,,,,,,,,,,
+2017,89,portugal. the man,portugal. the man,True,1525079.0,69.0,0.0,3.41,2.0,2.0,,Portugal. The Man,83.0,74.0,74.0,65.0
+2017,90,playboi carti,playboi carti,True,15037198.0,86.0,1.0,2.8017777777777777,45.0,1.0,rage rap,Playboi Carti,79.0,64.71111111111111,77.0,56.0
+2017,91,billy joel,billy joel,True,7402824.0,78.0,0.0,4.19,3.0,,soft rock,Billy Joel,83.0,81.66666666666667,,79.0
+2017,92,john mayer,john mayer,False,,,,,,,,,,,,
+2017,93,2 chainz,2 chainz,True,8305217.0,74.0,0.5,4.02,2.0,1.0,rap,2 Chainz,69.0,63.5,58.0,58.0
+2017,94,zac brown band,zac brown band,False,,,,,,,,,,,,
+2017,95,kesha,kesha,True,9160918.0,78.0,0.0,3.3677777777777775,9.0,,,Kesha,84.0,51.888888888888886,,0.0
+2017,96,justin timberlake,justin timberlake,True,15830822.0,82.0,0.3,5.840999999999999,10.0,,,Justin Timberlake,85.0,72.4,,56.0
+2017,97,sia,sia,True,30556621.0,82.0,0.0,3.72421052631579,19.0,2.0,,Sia,81.0,68.42105263157895,61.5,51.0
+2017,98,jay-z,jay-z,True,10380063.0,82.0,1.0,4.415,10.0,,hip hop,JAY-Z,84.0,53.4,,1.0
+2017,99,kane brown,kane brown,True,5778418.0,71.0,0.0,3.2,4.0,2.0,country,Kane Brown,68.0,58.75,59.5,51.0
+2017,100,zedd,zedd,True,6111556.0,73.0,0.0,3.6966666666666668,3.0,1.0,edm,Zedd,78.0,77.0,76.0,76.0
+2018,1,drake,drake,True,103126025.0,95.0,0.8690476190476191,3.8779761904761907,84.0,26.0,rap,Drake,85.0,65.89285714285714,61.76923076923077,0.0
+2018,2,post malone,post malone,True,47726839.0,86.0,0.7108433734939759,3.3266265060240965,83.0,10.0,pop,Post Malone,85.0,61.69879518072289,68.3,0.0
+2018,3,cardi b,cardi b,True,25960760.0,81.0,1.0,3.491818181818182,22.0,15.0,,Cardi B,79.0,64.77272727272727,61.06666666666667,44.0
+2018,4,ed sheeran,ed sheeran,True,122802777.0,88.0,0.018867924528301886,3.8866037735849064,53.0,,soft pop,Ed Sheeran,88.0,60.283018867924525,,1.0
+2018,5,imagine dragons,imagine dragons,True,58375520.0,85.0,0.0,3.2058823529411766,17.0,2.0,,Imagine Dragons,84.0,56.294117647058826,80.0,0.0
+2018,6,camila cabello,camila cabello,True,35582423.0,78.0,0.0,3.382,20.0,12.0,,Camila Cabello,79.0,55.5,54.5,3.0
+2018,7,xxxtentacion,xxxtentacion,True,51727329.0,83.0,0.875,2.0925,8.0,4.0,emo rap,XXXTENTACION,82.0,77.75,78.75,68.0
+2018,8,ariana grande,ariana grande,True,107418606.0,90.0,0.4148936170212766,3.3245744680851064,94.0,6.0,pop,Ariana Grande,85.0,63.91489361702128,64.66666666666667,0.0
+2018,9,migos,migos,True,14641094.0,74.0,1.0,4.8919999999999995,5.0,2.0,trap,Migos,71.0,28.4,68.5,1.0
+2018,10,maroon 5,maroon 5,True,45777722.0,85.0,0.25,3.5746428571428575,28.0,5.0,pop,Maroon 5,84.0,56.892857142857146,68.8,0.0
+2018,11,juice wrld,juice wrld,True,42565036.0,85.0,1.0,3.588571428571428,7.0,1.0,melodic rap,Juice WRLD,82.0,60.857142857142854,82.0,3.0
+2018,12,dua lipa,dua lipa,True,46895665.0,85.0,0.09523809523809523,3.393571428571428,42.0,2.0,pop,Dua Lipa,81.0,55.80952380952381,46.5,6.0
+2018,13,travis scott,travis scott,True,41131037.0,89.0,0.9090909090909091,3.610606060606061,33.0,17.0,rap,Travis Scott,84.0,69.9090909090909,71.0,34.0
+2018,14,halsey,halsey,True,22397897.0,80.0,0.3157894736842105,3.4200000000000004,19.0,2.0,,Halsey,83.0,40.89473684210526,26.5,0.0
+2018,15,khalid,khalid,True,16946293.0,82.0,0.2222222222222222,3.3755555555555556,9.0,2.0,,Khalid,81.0,66.0,71.5,42.0
+2018,16,6ix9ine,6ix9ine,False,,,,,,,,,,,,
+2018,17,florida georgia line,florida georgia line,True,5589342.0,70.0,0.0,3.5119999999999996,10.0,,country,Florida Georgia Line,69.0,48.3,,0.0
+2018,18,ella mai,ella mai,True,6192505.0,69.0,0.0,3.9333333333333336,3.0,2.0,r&b,Ella Mai,73.0,68.66666666666667,69.0,65.0
+2018,19,kendrick lamar,kendrick lamar,True,44606446.0,89.0,0.7272727272727273,3.427272727272727,11.0,2.0,hip hop,Kendrick Lamar,89.0,72.54545454545455,74.5,2.0
+2018,20,taylor swift,taylor swift,True,145542136.0,100.0,0.1419753086419753,3.89679012345679,324.0,,country,Taylor Swift,97.0,60.04938271604938,,0.0
+2018,21,nicki minaj,nicki minaj,True,34297934.0,84.0,0.8888888888888888,3.506111111111111,18.0,1.0,,Nicki Minaj,78.0,53.55555555555556,61.0,0.0
+2018,22,bebe rexha,bebe rexha,True,9839947.0,76.0,0.0,2.856,5.0,2.0,,Bebe Rexha,70.0,58.4,70.0,39.0
+2018,23,bazzi,bazzi,True,5506705.0,66.0,0.75,2.6875,4.0,2.0,,Bazzi,72.0,69.25,71.5,66.0
+2018,24,marshmello,marshmello,True,34481381.0,80.0,0.125,2.8925,8.0,2.0,edm,Marshmello,81.0,66.25,49.0,17.0
+2018,25,eminem,eminem,True,104584370.0,88.0,0.9850746268656716,4.441940298507464,67.0,1.0,rap,Eminem,87.0,56.25373134328358,67.0,10.0
+2018,26,lil pump,lil pump,True,7569701.0,61.0,1.0,2.06,1.0,,,Lil Pump,59.0,59.0,,59.0
+2018,27,21 savage,21 savage,True,23822155.0,84.0,1.0,4.135714285714285,7.0,1.0,,21 Savage,78.0,62.285714285714285,78.0,3.0
+2018,28,nf,nf,True,11162039.0,76.0,0.0,3.53,1.0,,christian hip hop,NF,77.0,77.0,,77.0
+2018,29,demi lovato,demi lovato,True,27289523.0,78.0,0.5384615384615384,3.443076923076923,13.0,1.0,,Demi Lovato,80.0,59.76923076923077,58.0,2.0
+2018,30,selena gomez,selena gomez,True,53267200.0,81.0,0.0,3.436,20.0,2.0,,Selena Gomez,77.0,56.7,67.5,0.0
+2018,31,charlie puth,charlie puth,True,25310805.0,80.0,0.0,3.217,10.0,3.0,soft pop,Charlie Puth,87.0,54.9,78.0,2.0
+2018,32,g-eazy,g-eazy,True,6295804.0,74.0,1.0,4.408333333333334,6.0,,,G-Eazy,80.0,59.833333333333336,,0.0
+2018,33,the weeknd,the weeknd,True,113039308.0,94.0,0.49645390070921985,4.3803546099290775,141.0,4.0,r&b pop,The Weeknd,91.0,60.787234042553195,76.0,1.0
+2018,34,lil baby,lil baby,True,21662596.0,84.0,1.0,2.9706666666666663,15.0,14.0,,Lil Baby,79.0,63.13333333333333,62.642857142857146,47.0
+2018,35,dan + shay,dan + shay,True,3203185.0,66.0,0.0,3.203333333333333,3.0,2.0,country,Dan + Shay,68.0,67.33333333333333,67.0,67.0
+2018,36,kane brown,kane brown,True,5778418.0,71.0,0.0,3.2,4.0,,country,Kane Brown,68.0,58.75,,51.0
+2018,37,j balvin,j balvin,True,39113380.0,86.0,0.0,3.575,4.0,1.0,reggaeton,J Balvin,76.0,66.25,76.0,53.0
+2018,38,youngboy never broke again,youngboy never broke again,True,14958573.0,85.0,1.0,3.0680000000000005,5.0,2.0,,YoungBoy Never Broke Again,80.0,73.4,70.0,67.0
+2018,39,bruno mars,bruno mars,True,75513910.0,90.0,0.037037037037037035,3.681111111111111,27.0,,,Bruno Mars,88.0,66.4074074074074,,0.0
+2018,40,shawn mendes,shawn mendes,True,45710657.0,81.0,0.043478260869565216,3.2399999999999998,23.0,3.0,,Shawn Mendes,86.0,58.78260869565217,23.333333333333332,0.0
+2018,41,j. cole,j. cole,True,27077429.0,82.0,1.0,4.1466666666666665,9.0,,rap,J. Cole,85.0,67.44444444444444,,1.0
+2018,42,rich the kid,rich the kid,True,3479963.0,64.0,1.0,3.0549999999999997,2.0,2.0,trap,Rich The Kid,66.0,62.0,62.0,58.0
+2018,43,bad bunny,bad bunny,True,102610644.0,95.0,0.8035714285714286,3.6501785714285715,56.0,1.0,reggaeton,Bad Bunny,91.0,73.33928571428571,6.0,6.0
+2018,44,lil wayne,lil wayne,True,17938214.0,86.0,0.75,4.33,8.0,1.0,rap,Lil Wayne,78.0,36.625,70.0,0.0
+2018,45,5 seconds of summer,5 seconds of summer,True,10246609.0,76.0,0.14285714285714285,3.2571428571428576,7.0,2.0,,5 Seconds of Summer,80.0,59.285714285714285,75.0,0.0
+2018,46,sza,sza,True,33068979.0,87.0,0.625,3.028125,16.0,,r&b,SZA,85.0,70.875,,56.0
+2018,47,portugal. the man,portugal. the man,True,1525079.0,69.0,0.0,3.41,2.0,,,Portugal. The Man,83.0,74.0,,65.0
+2018,48,luke combs,luke combs,True,13402920.0,83.0,0.0,3.8375,4.0,,country,Luke Combs,82.0,77.25,,75.0
+2018,49,lauv,lauv,True,6816695.0,73.0,0.2,3.2939999999999996,5.0,1.0,,Lauv,2.0,1.0,2.0,0.0
+2018,50,thomas rhett,thomas rhett,True,4984665.0,73.0,0.0,3.793333333333333,3.0,,country,Thomas Rhett,72.0,59.0,,43.0
+2018,51,childish gambino,childish gambino,True,14561716.0,78.0,0.8333333333333334,4.864999999999999,6.0,1.0,,Childish Gambino,66.0,14.0,66.0,1.0
+2018,52,blocboy jb,blocboy jb,True,1434846.0,53.0,1.0,3.02,1.0,1.0,,BlocBoy JB,57.0,57.0,57.0,57.0
+2018,53,sam smith,sam smith,True,26278854.0,81.0,0.0,3.253846153846154,39.0,,soft pop,Sam Smith,85.0,37.58974358974359,,0.0
+2018,54,maren morris,maren morris,True,888857.0,67.0,0.0,3.28,1.0,,country,Maren Morris,66.0,66.0,,66.0
+2018,55,jason aldean,jason aldean,True,7054208.0,75.0,0.0,3.6281818181818184,11.0,1.0,country,Jason Aldean,76.0,58.81818181818182,76.0,0.0
+2018,56,offset,offset,True,5610584.0,77.0,0.75,3.835,4.0,,,Offset,81.0,50.25,,0.0
+2018,57,luke bryan,luke bryan,True,9408174.0,74.0,0.0,3.6487499999999997,16.0,,country,Luke Bryan,75.0,50.625,,32.0
+2018,58,kodak black,kodak black,True,12478974.0,79.0,0.7142857142857143,3.5714285714285716,7.0,3.0,,Kodak Black,77.0,64.28571428571429,59.666666666666664,50.0
+2018,59,young thug,young thug,True,12421354.0,84.0,1.0,3.9425,4.0,,rap,Young Thug,73.0,69.5,,67.0
+2018,60,kanye west,kanye west,True,31059657.0,89.0,0.6956521739130435,4.1643478260869555,23.0,3.0,rap,Kanye West,85.0,66.34782608695652,71.33333333333333,1.0
+2018,61,ty dolla $ign,ty dolla $ign,True,7319540.0,81.0,1.0,4.04,1.0,,trap soul,Ty Dolla $ign,80.0,80.0,,80.0
+2018,62,tyga,tyga,True,7315854.0,78.0,1.0,3.693333333333333,3.0,1.0,,Tyga,72.0,47.333333333333336,68.0,2.0
+2018,63,logic,logic,True,6141719.0,71.0,1.0,4.12,2.0,,,Logic,76.0,71.0,,66.0
+2018,64,brett young,brett young,False,,,,,,,,,,,,
+2018,65,zedd,zedd,True,6111556.0,73.0,0.0,3.6966666666666668,3.0,1.0,edm,Zedd,78.0,77.0,77.0,76.0
+2018,66,normani,normani,True,2956534.0,66.0,1.0,2.84,1.0,,,Normani,44.0,44.0,,44.0
+2018,67,old dominion,old dominion,True,1738831.0,67.0,0.0,3.5666666666666664,3.0,,country,Old Dominion,67.0,58.666666666666664,,44.0
+2018,68,grey,grey,False,,,,,,,,,,,,
+2018,69,famous dex,famous dex,False,,,,,,,,,,,,
+2018,70,kenny chesney,kenny chesney,True,4887584.0,69.0,0.0,4.085,2.0,,country,Kenny Chesney,71.0,57.5,,44.0
+2018,71,lil uzi vert,lil uzi vert,True,19260805.0,82.0,1.0,2.9666666666666663,3.0,,melodic rap,Lil Uzi Vert,80.0,66.0,,46.0
+2018,72,metro boomin,metro boomin,True,11687489.0,84.0,1.0,3.3155555555555556,9.0,3.0,,Metro Boomin,83.0,75.0,69.66666666666667,62.0
+2018,73,justin timberlake,justin timberlake,True,15830822.0,82.0,0.3,5.840999999999999,10.0,1.0,,Justin Timberlake,85.0,72.4,68.0,56.0
+2018,74,daddy yankee,daddy yankee,True,37813429.0,85.0,0.0,3.275,2.0,1.0,reggaeton,Daddy Yankee,69.0,37.5,69.0,6.0
+2018,75,russell dickerson,russell dickerson,True,587206.0,65.0,0.0,3.06,1.0,,country,Russell Dickerson,59.0,59.0,,59.0
+2018,76,anne-marie,anne-marie,True,12848260.0,75.0,0.5,2.705,2.0,1.0,,Anne-Marie,78.0,73.5,78.0,69.0
+2018,77,lil dicky,lil dicky,True,2046209.0,59.0,1.0,3.61,1.0,1.0,,Lil Dicky,73.0,73.0,73.0,73.0
+2018,78,yg,yg,True,3477960.0,71.0,1.0,3.92,1.0,,,YG,0.0,0.0,,0.0
+2018,79,beyonce,beyonce,False,,,,,,,,,,,,
+2018,80,dj khaled,dj khaled,True,12343335.0,73.0,1.0,3.9685714285714284,7.0,1.0,,DJ Khaled,72.0,65.42857142857143,60.0,60.0
+2018,81,chris brown,chris brown,True,28338976.0,87.0,0.7333333333333333,3.858,15.0,,r&b,Chris Brown,83.0,59.333333333333336,,0.0
+2018,82,blake shelton,blake shelton,True,7507062.0,69.0,0.0,3.62875,8.0,,country,Blake Shelton,66.0,58.25,,36.0
+2018,83,gucci mane,gucci mane,True,5987438.0,76.0,1.0,3.364,5.0,2.0,southern hip hop,Gucci Mane,75.0,66.2,73.0,49.0
+2018,84,quavo,quavo,True,8083202.0,76.0,0.6666666666666666,2.94,3.0,,,Quavo,70.0,61.0,,50.0
+2018,85,the carters,the carters,False,,,,,,,,,,,,
+2018,86,lil skies,lil skies,True,5287479.0,64.0,1.0,3.375,2.0,1.0,melodic rap,Lil Skies,66.0,51.5,37.0,37.0
+2018,87,chris stapleton,chris stapleton,True,9020741.0,81.0,0.0,4.88,1.0,,country,Chris Stapleton,84.0,84.0,,84.0
+2018,88,max,max,False,,,,,,,,,,,,
+2018,89,ozuna,ozuna,False,,,,,,,,,,,,
+2018,90,p!nk,p!nk,True,18208465.0,78.0,0.5714285714285714,3.7085714285714286,14.0,,,P!nk,82.0,49.42857142857143,,0.0
+2018,91,miguel,miguel,True,6132588.0,78.0,0.25,3.3200000000000003,4.0,,r&b,Miguel,84.0,72.75,,62.0
+2018,92,calvin harris,calvin harris,True,23079295.0,84.0,0.23809523809523808,3.6533333333333338,21.0,2.0,edm,Calvin Harris,85.0,69.52380952380952,74.5,3.0
+2018,93,panic! at the disco,panic! at the disco,True,12721192.0,76.0,0.5,3.135,2.0,1.0,emo,Panic! At The Disco,79.0,75.0,79.0,71.0
+2018,94,lovelytheband,lovelytheband,False,,,,,,,,,,,,
+2018,95,foster the people,foster the people,True,4025972.0,70.0,0.0,4.13,2.0,,,Foster The People,84.0,77.0,,70.0
+2018,96,eric church,eric church,True,4141160.0,71.0,0.0,3.646,5.0,,country,Eric Church,78.0,60.6,,40.0
+2018,97,chris young,chris young,True,2918794.0,65.0,0.0,3.3133333333333335,15.0,,country,Chris Young,69.0,48.06666666666667,,38.0
+2018,98,a$ap ferg,a$ap ferg,True,4287336.0,68.0,1.0,3.8049999999999997,2.0,,rap,A$AP Ferg,68.0,66.5,,65.0
+2018,99,a$ap rocky,a$ap rocky,True,17333176.0,82.0,1.0,3.585714285714286,7.0,3.0,rap,A$AP Rocky,84.0,73.85714285714286,74.66666666666667,54.0
+2018,100,queen naija,queen naija,False,,,,,,,,,,,,
+2019,1,post malone,post malone,True,47726839.0,86.0,0.7108433734939759,3.3266265060240965,83.0,17.0,pop,Post Malone,85.0,61.69879518072289,68.05882352941177,0.0
+2019,2,ariana grande,ariana grande,True,107418606.0,90.0,0.4148936170212766,3.3245744680851064,94.0,14.0,pop,Ariana Grande,85.0,63.91489361702128,71.42857142857143,0.0
+2019,3,billie ellish,billie ellish,False,,,,,,,,,,,,
+2019,4,khalid,khalid,True,16946293.0,82.0,0.2222222222222222,3.3755555555555556,9.0,3.0,,Khalid,81.0,66.0,62.666666666666664,42.0
+2019,5,drake,drake,True,103126025.0,95.0,0.8690476190476191,3.8779761904761907,84.0,1.0,rap,Drake,85.0,65.89285714285714,73.0,0.0
+2019,6,travis scott,travis scott,True,41131037.0,89.0,0.9090909090909091,3.610606060606061,33.0,1.0,rap,Travis Scott,84.0,69.9090909090909,83.0,34.0
+2019,7,ed sheeran,ed sheeran,True,122802777.0,88.0,0.018867924528301886,3.8866037735849064,53.0,5.0,soft pop,Ed Sheeran,88.0,60.283018867924525,69.2,1.0
+2019,8,taylor swift,taylor swift,True,145542136.0,100.0,0.1419753086419753,3.89679012345679,324.0,19.0,country,Taylor Swift,97.0,60.04938271604938,73.78947368421052,0.0
+2019,9,lil nas x,lil nas x,True,12310527.0,71.0,0.6,2.6399999999999997,10.0,4.0,,Lil Nas X,76.0,69.2,64.75,48.0
+2019,10,halsey,halsey,True,22397897.0,80.0,0.3157894736842105,3.4200000000000004,19.0,2.0,,Halsey,83.0,40.89473684210526,1.0,0.0
+2019,11,jonas borthers,jonas borthers,False,,,,,,,,,,,,
+2019,12,juice wrld,juice wrld,True,42565036.0,85.0,1.0,3.588571428571428,7.0,1.0,melodic rap,Juice WRLD,82.0,60.857142857142854,3.0,3.0
+2019,13,cardi b,cardi b,True,25960760.0,81.0,1.0,3.491818181818182,22.0,1.0,,Cardi B,79.0,64.77272727272727,79.0,44.0
+2019,14,dababy,dababy,True,12955951.0,77.0,1.0,2.8000000000000003,3.0,2.0,,DaBaby,73.0,71.0,70.0,67.0
+2019,15,bts,bts,True,81197976.0,85.0,0.0,3.9226666666666667,30.0,1.0,k-pop,BTS,79.0,57.43333333333333,76.0,0.0
+2019,16,panic! at the disco,panic! at the disco,True,12721192.0,76.0,0.5,3.135,2.0,,emo,Panic! At The Disco,79.0,75.0,,71.0
+2019,17,luke combs,luke combs,True,13402920.0,83.0,0.0,3.8375,4.0,,country,Luke Combs,82.0,77.25,,75.0
+2019,18,lil baby,lil baby,True,21662596.0,84.0,1.0,2.9706666666666663,15.0,,,Lil Baby,79.0,63.13333333333333,,47.0
+2019,19,shawn mendes,shawn mendes,True,45710657.0,81.0,0.043478260869565216,3.2399999999999998,23.0,4.0,,Shawn Mendes,86.0,58.78260869565217,74.5,0.0
+2019,20,lizzo,lizzo,True,5739313.0,68.0,0.5,2.6775,8.0,4.0,,Lizzo,70.0,52.875,64.75,8.0
+2019,21,meek mill,meek mill,True,8277770.0,72.0,1.0,3.0,1.0,,rap,Meek Mill,73.0,73.0,,73.0
+2019,22,queen,queen,True,55209500.0,82.0,0.0,3.9033333333333338,6.0,,classic rock,Queen,82.0,65.33333333333333,,4.0
+2019,23,dan + shay,dan + shay,True,3203185.0,66.0,0.0,3.203333333333333,3.0,,country,Dan + Shay,68.0,67.33333333333333,,67.0
+2019,24,a boogie wit da hoodie,a boogie wit da hoodie,True,8987309.0,77.0,1.0,2.6633333333333336,3.0,,melodic rap,A Boogie Wit da Hoodie,76.0,74.66666666666667,,73.0
+2019,25,p!nk,p!nk,True,18208465.0,78.0,0.5714285714285714,3.7085714285714286,14.0,,,P!nk,82.0,49.42857142857143,,0.0
+2019,26,chris brown,chris brown,True,28338976.0,87.0,0.7333333333333333,3.858,15.0,2.0,r&b,Chris Brown,83.0,59.333333333333336,81.5,0.0
+2019,27,xxxtentacion,xxxtentacion,True,51727329.0,83.0,0.875,2.0925,8.0,,emo rap,XXXTENTACION,82.0,77.75,,68.0
+2019,28,j. cole,j. cole,True,27077429.0,82.0,1.0,4.1466666666666665,9.0,1.0,rap,J. Cole,85.0,67.44444444444444,76.0,1.0
+2019,29,elton john,elton john,True,15545907.0,80.0,0.0,3.5980000000000003,5.0,,,Elton John,80.0,67.4,,53.0
+2019,30,imagine dragons,imagine dragons,True,58375520.0,85.0,0.0,3.2058823529411766,17.0,,,Imagine Dragons,84.0,56.294117647058826,,0.0
+2019,31,bad bunny,bad bunny,True,102610644.0,95.0,0.8035714285714286,3.6501785714285715,56.0,,reggaeton,Bad Bunny,91.0,73.33928571428571,,6.0
+2019,32,kodak black,kodak black,True,12478974.0,79.0,0.7142857142857143,3.5714285714285716,7.0,,,Kodak Black,77.0,64.28571428571429,,50.0
+2019,33,21 savage,21 savage,True,23822155.0,84.0,1.0,4.135714285714285,7.0,,,21 Savage,78.0,62.285714285714285,,3.0
+2019,34,youngboy never broke again,youngboy never broke again,True,14958573.0,85.0,1.0,3.0680000000000005,5.0,1.0,,YoungBoy Never Broke Again,80.0,73.4,80.0,67.0
+2019,35,gunna,gunna,True,10353625.0,85.0,1.0,2.717,10.0,2.0,melodic rap,Gunna,80.0,56.3,54.5,0.0
+2019,36,kane brown,kane brown,True,5778418.0,71.0,0.0,3.2,4.0,,country,Kane Brown,68.0,58.75,,51.0
+2019,37,lady gaga,lady gaga,True,42298315.0,89.0,0.15714285714285714,3.857,70.0,,art pop,Lady Gaga,91.0,57.18571428571428,,0.0
+2019,38,marshmellow,marshmellow,False,,,,,,,,,,,,
+2019,39,thomas rhett,thomas rhett,True,4984665.0,73.0,0.0,3.793333333333333,3.0,,country,Thomas Rhett,72.0,59.0,,43.0
+2019,40,maroon 5,maroon 5,True,45777722.0,85.0,0.25,3.5746428571428575,28.0,1.0,pop,Maroon 5,84.0,56.892857142857146,33.0,0.0
+2019,41,swae lee,swae lee,False,,,,,,,,,,,,
+2019,42,camilia cabello,camilia cabello,False,,,,,,,,,,,,
+2019,43,sam smith,sam smith,True,26278854.0,81.0,0.0,3.253846153846154,39.0,3.0,soft pop,Sam Smith,85.0,37.58974358974359,64.66666666666667,0.0
+2019,44,ynw melly,ynw melly,True,12755534.0,71.0,1.0,4.115,2.0,,melodic rap,YNW Melly,76.0,73.5,,71.0
+2019,45,the rolling stones,the rolling stones,True,15714574.0,77.0,0.0,4.46,3.0,,classic rock,The Rolling Stones,82.0,70.0,,56.0
+2019,46,5 seconds of summer,5 seconds of summer,True,10246609.0,76.0,0.14285714285714285,3.2571428571428576,7.0,1.0,,5 Seconds of Summer,80.0,59.285714285714285,66.0,0.0
+2019,47,lauren daigie,lauren daigie,False,,,,,,,,,,,,
+2019,48,lil tecca,lil tecca,True,10172903.0,79.0,1.0,2.5833333333333335,3.0,1.0,melodic rap,Lil Tecca,82.0,72.66666666666667,82.0,58.0
+2019,49,metallica,metallica,True,32177831.0,82.0,0.0,6.3374999999999995,4.0,,metal,Metallica,71.0,37.25,,2.0
+2019,50,bruno mars,bruno mars,True,75513910.0,90.0,0.037037037037037035,3.681111111111111,27.0,,,Bruno Mars,88.0,66.4074074074074,,0.0
+2019,51,young thug,young thug,True,12421354.0,84.0,1.0,3.9425,4.0,2.0,rap,Young Thug,73.0,69.5,71.5,67.0
+2019,52,ella mai,ella mai,True,6192505.0,69.0,0.0,3.9333333333333336,3.0,,r&b,Ella Mai,73.0,68.66666666666667,,65.0
+2019,53,bradley cooper,bradley cooper,False,,,,,,,,,,,,
+2019,54,lewis capaldi,lewis capaldi,True,14045780.0,79.0,0.0,3.4175000000000004,12.0,7.0,soft pop,Lewis Capaldi,86.0,67.66666666666667,75.57142857142857,2.0
+2019,55,eminem,eminem,True,104584370.0,88.0,0.9850746268656716,4.441940298507464,67.0,,rap,Eminem,87.0,56.25373134328358,,10.0
+2019,56,jason aldean,jason aldean,True,7054208.0,75.0,0.0,3.6281818181818184,11.0,,country,Jason Aldean,76.0,58.81818181818182,,0.0
+2019,57,nf,nf,True,11162039.0,76.0,0.0,3.53,1.0,,christian hip hop,NF,77.0,77.0,,77.0
+2019,58,michael buble,michael buble,False,,,,,,,,,,,,
+2019,59,ava max,ava max,True,7755194.0,77.0,0.0,2.8850000000000002,6.0,,,Ava Max,82.0,51.166666666666664,,3.0
+2019,60,the beatles,the beatles,True,30726377.0,83.0,0.0,2.8875,20.0,,classic rock,The Beatles,82.0,56.9,,0.0
+2019,61,normani,normani,True,2956534.0,66.0,1.0,2.84,1.0,,,Normani,44.0,44.0,,44.0
+2019,62,florida georgia line,florida georgia line,True,5589342.0,70.0,0.0,3.5119999999999996,10.0,1.0,country,Florida Georgia Line,69.0,48.3,66.0,0.0
+2019,63,twenty one pilots,twenty one pilots,True,25762646.0,83.0,0.0,3.8514285714285714,14.0,,,Twenty One Pilots,84.0,68.07142857142857,,39.0
+2019,64,billy rae cyrus,billy rae cyrus,False,,,,,,,,,,,,
+2019,65,chris stapleton,chris stapleton,True,9020741.0,81.0,0.0,4.88,1.0,,country,Chris Stapleton,84.0,84.0,,84.0
+2019,66,summer walker,summer walker,True,8013600.0,76.0,0.75,3.3674999999999997,4.0,1.0,r&b,Summer Walker,78.0,55.75,73.0,0.0
+2019,67,morgan wallen,morgan wallen,True,14005617.0,88.0,0.4,2.9240000000000004,5.0,,country,Morgan Wallen,86.0,51.4,,33.0
+2019,68,bastille,bastille,True,5647181.0,72.0,0.0,3.4633333333333334,3.0,,,Bastille,74.0,61.666666666666664,,41.0
+2019,69,offset,offset,True,5610584.0,77.0,0.75,3.835,4.0,2.0,,Offset,81.0,50.25,60.0,0.0
+2019,70,trippie redd,trippie redd,True,11010665.0,80.0,1.0,3.5949999999999998,2.0,,melodic rap,Trippie Redd,2.0,2.0,,2.0
+2019,71,"tyler, the creator","tyler, the creator",True,24451340.0,86.0,1.0,3.18375,8.0,1.0,,"Tyler, The Creator",90.0,68.25,77.0,0.0
+2019,72,future,future,True,22688560.0,88.0,1.0,3.5849999999999995,24.0,,rap,Future,82.0,66.16666666666667,,53.0
+2019,73,lil wayne,lil wayne,True,17938214.0,86.0,0.75,4.33,8.0,,rap,Lil Wayne,78.0,36.625,,0.0
+2019,74,blake shelton,blake shelton,True,7507062.0,69.0,0.0,3.62875,8.0,1.0,country,Blake Shelton,66.0,58.25,66.0,36.0
+2019,75,justin bieber,justin bieber,True,85050158.0,91.0,0.18181818181818182,3.001636363636363,55.0,,pop,Justin Bieber,91.0,66.27272727272727,,0.0
+2019,76,city girls,city girls,False,,,,,,,,,,,,
+2019,77,blueface,blueface,False,,,,,,,,,,,,
+2019,78,carrie underwood,carrie underwood,True,6125781.0,68.0,0.0,3.33,1.0,,country,Carrie Underwood,76.0,76.0,,76.0
+2019,79,kanye west,kanye west,True,31059657.0,89.0,0.6956521739130435,4.1643478260869555,23.0,1.0,rap,Kanye West,85.0,66.34782608695652,71.0,1.0
+2019,80,dj khaled,dj khaled,True,12343335.0,73.0,1.0,3.9685714285714284,7.0,,,DJ Khaled,72.0,65.42857142857143,,60.0
+2019,81,billy joel,billy joel,True,7402824.0,78.0,0.0,4.19,3.0,,soft rock,Billy Joel,83.0,81.66666666666667,,79.0
+2019,82,eagles,eagles,True,12152190.0,75.0,0.0,6.52,1.0,,classic rock,Eagles,52.0,52.0,,52.0
+2019,83,backstreet boys,backstreet boys,True,6711194.0,76.0,0.0,3.78,3.0,,,Backstreet Boys,83.0,76.66666666666667,,73.0
+2019,84,paul mccartney,paul mccartney,False,,,,,,,,,,,,
+2019,85,megan thee stallion,megan thee stallion,True,10895519.0,76.0,1.0,2.980952380952381,21.0,,,Megan Thee Stallion,72.0,52.0,,40.0
+2019,86,maren morris,maren morris,True,888857.0,67.0,0.0,3.28,1.0,1.0,country,Maren Morris,66.0,66.0,66.0,66.0
+2019,87,bazzi,bazzi,True,5506705.0,66.0,0.75,2.6875,4.0,2.0,,Bazzi,72.0,69.25,67.0,66.0
+2019,88,mustard,mustard,True,1930877.0,71.0,1.0,3.2,1.0,1.0,,Mustard,72.0,72.0,72.0,72.0
+2019,89,6ix9ine,6ix9ine,False,,,,,,,,,,,,
+2019,90,kendrick lamar,kendrick lamar,True,44606446.0,89.0,0.7272727272727273,3.427272727272727,11.0,,hip hop,Kendrick Lamar,89.0,72.54545454545455,,2.0
+2019,91,polo g,polo g,True,13056061.0,76.0,1.0,2.81,2.0,1.0,,Polo G,73.0,64.5,73.0,56.0
+2019,92,sheck wes,sheck wes,True,1781959.0,63.0,1.0,3.06,1.0,,,Sheck Wes,73.0,73.0,,73.0
+2019,93,migos,migos,True,14641094.0,74.0,1.0,4.8919999999999995,5.0,,trap,Migos,71.0,28.4,,1.0
+2019,94,lil uzi vert,lil uzi vert,True,19260805.0,82.0,1.0,2.9666666666666663,3.0,,melodic rap,Lil Uzi Vert,80.0,66.0,,46.0
+2019,95,nipsey hussle,nipsey hussle,False,,,,,,,,,,,,
+2019,96,fleetwood mac,fleetwood mac,True,13973668.0,83.0,0.0,4.3575,8.0,,classic rock,Fleetwood Mac,86.0,69.75,,53.0
+2019,97,the weeknd,the weeknd,True,113039308.0,94.0,0.49645390070921985,4.3803546099290775,141.0,1.0,r&b pop,The Weeknd,91.0,60.787234042553195,22.0,1.0
+2019,98,eric church,eric church,True,4141160.0,71.0,0.0,3.646,5.0,,country,Eric Church,78.0,60.6,,40.0
+2019,99,benny blanco,benny blanco,True,1628440.0,73.0,0.0,2.8666666666666667,3.0,,,benny blanco,76.0,70.33333333333333,,64.0
+2019,100,luke bryan,luke bryan,True,9408174.0,74.0,0.0,3.6487499999999997,16.0,1.0,country,Luke Bryan,75.0,50.625,44.0,32.0
+2020,1,post malone,post malone,True,47726839.0,86.0,0.7108433734939759,3.3266265060240965,83.0,,pop,Post Malone,85.0,61.69879518072289,,0.0
+2020,2,juice wrld,juice wrld,True,42565036.0,85.0,1.0,3.588571428571428,7.0,4.0,melodic rap,Juice WRLD,82.0,60.857142857142854,68.0,3.0
+2020,3,taylor swift,taylor swift,True,145542136.0,100.0,0.1419753086419753,3.89679012345679,324.0,39.0,country,Taylor Swift,97.0,60.04938271604938,64.94871794871794,0.0
+2020,4,drake,drake,True,103126025.0,95.0,0.8690476190476191,3.8779761904761907,84.0,4.0,rap,Drake,85.0,65.89285714285714,76.25,0.0
+2020,5,luke combs,luke combs,True,13402920.0,83.0,0.0,3.8375,4.0,,country,Luke Combs,82.0,77.25,,75.0
+2020,6,dababy,dababy,True,12955951.0,77.0,1.0,2.8000000000000003,3.0,1.0,,DaBaby,73.0,71.0,73.0,67.0
+2020,7,lil baby,lil baby,True,21662596.0,84.0,1.0,2.9706666666666663,15.0,1.0,,Lil Baby,79.0,63.13333333333333,70.0,47.0
+2020,8,the weeknd,the weeknd,True,113039308.0,94.0,0.49645390070921985,4.3803546099290775,141.0,7.0,r&b pop,The Weeknd,91.0,60.787234042553195,70.57142857142857,1.0
+2020,9,pop smoke,pop smoke,True,15616692.0,76.0,1.0,2.9819999999999998,5.0,4.0,brooklyn drill,Pop Smoke,77.0,73.6,73.0,69.0
+2020,10,billie eilish,billie eilish,True,118797451.0,90.0,0.09836065573770492,3.4967213114754094,61.0,3.0,alternative pop,Billie Eilish,94.0,73.88524590163935,70.33333333333333,17.0
+2020,11,lil uzi vert,lil uzi vert,True,19260805.0,82.0,1.0,2.9666666666666663,3.0,,melodic rap,Lil Uzi Vert,80.0,66.0,,46.0
+2020,12,roddy ricch,roddy ricch,True,11850722.0,74.0,1.0,3.1933333333333334,3.0,,melodic rap,Roddy Ricch,81.0,70.33333333333333,,60.0
+2020,13,youngboy never broke again,youngboy never broke again,True,14958573.0,85.0,1.0,3.0680000000000005,5.0,,,YoungBoy Never Broke Again,80.0,73.4,,67.0
+2020,14,harry styles,harry styles,True,34139515.0,80.0,0.0,3.5541935483870977,31.0,,pop rock,Harry Styles,87.0,66.29032258064517,,2.0
+2020,15,bad bunny,bad bunny,True,102610644.0,95.0,0.8035714285714286,3.6501785714285715,56.0,5.0,reggaeton,Bad Bunny,91.0,73.33928571428571,75.6,6.0
+2020,16,rod wave,rod wave,True,9673984.0,76.0,1.0,2.81,1.0,,,Rod Wave,70.0,70.0,,70.0
+2020,17,eminem,eminem,True,104584370.0,88.0,0.9850746268656716,4.441940298507464,67.0,1.0,rap,Eminem,87.0,56.25373134328358,80.0,10.0
+2020,18,bts,bts,True,81197976.0,85.0,0.0,3.9226666666666667,30.0,3.0,k-pop,BTS,79.0,57.43333333333333,27.0,0.0
+2020,19,ed sheeran,ed sheeran,True,122802777.0,88.0,0.018867924528301886,3.8866037735849064,53.0,,soft pop,Ed Sheeran,88.0,60.283018867924525,,1.0
+2020,20,travis scott,travis scott,True,41131037.0,89.0,0.9090909090909091,3.610606060606061,33.0,1.0,rap,Travis Scott,84.0,69.9090909090909,42.0,34.0
+2020,21,khalid,khalid,True,16946293.0,82.0,0.2222222222222222,3.3755555555555556,9.0,1.0,,Khalid,81.0,66.0,63.0,42.0
+2020,22,polo g,polo g,True,13056061.0,76.0,1.0,2.81,2.0,,,Polo G,73.0,64.5,,56.0
+2020,23,xxxtentacion,xxxtentacion,True,51727329.0,83.0,0.875,2.0925,8.0,1.0,emo rap,XXXTENTACION,82.0,77.75,68.0,68.0
+2020,24,a boogie wit da hoodie,a boogie wit da hoodie,True,8987309.0,77.0,1.0,2.6633333333333336,3.0,1.0,melodic rap,A Boogie Wit da Hoodie,76.0,74.66666666666667,73.0,73.0
+2020,25,the beatles,the beatles,True,30726377.0,83.0,0.0,2.8875,20.0,,classic rock,The Beatles,82.0,56.9,,0.0
+2020,26,summer walker,summer walker,True,8013600.0,76.0,0.75,3.3674999999999997,4.0,,r&b,Summer Walker,78.0,55.75,,0.0
+2020,27,trippie redd,trippie redd,True,11010665.0,80.0,1.0,3.5949999999999998,2.0,,melodic rap,Trippie Redd,2.0,2.0,,2.0
+2020,28,gunna,gunna,True,10353625.0,85.0,1.0,2.717,10.0,,melodic rap,Gunna,80.0,56.3,,0.0
+2020,29,young thug,young thug,True,12421354.0,84.0,1.0,3.9425,4.0,,rap,Young Thug,73.0,69.5,,67.0
+2020,30,queen,queen,True,55209500.0,82.0,0.0,3.9033333333333338,6.0,,classic rock,Queen,82.0,65.33333333333333,,4.0
+2020,31,ariana grande,ariana grande,True,107418606.0,90.0,0.4148936170212766,3.3245744680851064,94.0,16.0,pop,Ariana Grande,85.0,63.91489361702128,63.0625,0.0
+2020,32,justin bieber,justin bieber,True,85050158.0,91.0,0.18181818181818182,3.001636363636363,55.0,4.0,pop,Justin Bieber,91.0,66.27272727272727,67.75,0.0
+2020,33,mac miller,mac miller,True,12177441.0,81.0,0.5,5.725,2.0,1.0,,Mac Miller,74.0,71.5,69.0,69.0
+2020,34,kendrick lamar,kendrick lamar,True,44606446.0,89.0,0.7272727272727273,3.427272727272727,11.0,,hip hop,Kendrick Lamar,89.0,72.54545454545455,,2.0
+2020,35,kane brown,kane brown,True,5778418.0,71.0,0.0,3.2,4.0,1.0,country,Kane Brown,68.0,58.75,65.0,51.0
+2020,36,lewis capaldi,lewis capaldi,True,14045780.0,79.0,0.0,3.4175000000000004,12.0,,soft pop,Lewis Capaldi,86.0,67.66666666666667,,2.0
+2020,37,halsey,halsey,True,22397897.0,80.0,0.3157894736842105,3.4200000000000004,19.0,4.0,,Halsey,83.0,40.89473684210526,62.0,0.0
+2020,38,lady gaga,lady gaga,True,42298315.0,89.0,0.15714285714285714,3.857,70.0,4.0,art pop,Lady Gaga,91.0,57.18571428571428,67.0,0.0
+2020,39,morgan wallen,morgan wallen,True,14005617.0,88.0,0.4,2.9240000000000004,5.0,,country,Morgan Wallen,86.0,51.4,,33.0
+2020,40,nf,nf,True,11162039.0,76.0,0.0,3.53,1.0,,christian hip hop,NF,77.0,77.0,,77.0
+2020,41,doja cat,doja cat,True,34748949.0,86.0,0.9666666666666667,3.3406666666666665,30.0,1.0,,Doja Cat,84.0,68.66666666666667,74.0,8.0
+2020,42,jhene aiko,jhene aiko,False,,,,,,,,,,,,
+2020,43,lizzo,lizzo,True,5739313.0,68.0,0.5,2.6775,8.0,,,Lizzo,70.0,52.875,,8.0
+2020,44,fleetwood mac,fleetwood mac,True,13973668.0,83.0,0.0,4.3575,8.0,,classic rock,Fleetwood Mac,86.0,69.75,,53.0
+2020,45,jackboys,jackboys,True,1315942.0,62.0,1.0,2.62,1.0,,,JACKBOYS,75.0,75.0,,75.0
+2020,46,blake shelton,blake shelton,True,7507062.0,69.0,0.0,3.62875,8.0,,country,Blake Shelton,66.0,58.25,,36.0
+2020,47,chris brown,chris brown,True,28338976.0,87.0,0.7333333333333333,3.858,15.0,1.0,r&b,Chris Brown,83.0,59.333333333333336,77.0,0.0
+2020,48,elton john,elton john,True,15545907.0,80.0,0.0,3.5980000000000003,5.0,,,Elton John,80.0,67.4,,53.0
+2020,49,moneybagg yo,moneybagg yo,False,,,,,,,,,,,,
+2020,50,future,future,True,22688560.0,88.0,1.0,3.5849999999999995,24.0,1.0,rap,Future,82.0,66.16666666666667,72.0,53.0
+2020,51,michael jackson,michael jackson,True,37462708.0,85.0,0.0,4.552380952380953,21.0,,,Michael Jackson,85.0,69.04761904761905,,49.0
+2020,52,megan thee stallion,megan thee stallion,True,10895519.0,76.0,1.0,2.980952380952381,21.0,1.0,,Megan Thee Stallion,72.0,52.0,59.0,40.0
+2020,53,tory lanez,tory lanez,True,8276031.0,79.0,0.25,2.6925,4.0,2.0,,Tory Lanez,84.0,71.0,63.5,56.0
+2020,54,camila cabello,camila cabello,True,35582423.0,78.0,0.0,3.382,20.0,,,Camila Cabello,79.0,55.5,,3.0
+2020,55,imagine dragons,imagine dragons,True,58375520.0,85.0,0.0,3.2058823529411766,17.0,,,Imagine Dragons,84.0,56.294117647058826,,0.0
+2020,56,bob marley and the wailers,bob marley and the wailers,False,,,,,,,,,,,,
+2020,57,dua lipa,dua lipa,True,46895665.0,85.0,0.09523809523809523,3.393571428571428,42.0,15.0,pop,Dua Lipa,81.0,55.80952380952381,54.666666666666664,6.0
+2020,58,creedence clearwater revival,creedence clearwater revival,True,7945600.0,77.0,0.0,2.865,2.0,,classic rock,Creedence Clearwater Revival,85.0,72.5,,60.0
+2020,59,jason aldean,jason aldean,True,7054208.0,75.0,0.0,3.6281818181818184,11.0,,country,Jason Aldean,76.0,58.81818181818182,,0.0
+2020,60,lil wayne,lil wayne,True,17938214.0,86.0,0.75,4.33,8.0,,rap,Lil Wayne,78.0,36.625,,0.0
+2020,61,lil durk,lil durk,True,9504357.0,78.0,1.0,3.34,3.0,1.0,chicago drill,Lil Durk,66.0,61.666666666666664,64.0,55.0
+2020,62,lil tjay,lil tjay,True,10192579.0,74.0,1.0,3.42,1.0,,brooklyn drill,Lil Tjay,75.0,75.0,,75.0
+2020,63,chris stapleton,chris stapleton,True,9020741.0,81.0,0.0,4.88,1.0,,country,Chris Stapleton,84.0,84.0,,84.0
+2020,64,tom petty and the heartbreakers,tom petty and the heartbreakers,False,,,,,,,,,,,,
+2020,65,journey,journey,True,6510494.0,73.0,0.0,4.1775,4.0,,aor,Journey,83.0,59.75,,27.0
+2020,66,lil mosey,lil mosey,True,5982826.0,64.0,1.0,2.7,1.0,1.0,melodic rap,Lil Mosey,70.0,70.0,70.0,70.0
+2020,67,mustard,mustard,True,1930877.0,71.0,1.0,3.2,1.0,,,Mustard,72.0,72.0,,72.0
+2020,68,cardi b,cardi b,True,25960760.0,81.0,1.0,3.491818181818182,22.0,1.0,,Cardi B,79.0,64.77272727272727,74.0,44.0
+2020,69,lil nas x,lil nas x,True,12310527.0,71.0,0.6,2.6399999999999997,10.0,,,Lil Nas X,76.0,69.2,,48.0
+2020,70,ynw melly,ynw melly,True,12755534.0,71.0,1.0,4.115,2.0,1.0,melodic rap,YNW Melly,76.0,73.5,71.0,71.0
+2020,71,frank sinatra,frank sinatra,False,,,,,,,,,,,,
+2020,72,2pac,2pac,True,22555572.0,78.0,1.0,4.91,4.0,,old school hip hop,2Pac,80.0,72.5,,52.0
+2020,73,maren morris,maren morris,True,888857.0,67.0,0.0,3.28,1.0,,country,Maren Morris,66.0,66.0,,66.0
+2020,74,lauren daigle,lauren daigle,True,3134316.0,67.0,0.0,4.57,1.0,,christian,Lauren Daigle,74.0,74.0,,74.0
+2020,75,ac/dc,ac/dc,True,32304988.0,80.0,0.0,4.2,3.0,,rock,AC/DC,85.0,84.66666666666667,,84.0
+2020,76,shawn mendes,shawn mendes,True,45710657.0,81.0,0.043478260869565216,3.2399999999999998,23.0,4.0,,Shawn Mendes,86.0,58.78260869565217,67.25,0.0
+2020,77,j. cole,j. cole,True,27077429.0,82.0,1.0,4.1466666666666665,9.0,,rap,J. Cole,85.0,67.44444444444444,,1.0
+2020,78,eagles,eagles,True,12152190.0,75.0,0.0,6.52,1.0,,classic rock,Eagles,52.0,52.0,,52.0
+2020,79,tones and i,tones and i,True,3006445.0,69.0,0.0,3.49,2.0,,,Tones And I,73.0,70.0,,67.0
+2020,80,dan + shay,dan + shay,True,3203185.0,66.0,0.0,3.203333333333333,3.0,,country,Dan + Shay,68.0,67.33333333333333,,67.0
+2020,81,jack harlow,jack harlow,True,4350533.0,75.0,1.0,3.004,5.0,2.0,,Jack Harlow,77.0,53.8,63.5,4.0
+2020,82,elvis presley,elvis presley,False,,,,,,,,,,,,
+2020,83,lil tecca,lil tecca,True,10172903.0,79.0,1.0,2.5833333333333335,3.0,,melodic rap,Lil Tecca,82.0,72.66666666666667,,58.0
+2020,84,sam hunt,sam hunt,True,2473903.0,65.0,0.0,3.6075,4.0,,country,Sam Hunt,66.0,53.0,,38.0
+2020,85,selena gomez,selena gomez,True,53267200.0,81.0,0.0,3.436,20.0,3.0,,Selena Gomez,77.0,56.7,61.333333333333336,0.0
+2020,86,guns n' roses,guns n' roses,True,35214496.0,80.0,0.6666666666666666,6.126666666666666,6.0,,rock,Guns N' Roses,82.0,19.333333333333332,,1.0
+2020,87,sza,sza,True,33068979.0,87.0,0.625,3.028125,16.0,3.0,r&b,SZA,85.0,70.875,65.33333333333333,56.0
+2020,88,bruno mars,bruno mars,True,75513910.0,90.0,0.037037037037037035,3.681111111111111,27.0,,,Bruno Mars,88.0,66.4074074074074,,0.0
+2020,89,nirvana,nirvana,True,23398010.0,81.0,0.02197802197802198,3.6468131868131866,91.0,,grunge,Nirvana,84.0,32.45054945054945,,5.0
+2020,90,pentatonix,pentatonix,False,,,,,,,,,,,,
+2020,91,adele,adele,True,66751662.0,83.0,0.0,4.496829268292683,41.0,,soft pop,Adele,85.0,58.78048780487805,,0.0
+2020,92,billy joel,billy joel,True,7402824.0,78.0,0.0,4.19,3.0,,soft rock,Billy Joel,83.0,81.66666666666667,,79.0
+2020,93,the notorious b.i.g.,the notorious b.i.g.,True,12766717.0,75.0,1.0,4.5840000000000005,5.0,,old school hip hop,The Notorious B.I.G.,81.0,67.6,,59.0
+2020,94,don toliver,don toliver,True,7473754.0,85.0,0.5,3.41,4.0,,,Don Toliver,83.0,60.25,,0.0
+2020,95,the beach boys,the beach boys,False,,,,,,,,,,,,
+2020,96,g herbo,g herbo,True,2482067.0,69.0,1.0,2.34,1.0,,chicago drill,G Herbo,44.0,44.0,,44.0
+2020,97,frank ocean,frank ocean,True,20293960.0,84.0,0.6666666666666666,5.028333333333333,6.0,,,Frank Ocean,86.0,68.83333333333333,,2.0
+2020,98,"tyler, the creator","tyler, the creator",True,24451340.0,86.0,1.0,3.18375,8.0,,,"Tyler, The Creator",90.0,68.25,,0.0
+2020,99,old dominion,old dominion,True,1738831.0,67.0,0.0,3.5666666666666664,3.0,,country,Old Dominion,67.0,58.666666666666664,,44.0
+2020,100,meek mill,meek mill,True,8277770.0,72.0,1.0,3.0,1.0,,rap,Meek Mill,73.0,73.0,,73.0
+2021,1,drake,drake,True,103126025.0,95.0,0.8690476190476191,3.8779761904761907,84.0,4.0,rap,Drake,85.0,65.89285714285714,75.25,0.0
+2021,2,olivia rodrigo,olivia rodrigo,True,49083617.0,85.0,0.36764705882352944,3.050588235294118,68.0,18.0,pop rock,Olivia Rodrigo,86.0,60.5735294117647,64.16666666666667,2.0
+2021,3,the weeknd,the weeknd,True,113039308.0,94.0,0.49645390070921985,4.3803546099290775,141.0,19.0,r&b pop,The Weeknd,91.0,60.787234042553195,51.36842105263158,1.0
+2021,4,taylor swift,taylor swift,True,145542136.0,100.0,0.1419753086419753,3.89679012345679,324.0,51.0,country,Taylor Swift,97.0,60.04938271604938,63.92156862745098,0.0
+2021,5,morgan wallen,morgan wallen,True,14005617.0,88.0,0.4,2.9240000000000004,5.0,,country,Morgan Wallen,86.0,51.4,,33.0
+2021,6,ariana grande,ariana grande,True,107418606.0,90.0,0.4148936170212766,3.3245744680851064,94.0,1.0,pop,Ariana Grande,85.0,63.91489361702128,51.0,0.0
+2021,7,doja cat,doja cat,True,34748949.0,86.0,0.9666666666666667,3.3406666666666665,30.0,15.0,,Doja Cat,84.0,68.66666666666667,64.06666666666666,8.0
+2021,8,justin bieber,justin bieber,True,85050158.0,91.0,0.18181818181818182,3.001636363636363,55.0,16.0,pop,Justin Bieber,91.0,66.27272727272727,65.75,0.0
+2021,9,luke combs,luke combs,True,13402920.0,83.0,0.0,3.8375,4.0,,country,Luke Combs,82.0,77.25,,75.0
+2021,10,pop smoke,pop smoke,True,15616692.0,76.0,1.0,2.9819999999999998,5.0,,brooklyn drill,Pop Smoke,77.0,73.6,,69.0
+2021,11,dua lipa,dua lipa,True,46895665.0,85.0,0.09523809523809523,3.393571428571428,42.0,1.0,pop,Dua Lipa,81.0,55.80952380952381,67.0,6.0
+2021,12,bts,bts,True,81197976.0,85.0,0.0,3.9226666666666667,30.0,1.0,k-pop,BTS,79.0,57.43333333333333,66.0,0.0
+2021,13,billie eilish,billie eilish,True,118797451.0,90.0,0.09836065573770492,3.4967213114754094,61.0,14.0,alternative pop,Billie Eilish,94.0,73.88524590163935,71.35714285714286,17.0
+2021,14,lil baby,lil baby,True,21662596.0,84.0,1.0,2.9706666666666663,15.0,,,Lil Baby,79.0,63.13333333333333,,47.0
+2021,15,the kid laroi,the kid laroi,True,6596750.0,79.0,0.7272727272727273,2.5145454545454546,11.0,2.0,,The Kid LAROI,86.0,56.09090909090909,44.0,3.0
+2021,16,bad bunny,bad bunny,True,102610644.0,95.0,0.8035714285714286,3.6501785714285715,56.0,1.0,reggaeton,Bad Bunny,91.0,73.33928571428571,78.0,6.0
+2021,17,lil durk,lil durk,True,9504357.0,78.0,1.0,3.34,3.0,,chicago drill,Lil Durk,66.0,61.666666666666664,,55.0
+2021,18,polo g,polo g,True,13056061.0,76.0,1.0,2.81,2.0,,,Polo G,73.0,64.5,,56.0
+2021,19,lil nas x,lil nas x,True,12310527.0,71.0,0.6,2.6399999999999997,10.0,5.0,,Lil Nas X,76.0,69.2,72.6,48.0
+2021,20,juice wrld,juice wrld,True,42565036.0,85.0,1.0,3.588571428571428,7.0,,melodic rap,Juice WRLD,82.0,60.857142857142854,,3.0
+2021,21,megan thee stallion,megan thee stallion,True,10895519.0,76.0,1.0,2.980952380952381,21.0,,,Megan Thee Stallion,72.0,52.0,,40.0
+2021,22,rod wave,rod wave,True,9673984.0,76.0,1.0,2.81,1.0,,,Rod Wave,70.0,70.0,,70.0
+2021,23,dababy,dababy,True,12955951.0,77.0,1.0,2.8000000000000003,3.0,,,DaBaby,73.0,71.0,,67.0
+2021,24,kanye west,kanye west,True,31059657.0,89.0,0.6956521739130435,4.1643478260869555,23.0,3.0,rap,Kanye West,85.0,66.34782608695652,63.333333333333336,1.0
+2021,25,moneybagg yo,moneybagg yo,False,,,,,,,,,,,,
+2021,26,post malone,post malone,True,47726839.0,86.0,0.7108433734939759,3.3266265060240965,83.0,2.0,pop,Post Malone,85.0,61.69879518072289,67.0,0.0
+2021,27,chris stapleton,chris stapleton,True,9020741.0,81.0,0.0,4.88,1.0,,country,Chris Stapleton,84.0,84.0,,84.0
+2021,28,ed sheeran,ed sheeran,True,122802777.0,88.0,0.018867924528301886,3.8866037735849064,53.0,5.0,soft pop,Ed Sheeran,88.0,60.283018867924525,36.8,1.0
+2021,29,j. cole,j. cole,True,27077429.0,82.0,1.0,4.1466666666666665,9.0,1.0,rap,J. Cole,85.0,67.44444444444444,67.0,1.0
+2021,30,harry styles,harry styles,True,34139515.0,80.0,0.0,3.5541935483870977,31.0,,pop rock,Harry Styles,87.0,66.29032258064517,,2.0
+2021,31,youngboy never broke again,youngboy never broke again,True,14958573.0,85.0,1.0,3.0680000000000005,5.0,,,YoungBoy Never Broke Again,80.0,73.4,,67.0
+2021,32,giveon,giveon,False,,,,,,,,,,,,
+2021,33,sza,sza,True,33068979.0,87.0,0.625,3.028125,16.0,1.0,r&b,SZA,85.0,70.875,64.0,56.0
+2021,34,young thug,young thug,True,12421354.0,84.0,1.0,3.9425,4.0,,rap,Young Thug,73.0,69.5,,67.0
+2021,35,cardi b,cardi b,True,25960760.0,81.0,1.0,3.491818181818182,22.0,,,Cardi B,79.0,64.77272727272727,,44.0
+2021,36,jack harlow,jack harlow,True,4350533.0,75.0,1.0,3.004,5.0,,,Jack Harlow,77.0,53.8,,4.0
+2021,37,lil uzi vert,lil uzi vert,True,19260805.0,82.0,1.0,2.9666666666666663,3.0,,melodic rap,Lil Uzi Vert,80.0,66.0,,46.0
+2021,38,glass animals,glass animals,True,4568917.0,73.0,0.0,4.1899999999999995,4.0,,,Glass Animals,85.0,42.0,,6.0
+2021,39,bruno mars,bruno mars,True,75513910.0,90.0,0.037037037037037035,3.681111111111111,27.0,4.0,,Bruno Mars,88.0,66.4074074074074,18.0,0.0
+2021,40,gabby barrett,gabby barrett,False,,,,,,,,,,,,
+2021,41,machine gun kelly,machine gun kelly,False,,,,,,,,,,,,
+2021,42,pooh shiesty,pooh shiesty,False,,,,,,,,,,,,
+2021,43,future,future,True,22688560.0,88.0,1.0,3.5849999999999995,24.0,,rap,Future,82.0,66.16666666666667,,53.0
+2021,44,travis scott,travis scott,True,41131037.0,89.0,0.9090909090909091,3.610606060606061,33.0,1.0,rap,Travis Scott,84.0,69.9090909090909,73.0,34.0
+2021,45,24kgoldn,24kgoldn,True,2285613.0,65.0,0.75,2.3825000000000003,4.0,1.0,,24kGoldn,77.0,53.0,77.0,6.0
+2021,46,lil tjay,lil tjay,True,10192579.0,74.0,1.0,3.42,1.0,1.0,brooklyn drill,Lil Tjay,75.0,75.0,75.0,75.0
+2021,47,eminem,eminem,True,104584370.0,88.0,0.9850746268656716,4.441940298507464,67.0,,rap,Eminem,87.0,56.25373134328358,,10.0
+2021,48,roddy ricch,roddy ricch,True,11850722.0,74.0,1.0,3.1933333333333334,3.0,,melodic rap,Roddy Ricch,81.0,70.33333333333333,,60.0
+2021,49,luke bryan,luke bryan,True,9408174.0,74.0,0.0,3.6487499999999997,16.0,,country,Luke Bryan,75.0,50.625,,32.0
+2021,50,kendrick lamar,kendrick lamar,True,44606446.0,89.0,0.7272727272727273,3.427272727272727,11.0,,hip hop,Kendrick Lamar,89.0,72.54545454545455,,2.0
+2021,51,walker hayes,walker hayes,False,,,,,,,,,,,,
+2021,52,masked wolf,masked wolf,True,787903.0,59.0,1.0,2.21,1.0,1.0,,Masked Wolf,70.0,70.0,70.0,70.0
+2021,53,"tyler, the creator","tyler, the creator",True,24451340.0,86.0,1.0,3.18375,8.0,,,"Tyler, The Creator",90.0,68.25,,0.0
+2021,54,dan + shay,dan + shay,True,3203185.0,66.0,0.0,3.203333333333333,3.0,1.0,country,Dan + Shay,68.0,67.33333333333333,68.0,67.0
+2021,55,fleetwood mac,fleetwood mac,True,13973668.0,83.0,0.0,4.3575,8.0,,classic rock,Fleetwood Mac,86.0,69.75,,53.0
+2021,56,thomas rhett,thomas rhett,True,4984665.0,73.0,0.0,3.793333333333333,3.0,,country,Thomas Rhett,72.0,59.0,,43.0
+2021,57,chris brown,chris brown,True,28338976.0,87.0,0.7333333333333333,3.858,15.0,,r&b,Chris Brown,83.0,59.333333333333336,,0.0
+2021,58,ajr,ajr,True,3667184.0,70.0,0.0,3.35,1.0,,,AJR,59.0,59.0,,59.0
+2021,59,the beatles,the beatles,True,30726377.0,83.0,0.0,2.8875,20.0,,classic rock,The Beatles,82.0,56.9,,0.0
+2021,60,kid cudi,kid cudi,True,7688970.0,79.0,0.5,3.035,2.0,,,Kid Cudi,82.0,76.0,,70.0
+2021,61,h.e.r.,h.e.r.,False,,,,,,,,,,,,
+2021,62,dj khaled,dj khaled,True,12343335.0,73.0,1.0,3.9685714285714284,7.0,1.0,,DJ Khaled,72.0,65.42857142857143,62.0,60.0
+2021,63,florida georgia line,florida georgia line,True,5589342.0,70.0,0.0,3.5119999999999996,10.0,1.0,country,Florida Georgia Line,69.0,48.3,40.0,0.0
+2021,64,gunna,gunna,True,10353625.0,85.0,1.0,2.717,10.0,,melodic rap,Gunna,80.0,56.3,,0.0
+2021,65,anderson .paak,anderson .paak,False,,,,,,,,,,,,
+2021,66,khalid,khalid,True,16946293.0,82.0,0.2222222222222222,3.3755555555555556,9.0,,,Khalid,81.0,66.0,,42.0
+2021,67,maroon 5,maroon 5,True,45777722.0,85.0,0.25,3.5746428571428575,28.0,3.0,pop,Maroon 5,84.0,56.892857142857146,74.66666666666667,0.0
+2021,68,lewis capaldi,lewis capaldi,True,14045780.0,79.0,0.0,3.4175000000000004,12.0,,soft pop,Lewis Capaldi,86.0,67.66666666666667,,2.0
+2021,69,queen,queen,True,55209500.0,82.0,0.0,3.9033333333333338,6.0,,classic rock,Queen,82.0,65.33333333333333,,4.0
+2021,70,ava max,ava max,True,7755194.0,77.0,0.0,2.8850000000000002,6.0,,,Ava Max,82.0,51.166666666666664,,3.0
+2021,71,tate mcrae,tate mcrae,True,9265406.0,88.0,0.6041666666666666,2.84375,48.0,7.0,pop,Tate McRae,91.0,66.25,65.71428571428571,4.0
+2021,72,jason aldean,jason aldean,True,7054208.0,75.0,0.0,3.6281818181818184,11.0,,country,Jason Aldean,76.0,58.81818181818182,,0.0
+2021,73,kane brown,kane brown,True,5778418.0,71.0,0.0,3.2,4.0,,country,Kane Brown,68.0,58.75,,51.0
+2021,74,migos,migos,True,14641094.0,74.0,1.0,4.8919999999999995,5.0,,trap,Migos,71.0,28.4,,1.0
+2021,75,elton john,elton john,True,15545907.0,80.0,0.0,3.5980000000000003,5.0,3.0,,Elton John,80.0,67.4,71.0,53.0
+2021,76,carrie underwood,carrie underwood,True,6125781.0,68.0,0.0,3.33,1.0,,country,Carrie Underwood,76.0,76.0,,76.0
+2021,77,king von,king von,True,7938689.0,74.0,1.0,3.18,1.0,,chicago drill,King Von,76.0,76.0,,76.0
+2021,78,saweetie,saweetie,True,2640883.0,65.0,0.5,2.695,2.0,1.0,,Saweetie,65.0,42.5,65.0,20.0
+2021,79,michael jackson,michael jackson,True,37462708.0,85.0,0.0,4.552380952380953,21.0,,,Michael Jackson,85.0,69.04761904761905,,49.0
+2021,80,ac/dc,ac/dc,True,32304988.0,80.0,0.0,4.2,3.0,,rock,AC/DC,85.0,84.66666666666667,,84.0
+2021,81,kali uchis,kali uchis,True,9475754.0,83.0,0.0,3.4050000000000002,8.0,,,Kali Uchis,82.0,74.625,,54.0
+2021,82,xxxtentacion,xxxtentacion,True,51727329.0,83.0,0.875,2.0925,8.0,,emo rap,XXXTENTACION,82.0,77.75,,68.0
+2021,83,miley cyrus,miley cyrus,True,26568626.0,81.0,0.22580645161290322,3.451935483870968,62.0,,country pop,Miley Cyrus,84.0,50.596774193548384,,0.0
+2021,84,blackbear,blackbear,True,5067774.0,71.0,1.0,3.34125,8.0,,,blackbear,73.0,51.375,,3.0
+2021,85,lee brice,lee brice,False,,,,,,,,,,,,
+2021,86,guns n' roses,guns n' roses,True,35214496.0,80.0,0.6666666666666666,6.126666666666666,6.0,,rock,Guns N' Roses,82.0,19.333333333333332,,1.0
+2021,87,mariah carey,mariah carey,True,11913071.0,79.0,0.0,4.02,2.0,,christmas,Mariah Carey,81.0,79.5,,78.0
+2021,88,eagles,eagles,True,12152190.0,75.0,0.0,6.52,1.0,,classic rock,Eagles,52.0,52.0,,52.0
+2021,89,sam smith,sam smith,True,26278854.0,81.0,0.0,3.253846153846154,39.0,,soft pop,Sam Smith,85.0,37.58974358974359,,0.0
+2021,90,yung bleu,yung bleu,False,,,,,,,,,,,,
+2021,91,miranda lambert,miranda lambert,True,3708746.0,66.0,0.0,3.19,1.0,,country,Miranda Lambert,65.0,65.0,,65.0
+2021,92,imagine dragons,imagine dragons,True,58375520.0,85.0,0.0,3.2058823529411766,17.0,3.0,,Imagine Dragons,84.0,56.294117647058826,25.333333333333332,0.0
+2021,93,trippie redd,trippie redd,True,11010665.0,80.0,1.0,3.5949999999999998,2.0,,melodic rap,Trippie Redd,2.0,2.0,,2.0
+2021,94,cj,cj,True,277520.0,58.0,1.0,2.05,1.0,,dembow,CJ,63.0,63.0,,63.0
+2021,95,playboi carti,playboi carti,True,15037198.0,86.0,1.0,2.8017777777777777,45.0,,rage rap,Playboi Carti,79.0,64.71111111111111,,56.0
+2021,96,sam hunt,sam hunt,True,2473903.0,65.0,0.0,3.6075,4.0,,country,Sam Hunt,66.0,53.0,,38.0
+2021,97,jhene aiko,jhene aiko,False,,,,,,,,,,,,
+2021,98,eric church,eric church,True,4141160.0,71.0,0.0,3.646,5.0,1.0,country,Eric Church,78.0,60.6,40.0,40.0
+2021,99,adele,adele,True,66751662.0,83.0,0.0,4.496829268292683,41.0,13.0,soft pop,Adele,85.0,58.78048780487805,65.76923076923077,0.0
+2021,100,creedence clearwater revival,creedence clearwater revival,True,7945600.0,77.0,0.0,2.865,2.0,,classic rock,Creedence Clearwater Revival,85.0,72.5,,60.0
+2022,1,bad bunny,bad bunny,True,102610644.0,95.0,0.8035714285714286,3.6501785714285715,56.0,23.0,reggaeton,Bad Bunny,91.0,73.33928571428571,77.17391304347827,6.0
+2022,2,taylor swift,taylor swift,True,145542136.0,100.0,0.1419753086419753,3.89679012345679,324.0,20.0,country,Taylor Swift,97.0,60.04938271604938,65.0,0.0
+2022,3,harry styles,harry styles,True,34139515.0,80.0,0.0,3.5541935483870977,31.0,14.0,pop rock,Harry Styles,87.0,66.29032258064517,66.14285714285714,2.0
+2022,4,drake,drake,True,103126025.0,95.0,0.8690476190476191,3.8779761904761907,84.0,3.0,rap,Drake,85.0,65.89285714285714,75.0,0.0
+2022,5,morgan wallen,morgan wallen,True,14005617.0,88.0,0.4,2.9240000000000004,5.0,,country,Morgan Wallen,86.0,51.4,,33.0
+2022,6,doja cat,doja cat,True,34748949.0,86.0,0.9666666666666667,3.3406666666666665,30.0,1.0,,Doja Cat,84.0,68.66666666666667,71.0,8.0
+2022,7,ed sheeran,ed sheeran,True,122802777.0,88.0,0.018867924528301886,3.8866037735849064,53.0,1.0,soft pop,Ed Sheeran,88.0,60.283018867924525,61.0,1.0
+2022,8,adele,adele,True,66751662.0,83.0,0.0,4.496829268292683,41.0,,soft pop,Adele,85.0,58.78048780487805,,0.0
+2022,9,the weeknd,the weeknd,True,113039308.0,94.0,0.49645390070921985,4.3803546099290775,141.0,4.0,r&b pop,The Weeknd,91.0,60.787234042553195,74.75,1.0
+2022,10,lil baby,lil baby,True,21662596.0,84.0,1.0,2.9706666666666663,15.0,,,Lil Baby,79.0,63.13333333333333,,47.0
+2022,11,future,future,True,22688560.0,88.0,1.0,3.5849999999999995,24.0,1.0,rap,Future,82.0,66.16666666666667,82.0,53.0
+2022,12,justin bieber,justin bieber,True,85050158.0,91.0,0.18181818181818182,3.001636363636363,55.0,,pop,Justin Bieber,91.0,66.27272727272727,,0.0
+2022,13,post malone,post malone,True,47726839.0,86.0,0.7108433734939759,3.3266265060240965,83.0,3.0,pop,Post Malone,85.0,61.69879518072289,59.333333333333336,0.0
+2022,14,jack harlow,jack harlow,True,4350533.0,75.0,1.0,3.004,5.0,2.0,,Jack Harlow,77.0,53.8,32.5,4.0
+2022,15,kendrick lamar,kendrick lamar,True,44606446.0,89.0,0.7272727272727273,3.427272727272727,11.0,2.0,hip hop,Kendrick Lamar,89.0,72.54545454545455,37.0,2.0
+2022,16,luke combs,luke combs,True,13402920.0,83.0,0.0,3.8375,4.0,,country,Luke Combs,82.0,77.25,,75.0
+2022,17,juice wrld,juice wrld,True,42565036.0,85.0,1.0,3.588571428571428,7.0,1.0,melodic rap,Juice WRLD,82.0,60.857142857142854,69.0,3.0
+2022,18,glass animals,glass animals,True,4568917.0,73.0,0.0,4.1899999999999995,4.0,,,Glass Animals,85.0,42.0,,6.0
+2022,19,lil durk,lil durk,True,9504357.0,78.0,1.0,3.34,3.0,1.0,chicago drill,Lil Durk,66.0,61.666666666666664,55.0,55.0
+2022,20,lil nas x,lil nas x,True,12310527.0,71.0,0.6,2.6399999999999997,10.0,1.0,,Lil Nas X,76.0,69.2,70.0,48.0
+2022,21,dua lipa,dua lipa,True,46895665.0,85.0,0.09523809523809523,3.393571428571428,42.0,,pop,Dua Lipa,81.0,55.80952380952381,,6.0
+2022,22,elton john,elton john,True,15545907.0,80.0,0.0,3.5980000000000003,5.0,1.0,,Elton John,80.0,67.4,71.0,53.0
+2022,23,youngboy never broke again,youngboy never broke again,True,14958573.0,85.0,1.0,3.0680000000000005,5.0,,,YoungBoy Never Broke Again,80.0,73.4,,67.0
+2022,24,rod wave,rod wave,True,9673984.0,76.0,1.0,2.81,1.0,,,Rod Wave,70.0,70.0,,70.0
+2022,25,kanye west,kanye west,True,31059657.0,89.0,0.6956521739130435,4.1643478260869555,23.0,1.0,rap,Kanye West,85.0,66.34782608695652,71.0,1.0
+2022,26,olivia rodrigo,olivia rodrigo,True,49083617.0,85.0,0.36764705882352944,3.050588235294118,68.0,,pop rock,Olivia Rodrigo,86.0,60.5735294117647,,2.0
+2022,27,beyonce,beyonce,False,,,,,,,,,,,,
+2022,28,the kid laroi,the kid laroi,True,6596750.0,79.0,0.7272727272727273,2.5145454545454546,11.0,1.0,,The Kid LAROI,86.0,56.09090909090909,64.0,3.0
+2022,29,billie eilish,billie eilish,True,118797451.0,90.0,0.09836065573770492,3.4967213114754094,61.0,2.0,alternative pop,Billie Eilish,94.0,73.88524590163935,79.5,17.0
+2022,30,kodak black,kodak black,True,12478974.0,79.0,0.7142857142857143,3.5714285714285716,7.0,,,Kodak Black,77.0,64.28571428571429,,50.0
+2022,31,lizzo,lizzo,True,5739313.0,68.0,0.5,2.6775,8.0,2.0,,Lizzo,70.0,52.875,36.0,8.0
+2022,32,gunna,gunna,True,10353625.0,85.0,1.0,2.717,10.0,1.0,melodic rap,Gunna,80.0,56.3,0.0,0.0
+2022,33,imagine dragons,imagine dragons,True,58375520.0,85.0,0.0,3.2058823529411766,17.0,2.0,,Imagine Dragons,84.0,56.294117647058826,78.5,0.0
+2022,34,latto,latto,True,2338401.0,75.0,1.0,2.87,1.0,1.0,,Latto,63.0,63.0,63.0,63.0
+2022,35,chris stapleton,chris stapleton,True,9020741.0,81.0,0.0,4.88,1.0,,country,Chris Stapleton,84.0,84.0,,84.0
+2022,36,summer walker,summer walker,True,8013600.0,76.0,0.75,3.3674999999999997,4.0,,r&b,Summer Walker,78.0,55.75,,0.0
+2022,37,walker hayes,walker hayes,False,,,,,,,,,,,,
+2022,38,polo g,polo g,True,13056061.0,76.0,1.0,2.81,2.0,1.0,,Polo G,73.0,64.5,56.0,56.0
+2022,39,sza,sza,True,33068979.0,87.0,0.625,3.028125,16.0,8.0,r&b,SZA,85.0,70.875,74.25,56.0
+2022,40,bruno mars,bruno mars,True,75513910.0,90.0,0.037037037037037035,3.681111111111111,27.0,,,Bruno Mars,88.0,66.4074074074074,,0.0
+2022,41,zach bryan,zach bryan,True,7325625.0,84.0,0.0,3.51,2.0,,country,Zach Bryan,85.0,84.0,,83.0
+2022,42,steve lacy,steve lacy,True,6429788.0,77.0,0.6,3.2340000000000004,5.0,3.0,,Steve Lacy,83.0,62.0,75.33333333333333,4.0
+2022,43,eminem,eminem,True,104584370.0,88.0,0.9850746268656716,4.441940298507464,67.0,,rap,Eminem,87.0,56.25373134328358,,10.0
+2022,44,bailey zimmerman,bailey zimmerman,False,,,,,,,,,,,,
+2022,45,"tyler, the creator","tyler, the creator",True,24451340.0,86.0,1.0,3.18375,8.0,,,"Tyler, The Creator",90.0,68.25,,0.0
+2022,46,kate bush,kate bush,True,2516750.0,70.0,0.0,4.98,2.0,,art pop,Kate Bush,82.0,45.0,,8.0
+2022,47,karol g,karol g,True,60395783.0,87.0,0.5555555555555556,3.17,9.0,1.0,reggaeton,KAROL G,83.0,68.77777777777777,71.0,44.0
+2022,48,kane brown,kane brown,True,5778418.0,71.0,0.0,3.2,4.0,,country,Kane Brown,68.0,58.75,,51.0
+2022,49,gayle,gayle,True,668804.0,58.0,0.5,2.54,2.0,,,GAYLE,72.0,55.5,,39.0
+2022,50,nardo wick,nardo wick,True,1613435.0,61.0,1.0,4.66,1.0,,,Nardo Wick,60.0,60.0,,60.0
+2022,51,cole swindell,cole swindell,True,2565642.0,64.0,0.0,3.4042857142857144,7.0,2.0,country,Cole Swindell,62.0,49.57142857142857,37.5,37.0
+2022,52,ariana grande,ariana grande,True,107418606.0,90.0,0.4148936170212766,3.3245744680851064,94.0,,pop,Ariana Grande,85.0,63.91489361702128,,0.0
+2022,53,lil uzi vert,lil uzi vert,True,19260805.0,82.0,1.0,2.9666666666666663,3.0,,melodic rap,Lil Uzi Vert,80.0,66.0,,46.0
+2022,54,bts,bts,True,81197976.0,85.0,0.0,3.9226666666666667,30.0,,k-pop,BTS,79.0,57.43333333333333,,0.0
+2022,55,cody johnson,cody johnson,True,1943383.0,73.0,0.0,3.29,1.0,,texas country,Cody Johnson,75.0,75.0,,75.0
+2022,56,j. cole,j. cole,True,27077429.0,82.0,1.0,4.1466666666666665,9.0,,rap,J. Cole,85.0,67.44444444444444,,1.0
+2022,57,megan thee stallion,megan thee stallion,True,10895519.0,76.0,1.0,2.980952380952381,21.0,1.0,,Megan Thee Stallion,72.0,52.0,66.0,40.0
+2022,58,nicki minaj,nicki minaj,True,34297934.0,84.0,0.8888888888888888,3.506111111111111,18.0,1.0,,Nicki Minaj,78.0,53.55555555555556,67.0,0.0
+2022,59,chris brown,chris brown,True,28338976.0,87.0,0.7333333333333333,3.858,15.0,,r&b,Chris Brown,83.0,59.333333333333336,,0.0
+2022,60,xxxtentacion,xxxtentacion,True,51727329.0,83.0,0.875,2.0925,8.0,,emo rap,XXXTENTACION,82.0,77.75,,68.0
+2022,61,anderson .paak,anderson .paak,False,,,,,,,,,,,,
+2022,62,machine gun kelly,machine gun kelly,False,,,,,,,,,,,,
+2022,63,pop smoke,pop smoke,True,15616692.0,76.0,1.0,2.9819999999999998,5.0,,brooklyn drill,Pop Smoke,77.0,73.6,,69.0
+2022,64,the beatles,the beatles,True,30726377.0,83.0,0.0,2.8875,20.0,,classic rock,The Beatles,82.0,56.9,,0.0
+2022,65,moneybagg yo,moneybagg yo,False,,,,,,,,,,,,
+2022,66,fleetwood mac,fleetwood mac,True,13973668.0,83.0,0.0,4.3575,8.0,,classic rock,Fleetwood Mac,86.0,69.75,,53.0
+2022,67,queen,queen,True,55209500.0,82.0,0.0,3.9033333333333338,6.0,,classic rock,Queen,82.0,65.33333333333333,,4.0
+2022,68,jason aldean,jason aldean,True,7054208.0,75.0,0.0,3.6281818181818184,11.0,,country,Jason Aldean,76.0,58.81818181818182,,0.0
+2022,69,em beihold,em beihold,True,676095.0,67.0,0.0,2.82,1.0,1.0,,Em Beihold,69.0,69.0,69.0,69.0
+2022,70,michael jackson,michael jackson,True,37462708.0,85.0,0.0,4.552380952380953,21.0,,,Michael Jackson,85.0,69.04761904761905,,49.0
+2022,71,onerepublic,onerepublic,True,18706004.0,81.0,0.1,3.47,10.0,1.0,soft pop,OneRepublic,87.0,66.1,81.0,0.0
+2022,72,travis scott,travis scott,True,41131037.0,89.0,0.9090909090909091,3.610606060606061,33.0,,rap,Travis Scott,84.0,69.9090909090909,,34.0
+2022,73,playboi carti,playboi carti,True,15037198.0,86.0,1.0,2.8017777777777777,45.0,,rage rap,Playboi Carti,79.0,64.71111111111111,,56.0
+2022,74,giveon,giveon,False,,,,,,,,,,,,
+2022,75,mariah carey,mariah carey,True,11913071.0,79.0,0.0,4.02,2.0,,christmas,Mariah Carey,81.0,79.5,,78.0
+2022,76,lady gaga,lady gaga,True,42298315.0,89.0,0.15714285714285714,3.857,70.0,,art pop,Lady Gaga,91.0,57.18571428571428,,0.0
+2022,77,frank ocean,frank ocean,True,20293960.0,84.0,0.6666666666666666,5.028333333333333,6.0,,,Frank Ocean,86.0,68.83333333333333,,2.0
+2022,78,yeat,yeat,True,5978358.0,79.0,1.0,3.143333333333333,3.0,1.0,rage rap,Yeat,75.0,69.66666666666667,72.0,62.0
+2022,79,red hot chili peppers,red hot chili peppers,True,23226759.0,83.0,0.0,4.508888888888889,9.0,,funk rock,Red Hot Chili Peppers,85.0,80.88888888888889,,76.0
+2022,80,andy williams,andy williams,False,,,,,,,,,,,,
+2022,81,jordan davis,jordan davis,True,1615711.0,71.0,0.0,2.88,1.0,,country,Jordan Davis,70.0,70.0,,70.0
+2022,82,dj khaled,dj khaled,True,12343335.0,73.0,1.0,3.9685714285714284,7.0,,,DJ Khaled,72.0,65.42857142857143,,60.0
+2022,83,j.i.d,j.i.d,False,,,,,,,,,,,,
+2022,84,guns n' roses,guns n' roses,True,35214496.0,80.0,0.6666666666666666,6.126666666666666,6.0,,rock,Guns N' Roses,82.0,19.333333333333332,,1.0
+2022,85,joji,joji,True,10645550.0,81.0,0.42857142857142855,3.282857142857143,7.0,3.0,,Joji,88.0,57.0,50.333333333333336,1.0
+2022,86,charlie puth,charlie puth,True,25310805.0,80.0,0.0,3.217,10.0,3.0,soft pop,Charlie Puth,87.0,54.9,41.666666666666664,2.0
+2022,87,michael buble,michael buble,False,,,,,,,,,,,,
+2022,88,carrie underwood,carrie underwood,True,6125781.0,68.0,0.0,3.33,1.0,,country,Carrie Underwood,76.0,76.0,,76.0
+2022,89,metallica,metallica,True,32177831.0,82.0,0.0,6.3374999999999995,4.0,,metal,Metallica,71.0,37.25,,2.0
+2022,90,dove cameron,dove cameron,True,5531839.0,70.0,1.0,2.6599999999999997,3.0,2.0,,Dove Cameron,71.0,41.0,61.5,0.0
+2022,91,stephanie beatriz,stephanie beatriz,False,,,,,,,,,,,,
+2022,92,baby keem,baby keem,True,3128839.0,72.0,1.0,3.18,2.0,,,Baby Keem,77.0,76.0,,75.0
+2022,93,rauw alejandro,rauw alejandro,True,31093918.0,88.0,1.0,3.32,1.0,,reggaeton,Rauw Alejandro,78.0,78.0,,78.0
+2022,94,brent faiyaz,brent faiyaz,True,7897022.0,80.0,1.0,3.94,1.0,,r&b,Brent Faiyaz,63.0,63.0,,63.0
+2022,95,jessica darrow,jessica darrow,False,,,,,,,,,,,,
+2022,96,chencho corleone,chencho corleone,False,,,,,,,,,,,,
+2022,97,coldplay,coldplay,True,60830643.0,88.0,0.0,4.307435897435898,39.0,,,Coldplay,90.0,67.2051282051282,,37.0
+2022,98,ckay,ckay,True,1686077.0,66.0,1.0,2.43,1.0,,afrobeats,CKay,75.0,75.0,,75.0
+2022,99,nirvana,nirvana,True,23398010.0,81.0,0.02197802197802198,3.6468131868131866,91.0,,grunge,Nirvana,84.0,32.45054945054945,,5.0
+2022,100,21 savage,21 savage,True,23822155.0,84.0,1.0,4.135714285714285,7.0,,,21 Savage,78.0,62.285714285714285,,3.0
+2023,1,taylor swift,taylor swift,True,145542136.0,100.0,0.1419753086419753,3.89679012345679,324.0,9.0,country,Taylor Swift,97.0,60.04938271604938,71.66666666666667,0.0
+2023,2,morgan wallen,morgan wallen,True,14005617.0,88.0,0.4,2.9240000000000004,5.0,2.0,country,Morgan Wallen,86.0,51.4,34.0,33.0
+2023,3,sza,sza,True,33068979.0,87.0,0.625,3.028125,16.0,1.0,r&b,SZA,85.0,70.875,56.0,56.0
+2023,4,drake,drake,True,103126025.0,95.0,0.8690476190476191,3.8779761904761907,84.0,4.0,rap,Drake,85.0,65.89285714285714,74.25,0.0
+2023,5,luke combs,luke combs,True,13402920.0,83.0,0.0,3.8375,4.0,1.0,country,Luke Combs,82.0,77.25,82.0,75.0
+2023,6,zach bryan,zach bryan,True,7325625.0,84.0,0.0,3.51,2.0,1.0,country,Zach Bryan,85.0,84.0,85.0,83.0
+2023,7,the weeknd,the weeknd,True,113039308.0,94.0,0.49645390070921985,4.3803546099290775,141.0,7.0,r&b pop,The Weeknd,91.0,60.787234042553195,70.0,1.0
+2023,8,21 savage,21 savage,True,23822155.0,84.0,1.0,4.135714285714285,7.0,,,21 Savage,78.0,62.285714285714285,,3.0
+2023,9,miley cyrus,miley cyrus,True,26568626.0,81.0,0.22580645161290322,3.451935483870968,62.0,17.0,country pop,Miley Cyrus,84.0,50.596774193548384,50.94117647058823,0.0
+2023,10,post malone,post malone,True,47726839.0,86.0,0.7108433734939759,3.3266265060240965,83.0,11.0,pop,Post Malone,85.0,61.69879518072289,56.72727272727273,0.0
+2023,11,metro boomin,metro boomin,True,11687489.0,84.0,1.0,3.3155555555555556,9.0,,,Metro Boomin,83.0,75.0,,62.0
+2023,12,peso pluma,peso pluma,True,23973526.0,86.0,1.0,3.28,1.0,1.0,corrido,Peso Pluma,71.0,71.0,71.0,71.0
+2023,13,travis scott,travis scott,True,41131037.0,89.0,0.9090909090909091,3.610606060606061,33.0,6.0,rap,Travis Scott,84.0,69.9090909090909,74.0,34.0
+2023,14,harry styles,harry styles,True,34139515.0,80.0,0.0,3.5541935483870977,31.0,,pop rock,Harry Styles,87.0,66.29032258064517,,2.0
+2023,15,bad bunny,bad bunny,True,102610644.0,95.0,0.8035714285714286,3.6501785714285715,56.0,22.0,reggaeton,Bad Bunny,91.0,73.33928571428571,68.72727272727273,6.0
+2023,16,olivia rodrigo,olivia rodrigo,True,49083617.0,85.0,0.36764705882352944,3.050588235294118,68.0,16.0,pop rock,Olivia Rodrigo,86.0,60.5735294117647,65.9375,2.0
+2023,17,bailey zimmerman,bailey zimmerman,False,,,,,,,,,,,,
+2023,18,rod wave,rod wave,True,9673984.0,76.0,1.0,2.81,1.0,,,Rod Wave,70.0,70.0,,70.0
+2023,19,lil baby,lil baby,True,21662596.0,84.0,1.0,2.9706666666666663,15.0,,,Lil Baby,79.0,63.13333333333333,,47.0
+2023,20,beyonce,beyonce,False,,,,,,,,,,,,
+2023,21,lil uzi vert,lil uzi vert,True,19260805.0,82.0,1.0,2.9666666666666663,3.0,1.0,melodic rap,Lil Uzi Vert,80.0,66.0,72.0,46.0
+2023,22,ed sheeran,ed sheeran,True,122802777.0,88.0,0.018867924528301886,3.8866037735849064,53.0,1.0,soft pop,Ed Sheeran,88.0,60.283018867924525,3.0,1.0
+2023,23,karol g,karol g,True,60395783.0,87.0,0.5555555555555556,3.17,9.0,3.0,reggaeton,KAROL G,83.0,68.77777777777777,64.66666666666667,44.0
+2023,24,lil durk,lil durk,True,9504357.0,78.0,1.0,3.34,3.0,1.0,chicago drill,Lil Durk,66.0,61.666666666666664,66.0,55.0
+2023,25,ice spice,ice spice,True,4787436.0,69.0,1.0,2.0549999999999997,2.0,1.0,,Ice Spice,67.0,64.0,61.0,61.0
+2023,26,gunna,gunna,True,10353625.0,85.0,1.0,2.717,10.0,1.0,melodic rap,Gunna,80.0,56.3,78.0,0.0
+2023,27,chris brown,chris brown,True,28338976.0,87.0,0.7333333333333333,3.858,15.0,1.0,r&b,Chris Brown,83.0,59.333333333333336,77.0,0.0
+2023,28,doja cat,doja cat,True,34748949.0,86.0,0.9666666666666667,3.3406666666666665,30.0,5.0,,Doja Cat,84.0,68.66666666666667,72.8,8.0
+2023,29,kendrick lamar,kendrick lamar,True,44606446.0,89.0,0.7272727272727273,3.427272727272727,11.0,,hip hop,Kendrick Lamar,89.0,72.54545454545455,,2.0
+2023,30,"tyler, the creator","tyler, the creator",True,24451340.0,86.0,1.0,3.18375,8.0,3.0,,"Tyler, The Creator",90.0,68.25,43.333333333333336,0.0
+2023,31,jelly roll,jelly roll,True,6099725.0,79.0,0.0,3.02,1.0,,country hip hop,Jelly Roll,65.0,65.0,,65.0
+2023,32,future,future,True,22688560.0,88.0,1.0,3.5849999999999995,24.0,,rap,Future,82.0,66.16666666666667,,53.0
+2023,33,juice wrld,juice wrld,True,42565036.0,85.0,1.0,3.588571428571428,7.0,,melodic rap,Juice WRLD,82.0,60.857142857142854,,3.0
+2023,34,kane brown,kane brown,True,5778418.0,71.0,0.0,3.2,4.0,,country,Kane Brown,68.0,58.75,,51.0
+2023,35,nicki minaj,nicki minaj,True,34297934.0,84.0,0.8888888888888888,3.506111111111111,18.0,4.0,,Nicki Minaj,78.0,53.55555555555556,59.5,0.0
+2023,36,lainey wilson,lainey wilson,True,1538992.0,73.0,0.0,3.76,1.0,,country,Lainey Wilson,69.0,69.0,,69.0
+2023,37,jordan davis,jordan davis,True,1615711.0,71.0,0.0,2.88,1.0,,country,Jordan Davis,70.0,70.0,,70.0
+2023,38,fuerza regida,fuerza regida,True,19797218.0,89.0,1.0,3.01,2.0,,corrido,Fuerza Regida,87.0,87.0,,87.0
+2023,39,grupo frontera,grupo frontera,True,7470903.0,83.0,0.0,3.24,1.0,1.0,cumbia norteña,Grupo Frontera,75.0,75.0,75.0,75.0
+2023,40,rihanna,rihanna,True,69050055.0,90.0,0.3269230769230769,3.88,52.0,,pop,Rihanna,87.0,65.57692307692308,,0.0
+2023,41,rema,rema,True,8672431.0,76.0,0.0,3.98,1.0,,afrobeats,Rema,79.0,79.0,,79.0
+2023,42,elton john,elton john,True,15545907.0,80.0,0.0,3.5980000000000003,5.0,,,Elton John,80.0,67.4,,53.0
+2023,43,billie eilish,billie eilish,True,118797451.0,90.0,0.09836065573770492,3.4967213114754094,61.0,1.0,alternative pop,Billie Eilish,94.0,73.88524590163935,84.0,17.0
+2023,44,dua lipa,dua lipa,True,46895665.0,85.0,0.09523809523809523,3.393571428571428,42.0,2.0,pop,Dua Lipa,81.0,55.80952380952381,46.0,6.0
+2023,45,miguel,miguel,True,6132588.0,78.0,0.25,3.3200000000000003,4.0,1.0,r&b,Miguel,84.0,72.75,62.0,62.0
+2023,46,selena gomez,selena gomez,True,53267200.0,81.0,0.0,3.436,20.0,1.0,,Selena Gomez,77.0,56.7,65.0,0.0
+2023,47,chris stapleton,chris stapleton,True,9020741.0,81.0,0.0,4.88,1.0,,country,Chris Stapleton,84.0,84.0,,84.0
+2023,48,hardy,hardy,False,,,,,,,,,,,,
+2023,49,toosii,toosii,True,2342730.0,63.0,0.0,3.47,1.0,1.0,,Toosii,64.0,64.0,64.0,64.0
+2023,50,eminem,eminem,True,104584370.0,88.0,0.9850746268656716,4.441940298507464,67.0,,rap,Eminem,87.0,56.25373134328358,,10.0
+2023,51,steve lacy,steve lacy,True,6429788.0,77.0,0.6,3.2340000000000004,5.0,,,Steve Lacy,83.0,62.0,,4.0
+2023,52,fleetwood mac,fleetwood mac,True,13973668.0,83.0,0.0,4.3575,8.0,,classic rock,Fleetwood Mac,86.0,69.75,,53.0
+2023,53,sam smith,sam smith,True,26278854.0,81.0,0.0,3.253846153846154,39.0,23.0,soft pop,Sam Smith,85.0,37.58974358974359,27.217391304347824,0.0
+2023,54,jvke,jvke,True,5812926.0,75.0,0.0,3.48,2.0,,,JVKE,79.0,40.0,,1.0
+2023,55,lana del rey,lana del rey,True,51847587.0,88.0,0.26262626262626265,4.417575757575757,99.0,5.0,alternative pop,Lana Del Rey,87.0,63.17171717171717,73.2,31.0
+2023,56,noah kahan,noah kahan,True,4379868.0,82.0,0.0,3.835,2.0,1.0,,Noah Kahan,84.0,79.5,75.0,75.0
+2023,57,coi leray,coi leray,True,932488.0,66.0,1.0,2.32,1.0,,,Coi Leray,68.0,68.0,,68.0
+2023,58,j. cole,j. cole,True,27077429.0,82.0,1.0,4.1466666666666665,9.0,,rap,J. Cole,85.0,67.44444444444444,,1.0
+2023,59,ariana grande,ariana grande,True,107418606.0,90.0,0.4148936170212766,3.3245744680851064,94.0,3.0,pop,Ariana Grande,85.0,63.91489361702128,48.666666666666664,0.0
+2023,60,lizzo,lizzo,True,5739313.0,68.0,0.5,2.6775,8.0,2.0,,Lizzo,70.0,52.875,46.0,8.0
+2023,61,eslabon armado,eslabon armado,True,6442976.0,75.0,0.0,2.76,1.0,1.0,corridos tumbados,Eslabon Armado,75.0,75.0,75.0,75.0
+2023,62,david guetta,david guetta,True,27143729.0,87.0,0.14814814814814814,3.2729629629629637,27.0,1.0,edm,David Guetta,84.0,60.96296296296296,78.0,1.0
+2023,63,michael jackson,michael jackson,True,37462708.0,85.0,0.0,4.552380952380953,21.0,,,Michael Jackson,85.0,69.04761904761905,,49.0
+2023,64,mariah carey,mariah carey,True,11913071.0,79.0,0.0,4.02,2.0,,christmas,Mariah Carey,81.0,79.5,,78.0
+2023,65,lady gaga,lady gaga,True,42298315.0,89.0,0.15714285714285714,3.857,70.0,,art pop,Lady Gaga,91.0,57.18571428571428,,0.0
+2023,66,kanye west,kanye west,True,31059657.0,89.0,0.6956521739130435,4.1643478260869555,23.0,,rap,Kanye West,85.0,66.34782608695652,,1.0
+2023,67,meghan trainor,meghan trainor,True,15744271.0,74.0,0.2,3.1399999999999997,5.0,,,Meghan Trainor,78.0,71.2,,64.0
+2023,68,frank ocean,frank ocean,True,20293960.0,84.0,0.6666666666666666,5.028333333333333,6.0,,,Frank Ocean,86.0,68.83333333333333,,2.0
+2023,69,bebe rexha,bebe rexha,True,9839947.0,76.0,0.0,2.856,5.0,1.0,,Bebe Rexha,70.0,58.4,39.0,39.0
+2023,70,kim petras,kim petras,True,1192996.0,70.0,0.5,2.895,2.0,,,Kim Petras,57.0,28.5,,0.0
+2023,71,tyler hubbard,tyler hubbard,False,,,,,,,,,,,,
+2023,72,nat king cole,nat king cole,False,,,,,,,,,,,,
+2023,73,metallica,metallica,True,32177831.0,82.0,0.0,6.3374999999999995,4.0,,metal,Metallica,71.0,37.25,,2.0
+2023,74,youngboy never broke again,youngboy never broke again,True,14958573.0,85.0,1.0,3.0680000000000005,5.0,,,YoungBoy Never Broke Again,80.0,73.4,,67.0
+2023,75,fifty fifty,fifty fifty,True,1990839.0,63.0,0.0,2.6950000000000003,2.0,2.0,k-pop,FIFTY FIFTY,45.0,25.5,25.5,6.0
+2023,76,brenda lee,brenda lee,False,,,,,,,,,,,,
+2023,77,queen,queen,True,55209500.0,82.0,0.0,3.9033333333333338,6.0,,classic rock,Queen,82.0,65.33333333333333,,4.0
+2023,78,jason aldean,jason aldean,True,7054208.0,75.0,0.0,3.6281818181818184,11.0,,country,Jason Aldean,76.0,58.81818181818182,,0.0
+2023,79,stephen sanchez,stephen sanchez,True,1874891.0,71.0,0.0,2.9800000000000004,4.0,,,Stephen Sanchez,78.0,74.5,,64.0
+2023,80,megan moroney,megan moroney,True,1163610.0,73.0,0.0,3.04,1.0,,country,Megan Moroney,76.0,76.0,,76.0
+2023,81,tyler childers,tyler childers,False,,,,,,,,,,,,
+2023,82,brent faiyaz,brent faiyaz,True,7897022.0,80.0,1.0,3.94,1.0,,r&b,Brent Faiyaz,63.0,63.0,,63.0
+2023,83,michael buble,michael buble,False,,,,,,,,,,,,
+2023,84,bruno mars,bruno mars,True,75513910.0,90.0,0.037037037037037035,3.681111111111111,27.0,,,Bruno Mars,88.0,66.4074074074074,,0.0
+2023,85,elvis presley,elvis presley,False,,,,,,,,,,,,
+2023,86,newjeans,newjeans,True,11611877.0,77.0,0.0,2.83,2.0,1.0,k-pop,NewJeans,79.0,78.5,78.0,78.0
+2023,87,young thug,young thug,True,12421354.0,84.0,1.0,3.9425,4.0,,rap,Young Thug,73.0,69.5,,67.0
+2023,88,creedence clearwater revival,creedence clearwater revival,True,7945600.0,77.0,0.0,2.865,2.0,,classic rock,Creedence Clearwater Revival,85.0,72.5,,60.0
+2023,89,burl ives,burl ives,False,,,,,,,,,,,,
+2023,90,melanie martinez,melanie martinez,True,22220366.0,75.0,0.45454545454545453,3.5763636363636366,11.0,1.0,,Melanie Martinez,73.0,64.54545454545455,53.0,50.0
+2023,91,bobby helms,bobby helms,False,,,,,,,,,,,,
+2023,92,kali uchis,kali uchis,True,9475754.0,83.0,0.0,3.4050000000000002,8.0,3.0,,Kali Uchis,82.0,74.625,69.0,54.0
+2023,93,p!nk,p!nk,True,18208465.0,78.0,0.5714285714285714,3.7085714285714286,14.0,,,P!nk,82.0,49.42857142857143,,0.0
+2023,94,imagine dragons,imagine dragons,True,58375520.0,85.0,0.0,3.2058823529411766,17.0,,,Imagine Dragons,84.0,56.294117647058826,,0.0
+2023,95,guns n' roses,guns n' roses,True,35214496.0,80.0,0.6666666666666666,6.126666666666666,6.0,,rock,Guns N' Roses,82.0,19.333333333333332,,1.0
+2023,96,coldplay,coldplay,True,60830643.0,88.0,0.0,4.307435897435898,39.0,,,Coldplay,90.0,67.2051282051282,,37.0
+2023,97,andy williams,andy williams,False,,,,,,,,,,,,
+2023,98,the kid laroi,the kid laroi,True,6596750.0,79.0,0.7272727272727273,2.5145454545454546,11.0,4.0,,The Kid LAROI,86.0,56.09090909090909,64.25,3.0
+2023,99,kelly clarkson,kelly clarkson,True,10961941.0,72.0,0.0,3.59375,8.0,,christmas,Kelly Clarkson,75.0,56.125,,1.0
+2023,100,polo g,polo g,True,13056061.0,76.0,1.0,2.81,2.0,,,Polo G,73.0,64.5,,56.0
+2024,1,taylor swift,taylor swift,True,145542136.0,100.0,0.1419753086419753,3.89679012345679,324.0,40.0,country,Taylor Swift,97.0,60.04938271604938,69.675,0.0
+2024,2,morgan wallen,morgan wallen,True,14005617.0,88.0,0.4,2.9240000000000004,5.0,,country,Morgan Wallen,86.0,51.4,,33.0
+2024,3,zach bryan,zach bryan,True,7325625.0,84.0,0.0,3.51,2.0,1.0,country,Zach Bryan,85.0,84.0,83.0,83.0
+2024,4,drake,drake,True,103126025.0,95.0,0.8690476190476191,3.8779761904761907,84.0,1.0,rap,Drake,85.0,65.89285714285714,70.0,0.0
+2024,5,sabrina carpenter,sabrina carpenter,True,26559943.0,91.0,0.6764705882352942,3.0508823529411764,34.0,15.0,pop,Sabrina Carpenter,92.0,79.5,75.73333333333333,59.0
+2024,6,billie eilish,billie eilish,True,118797451.0,90.0,0.09836065573770492,3.4967213114754094,61.0,10.0,alternative pop,Billie Eilish,94.0,73.88524590163935,82.2,17.0
+2024,7,sza,sza,True,33068979.0,87.0,0.625,3.028125,16.0,2.0,r&b,SZA,85.0,70.875,77.5,56.0
+2024,8,luke combs,luke combs,True,13402920.0,83.0,0.0,3.8375,4.0,,country,Luke Combs,82.0,77.25,,75.0
+2024,9,post malone,post malone,True,47726839.0,86.0,0.7108433734939759,3.3266265060240965,83.0,19.0,pop,Post Malone,85.0,61.69879518072289,64.05263157894737,0.0
+2024,10,kendrick lamar,kendrick lamar,True,44606446.0,89.0,0.7272727272727273,3.427272727272727,11.0,4.0,hip hop,Kendrick Lamar,89.0,72.54545454545455,83.25,2.0
+2024,11,chappell roan,chappell roan,True,7310428.0,82.0,0.2777777777777778,3.5883333333333334,18.0,1.0,,Chappell Roan,89.0,73.61111111111111,89.0,62.0
+2024,12,teddy swims,teddy swims,True,5674855.0,83.0,0.0,3.373333333333333,3.0,1.0,,Teddy Swims,89.0,84.66666666666667,79.0,79.0
+2024,13,noah kahan,noah kahan,True,4379868.0,82.0,0.0,3.835,2.0,,,Noah Kahan,84.0,79.5,,75.0
+2024,14,olivia rodrigo,olivia rodrigo,True,49083617.0,85.0,0.36764705882352944,3.050588235294118,68.0,17.0,pop rock,Olivia Rodrigo,86.0,60.5735294117647,63.411764705882355,2.0
+2024,15,benson boone,benson boone,True,7055537.0,83.0,0.0,3.012857142857143,7.0,5.0,,Benson Boone,88.0,79.0,79.2,69.0
+2024,16,doja cat,doja cat,True,34748949.0,86.0,0.9666666666666667,3.3406666666666665,30.0,1.0,,Doja Cat,84.0,68.66666666666667,54.0,8.0
+2024,17,future,future,True,22688560.0,88.0,1.0,3.5849999999999995,24.0,18.0,rap,Future,82.0,66.16666666666667,63.72222222222222,53.0
+2024,18,ariana grande,ariana grande,True,107418606.0,90.0,0.4148936170212766,3.3245744680851064,94.0,15.0,pop,Ariana Grande,85.0,63.91489361702128,69.0,0.0
+2024,19,travis scott,travis scott,True,41131037.0,89.0,0.9090909090909091,3.610606060606061,33.0,,rap,Travis Scott,84.0,69.9090909090909,,34.0
+2024,20,bad bunny,bad bunny,True,102610644.0,95.0,0.8035714285714286,3.6501785714285715,56.0,,reggaeton,Bad Bunny,91.0,73.33928571428571,,6.0
+2024,21,hozier,hozier,True,9114093.0,82.0,0.0,4.111818181818182,11.0,3.0,,Hozier,83.0,53.54545454545455,56.0,0.0
+2024,22,shaboozey,shaboozey,True,1449816.0,76.0,0.5,3.0700000000000003,2.0,1.0,,Shaboozey,82.0,69.0,82.0,56.0
+2024,23,jelly roll,jelly roll,True,6099725.0,79.0,0.0,3.02,1.0,1.0,country hip hop,Jelly Roll,65.0,65.0,65.0,65.0
+2024,24,metro boomin,metro boomin,True,11687489.0,84.0,1.0,3.3155555555555556,9.0,,,Metro Boomin,83.0,75.0,,62.0
+2024,25,tate mcrae,tate mcrae,True,9265406.0,88.0,0.6041666666666666,2.84375,48.0,2.0,pop,Tate McRae,91.0,66.25,61.5,4.0
+2024,26,beyonce,beyonce,False,,,,,,,,,,,,
+2024,27,21 savage,21 savage,True,23822155.0,84.0,1.0,4.135714285714285,7.0,1.0,,21 Savage,78.0,62.285714285714285,78.0,3.0
+2024,28,chris stapleton,chris stapleton,True,9020741.0,81.0,0.0,4.88,1.0,,country,Chris Stapleton,84.0,84.0,,84.0
+2024,29,eminem,eminem,True,104584370.0,88.0,0.9850746268656716,4.441940298507464,67.0,2.0,rap,Eminem,87.0,56.25373134328358,73.0,10.0
+2024,30,the weeknd,the weeknd,True,113039308.0,94.0,0.49645390070921985,4.3803546099290775,141.0,7.0,r&b pop,The Weeknd,91.0,60.787234042553195,42.714285714285715,1.0
+2024,31,dua lipa,dua lipa,True,46895665.0,85.0,0.09523809523809523,3.393571428571428,42.0,4.0,pop,Dua Lipa,81.0,55.80952380952381,58.25,6.0
+2024,32,tommy richman,tommy richman,True,938200.0,68.0,0.5,2.38,2.0,2.0,,Tommy Richman,82.0,77.0,77.0,72.0
+2024,33,nicki minaj,nicki minaj,True,34297934.0,84.0,0.8888888888888888,3.506111111111111,18.0,,,Nicki Minaj,78.0,53.55555555555556,,0.0
+2024,34,jack harlow,jack harlow,True,4350533.0,75.0,1.0,3.004,5.0,,,Jack Harlow,77.0,53.8,,4.0
+2024,35,ye,ye,False,,,,,,,,,,,,
+2024,36,peso pluma,peso pluma,True,23973526.0,86.0,1.0,3.28,1.0,,corrido,Peso Pluma,71.0,71.0,,71.0
+2024,37,fuerza regida,fuerza regida,True,19797218.0,89.0,1.0,3.01,2.0,,corrido,Fuerza Regida,87.0,87.0,,87.0
+2024,38,karol g,karol g,True,60395783.0,87.0,0.5555555555555556,3.17,9.0,1.0,reggaeton,KAROL G,83.0,68.77777777777777,83.0,44.0
+2024,39,glorilla,glorilla,False,,,,,,,,,,,,
+2024,40,gunna,gunna,True,10353625.0,85.0,1.0,2.717,10.0,2.0,melodic rap,Gunna,80.0,56.3,69.0,0.0
+2024,41,rod wave,rod wave,True,9673984.0,76.0,1.0,2.81,1.0,,,Rod Wave,70.0,70.0,,70.0
+2024,42,sexyy red,sexyy red,False,,,,,,,,,,,,
+2024,43,bailey zimmerman,bailey zimmerman,False,,,,,,,,,,,,
+2024,44,charli xcx,charli xcx,True,6322030.0,82.0,0.2413793103448276,2.8613793103448275,29.0,20.0,hyperpop,Charli xcx,85.0,65.58620689655173,68.9,27.0
+2024,45,megan thee stallion,megan thee stallion,True,10895519.0,76.0,1.0,2.980952380952381,21.0,19.0,,Megan Thee Stallion,72.0,52.0,50.89473684210526,40.0
+2024,46,cody johnson,cody johnson,True,1943383.0,73.0,0.0,3.29,1.0,1.0,texas country,Cody Johnson,75.0,75.0,75.0,75.0
+2024,47,miley cyrus,miley cyrus,True,26568626.0,81.0,0.22580645161290322,3.451935483870968,62.0,,country pop,Miley Cyrus,84.0,50.596774193548384,,0.0
+2024,48,bryson tiller,bryson tiller,True,10566213.0,80.0,0.75,3.3425,4.0,1.0,trap soul,Bryson Tiller,83.0,79.0,76.0,76.0
+2024,49,j. cole,j. cole,True,27077429.0,82.0,1.0,4.1466666666666665,9.0,,rap,J. Cole,85.0,67.44444444444444,,1.0
+2024,50,tyla,tyla,True,3509163.0,77.0,0.0,2.895,4.0,2.0,afrobeats,Tyla,82.0,72.5,71.5,63.0
+2024,51,lainey wilson,lainey wilson,True,1538992.0,73.0,0.0,3.76,1.0,,country,Lainey Wilson,69.0,69.0,,69.0
+2024,52,frank ocean,frank ocean,True,20293960.0,84.0,0.6666666666666666,5.028333333333333,6.0,,,Frank Ocean,86.0,68.83333333333333,,2.0
+2024,53,lil baby,lil baby,True,21662596.0,84.0,1.0,2.9706666666666663,15.0,,,Lil Baby,79.0,63.13333333333333,,47.0
+2024,54,dasha,dasha,True,416933.0,67.0,1.0,2.86,1.0,1.0,,Dasha,82.0,82.0,82.0,82.0
+2024,55,fleetwood mac,fleetwood mac,True,13973668.0,83.0,0.0,4.3575,8.0,,classic rock,Fleetwood Mac,86.0,69.75,,53.0
+2024,56,juice wrld,juice wrld,True,42565036.0,85.0,1.0,3.588571428571428,7.0,,melodic rap,Juice WRLD,82.0,60.857142857142854,,3.0
+2024,57,hardy,hardy,False,,,,,,,,,,,,
+2024,58,bruno mars,bruno mars,True,75513910.0,90.0,0.037037037037037035,3.681111111111111,27.0,,,Bruno Mars,88.0,66.4074074074074,,0.0
+2024,59,nate smith,nate smith,False,,,,,,,,,,,,
+2024,60,jung kook,jung kook,True,18620976.0,79.0,0.6,3.2520000000000002,5.0,,k-pop,Jung Kook,83.0,63.8,,4.0
+2024,61,thomas rhett,thomas rhett,True,4984665.0,73.0,0.0,3.793333333333333,3.0,,country,Thomas Rhett,72.0,59.0,,43.0
+2024,62,linkin park,linkin park,True,31819030.0,88.0,0.07894736842105263,3.3223684210526314,38.0,8.0,nu metal,Linkin Park,88.0,66.07894736842105,53.125,44.0
+2024,63,"tyler, the creator","tyler, the creator",True,24451340.0,86.0,1.0,3.18375,8.0,2.0,,"Tyler, The Creator",90.0,68.25,80.5,0.0
+2024,64,bigxthaplug,bigxthaplug,True,2059774.0,79.0,0.0,2.98,1.0,,southern hip hop,BigXthaPlug,76.0,76.0,,76.0
+2024,65,mariah carey,mariah carey,True,11913071.0,79.0,0.0,4.02,2.0,,christmas,Mariah Carey,81.0,79.5,,78.0
+2024,66,ty dolla $ign,ty dolla $ign,True,7319540.0,81.0,1.0,4.04,1.0,,trap soul,Ty Dolla $ign,80.0,80.0,,80.0
+2024,67,xavi,xavi,True,8456647.0,76.0,0.5,2.7350000000000003,2.0,,corridos tumbados,Xavi,74.0,72.0,,70.0
+2024,68,michael jackson,michael jackson,True,37462708.0,85.0,0.0,4.552380952380953,21.0,,,Michael Jackson,85.0,69.04761904761905,,49.0
+2024,69,usher,usher,True,13753493.0,80.0,0.0,4.024285714285715,7.0,,r&b,USHER,85.0,48.142857142857146,,1.0
+2024,70,bossman dlow,bossman dlow,False,,,,,,,,,,,,
+2024,71,chris brown,chris brown,True,28338976.0,87.0,0.7333333333333333,3.858,15.0,,r&b,Chris Brown,83.0,59.333333333333336,,0.0
+2024,72,elton john,elton john,True,15545907.0,80.0,0.0,3.5980000000000003,5.0,,,Elton John,80.0,67.4,,53.0
+2024,73,stray kids,stray kids,False,,,,,,,,,,,,
+2024,74,lana del rey,lana del rey,True,51847587.0,88.0,0.26262626262626265,4.417575757575757,99.0,,alternative pop,Lana Del Rey,87.0,63.17171717171717,,31.0
+2024,75,kacey musgraves,kacey musgraves,False,,,,,,,,,,,,
+2024,76,eagles,eagles,True,12152190.0,75.0,0.0,6.52,1.0,,classic rock,Eagles,52.0,52.0,,52.0
+2024,77,warren zeiders,warren zeiders,False,,,,,,,,,,,,
+2024,78,tucker wetmore,tucker wetmore,False,,,,,,,,,,,,
+2024,79,rihanna,rihanna,True,69050055.0,90.0,0.3269230769230769,3.88,52.0,,pop,Rihanna,87.0,65.57692307692308,,0.0
+2024,80,nat king cole,nat king cole,False,,,,,,,,,,,,
+2024,81,djo,djo,True,2322081.0,73.0,0.0,2.65,1.0,,,Djo,89.0,89.0,,89.0
+2024,82,don toliver,don toliver,True,7473754.0,85.0,0.5,3.41,4.0,1.0,,Don Toliver,83.0,60.25,81.0,0.0
+2024,83,summer walker,summer walker,True,8013600.0,76.0,0.75,3.3674999999999997,4.0,,r&b,Summer Walker,78.0,55.75,,0.0
+2024,84,creedence clearwater revival,creedence clearwater revival,True,7945600.0,77.0,0.0,2.865,2.0,,classic rock,Creedence Clearwater Revival,85.0,72.5,,60.0
+2024,85,coldplay,coldplay,True,60830643.0,88.0,0.0,4.307435897435898,39.0,,,Coldplay,90.0,67.2051282051282,,37.0
+2024,86,queen,queen,True,55209500.0,82.0,0.0,3.9033333333333338,6.0,,classic rock,Queen,82.0,65.33333333333333,,4.0
+2024,87,lady gaga,lady gaga,True,42298315.0,89.0,0.15714285714285714,3.857,70.0,2.0,art pop,Lady Gaga,91.0,57.18571428571428,80.5,0.0
+2024,88,brenda lee,brenda lee,False,,,,,,,,,,,,
+2024,89,gracie abrams,gracie abrams,True,7430490.0,82.0,0.375,3.41875,8.0,4.0,,Gracie Abrams,89.0,76.375,82.0,57.0
+2024,90,jessie murph,jessie murph,True,1626341.0,76.0,0.0,2.3200000000000003,2.0,,,Jessie Murph,74.0,37.0,,0.0
+2024,91,kane brown,kane brown,True,5778418.0,71.0,0.0,3.2,4.0,,country,Kane Brown,68.0,58.75,,51.0
+2024,92,the kid laroi,the kid laroi,True,6596750.0,79.0,0.7272727272727273,2.5145454545454546,11.0,3.0,,The Kid LAROI,86.0,56.09090909090909,68.33333333333333,3.0
+2024,93,flo milli,flo milli,True,1567636.0,67.0,1.0,2.09,2.0,1.0,,Flo Milli,71.0,71.0,71.0,71.0
+2024,94,playboi carti,playboi carti,True,15037198.0,86.0,1.0,2.8017777777777777,45.0,,rage rap,Playboi Carti,79.0,64.71111111111111,,56.0
+2024,95,lil uzi vert,lil uzi vert,True,19260805.0,82.0,1.0,2.9666666666666663,3.0,,melodic rap,Lil Uzi Vert,80.0,66.0,,46.0
+2024,96,ed sheeran,ed sheeran,True,122802777.0,88.0,0.018867924528301886,3.8866037735849064,53.0,,soft pop,Ed Sheeran,88.0,60.283018867924525,,1.0
+2024,97,lil wayne,lil wayne,True,17938214.0,86.0,0.75,4.33,8.0,,rap,Lil Wayne,78.0,36.625,,0.0
+2024,98,bob marley and the wailers,bob marley and the wailers,False,,,,,,,,,,,,
+2024,99,the rolling stones,the rolling stones,True,15714574.0,77.0,0.0,4.46,3.0,,classic rock,The Rolling Stones,82.0,70.0,,56.0
+2024,100,bobby helms,bobby helms,False,,,,,,,,,,,,
+2025,1,morgan wallen,morgan wallen,True,14005617.0,88.0,0.4,2.9240000000000004,5.0,3.0,country,Morgan Wallen,86.0,51.4,63.0,33.0
+2025,2,kendrick lamar,kendrick lamar,True,44606446.0,89.0,0.7272727272727273,3.427272727272727,11.0,,hip hop,Kendrick Lamar,89.0,72.54545454545455,,2.0
+2025,3,taylor swift,taylor swift,True,145542136.0,100.0,0.1419753086419753,3.89679012345679,324.0,13.0,country,Taylor Swift,97.0,60.04938271604938,91.38461538461539,0.0
+2025,4,sabrina carpenter,sabrina carpenter,True,26559943.0,91.0,0.6764705882352942,3.0508823529411764,34.0,14.0,pop,Sabrina Carpenter,92.0,79.5,85.57142857142857,59.0
+2025,5,sza,sza,True,33068979.0,87.0,0.625,3.028125,16.0,,r&b,SZA,85.0,70.875,,56.0
+2025,6,drake,drake,True,103126025.0,95.0,0.8690476190476191,3.8779761904761907,84.0,2.0,rap,Drake,85.0,65.89285714285714,84.0,0.0
+2025,7,bad bunny,bad bunny,True,102610644.0,95.0,0.8035714285714286,3.6501785714285715,56.0,4.0,reggaeton,Bad Bunny,91.0,73.33928571428571,89.5,6.0
+2025,8,billie eilish,billie eilish,True,118797451.0,90.0,0.09836065573770492,3.4967213114754094,61.0,,alternative pop,Billie Eilish,94.0,73.88524590163935,,17.0
+2025,9,"tyler, the creator","tyler, the creator",True,24451340.0,86.0,1.0,3.18375,8.0,1.0,,"Tyler, The Creator",90.0,68.25,90.0,0.0
+2025,10,the weeknd,the weeknd,True,113039308.0,94.0,0.49645390070921985,4.3803546099290775,141.0,23.0,r&b pop,The Weeknd,91.0,60.787234042553195,65.08695652173913,1.0
+2025,11,shaboozey,shaboozey,True,1449816.0,76.0,0.5,3.0700000000000003,2.0,1.0,,Shaboozey,82.0,69.0,56.0,56.0
+2025,12,benson boone,benson boone,True,7055537.0,83.0,0.0,3.012857142857143,7.0,1.0,,Benson Boone,88.0,79.0,82.0,69.0
+2025,13,chappell roan,chappell roan,True,7310428.0,82.0,0.2777777777777778,3.5883333333333334,18.0,2.0,,Chappell Roan,89.0,73.61111111111111,80.0,62.0
+2025,14,teddy swims,teddy swims,True,5674855.0,83.0,0.0,3.373333333333333,3.0,,,Teddy Swims,89.0,84.66666666666667,,79.0
+2025,15,post malone,post malone,True,47726839.0,86.0,0.7108433734939759,3.3266265060240965,83.0,,pop,Post Malone,85.0,61.69879518072289,,0.0
+2025,16,lady gaga,lady gaga,True,42298315.0,89.0,0.15714285714285714,3.857,70.0,22.0,art pop,Lady Gaga,91.0,57.18571428571428,65.5909090909091,0.0
+2025,17,tate mcrae,tate mcrae,True,9265406.0,88.0,0.6041666666666666,2.84375,48.0,29.0,pop,Tate McRae,91.0,66.25,70.27586206896552,4.0
+2025,18,alex warren,alex warren,True,2896488.0,84.0,0.0,3.11,5.0,4.0,,Alex Warren,91.0,83.4,81.5,70.0
+2025,19,bruno mars,bruno mars,True,75513910.0,90.0,0.037037037037037035,3.681111111111111,27.0,,,Bruno Mars,88.0,66.4074074074074,,0.0
+2025,20,gracie abrams,gracie abrams,True,7430490.0,82.0,0.375,3.41875,8.0,,,Gracie Abrams,89.0,76.375,,57.0
+2025,21,zach bryan,zach bryan,True,7325625.0,84.0,0.0,3.51,2.0,,country,Zach Bryan,85.0,84.0,,83.0
+2025,22,playboi carti,playboi carti,True,15037198.0,86.0,1.0,2.8017777777777777,45.0,1.0,rage rap,Playboi Carti,79.0,64.71111111111111,79.0,56.0
+2025,23,jelly roll,jelly roll,True,6099725.0,79.0,0.0,3.02,1.0,,country hip hop,Jelly Roll,65.0,65.0,,65.0
+2025,24,"huntr/x:ejae, audrey nuna & rei ami","huntr/x:ejae, audrey nuna & rei ami",False,,,,,,,,,,,,
+2025,25,bigxthaplug,bigxthaplug,True,2059774.0,79.0,0.0,2.98,1.0,1.0,southern hip hop,BigXthaPlug,76.0,76.0,76.0,76.0
+2025,26,luke combs,luke combs,True,13402920.0,83.0,0.0,3.8375,4.0,2.0,country,Luke Combs,82.0,77.25,75.5,75.0
+2025,27,ariana grande,ariana grande,True,107418606.0,90.0,0.4148936170212766,3.3245744680851064,94.0,6.0,pop,Ariana Grande,85.0,63.91489361702128,59.0,0.0
+2025,28,hozier,hozier,True,9114093.0,82.0,0.0,4.111818181818182,11.0,,,Hozier,83.0,53.54545454545455,,0.0
+2025,29,justin bieber,justin bieber,True,85050158.0,91.0,0.18181818181818182,3.001636363636363,55.0,21.0,pop,Justin Bieber,91.0,66.27272727272727,68.14285714285714,0.0
+2025,30,doechii,doechii,True,3229233.0,76.0,1.0,3.8200000000000003,3.0,2.0,,Doechii,79.0,75.0,76.5,72.0
+2025,31,fuerza regida,fuerza regida,True,19797218.0,89.0,1.0,3.01,2.0,2.0,corrido,Fuerza Regida,87.0,87.0,87.0,87.0
+2025,32,sombr,sombr,True,2809275.0,85.0,0.0,3.5906666666666665,15.0,12.0,,sombr,92.0,79.66666666666667,79.41666666666667,68.0
+2025,33,rod wave,rod wave,True,9673984.0,76.0,1.0,2.81,1.0,1.0,,Rod Wave,70.0,70.0,70.0,70.0
+2025,34,chris stapleton,chris stapleton,True,9020741.0,81.0,0.0,4.88,1.0,,country,Chris Stapleton,84.0,84.0,,84.0
+2025,35,the marias,the marias,False,,,,,,,,,,,,
+2025,36,glorilla,glorilla,False,,,,,,,,,,,,
+2025,37,riley green,riley green,True,1372158.0,75.0,0.0,3.64,1.0,,country,Riley Green,71.0,71.0,,71.0
+2025,38,travis scott,travis scott,True,41131037.0,89.0,0.9090909090909091,3.610606060606061,33.0,,rap,Travis Scott,84.0,69.9090909090909,,34.0
+2025,39,ed sheeran,ed sheeran,True,122802777.0,88.0,0.018867924528301886,3.8866037735849064,53.0,3.0,soft pop,Ed Sheeran,88.0,60.283018867924525,82.0,1.0
+2025,40,leon thomas,leon thomas,True,735818.0,74.0,1.0,2.9850000000000003,2.0,1.0,,Leon Thomas,72.0,69.5,67.0,67.0
+2025,41,zach top,zach top,False,,,,,,,,,,,,
+2025,42,charli xcx,charli xcx,True,6322030.0,82.0,0.2413793103448276,2.8613793103448275,29.0,,hyperpop,Charli xcx,85.0,65.58620689655173,,27.0
+2025,43,megan moroney,megan moroney,True,1163610.0,73.0,0.0,3.04,1.0,1.0,country,Megan Moroney,76.0,76.0,76.0,76.0
+2025,44,rose,rose,False,,,,,,,,,,,,
+2025,45,jessie murph,jessie murph,True,1626341.0,76.0,0.0,2.3200000000000003,2.0,1.0,,Jessie Murph,74.0,37.0,74.0,0.0
+2025,46,lola young,lola young,True,1462626.0,77.0,0.5714285714285714,3.9042857142857144,7.0,4.0,,Lola Young,83.0,73.57142857142857,73.75,64.0
+2025,47,partynextdoor,partynextdoor,True,10115734.0,83.0,0.75,3.05,4.0,,dark r&b,PARTYNEXTDOOR,80.0,55.0,,0.0
+2025,48,myles smith,myles smith,True,1322522.0,74.0,0.0,3.0400000000000005,3.0,,,Myles Smith,84.0,76.33333333333333,,70.0
+2025,49,future,future,True,22688560.0,88.0,1.0,3.5849999999999995,24.0,,rap,Future,82.0,66.16666666666667,,53.0
+2025,50,chris brown,chris brown,True,28338976.0,87.0,0.7333333333333333,3.858,15.0,1.0,r&b,Chris Brown,83.0,59.333333333333336,79.0,0.0
+2025,51,lil baby,lil baby,True,21662596.0,84.0,1.0,2.9706666666666663,15.0,,,Lil Baby,79.0,63.13333333333333,,47.0
+2025,52,olivia rodrigo,olivia rodrigo,True,49083617.0,85.0,0.36764705882352944,3.050588235294118,68.0,2.0,pop rock,Olivia Rodrigo,86.0,60.5735294117647,58.0,2.0
+2025,53,peso pluma,peso pluma,True,23973526.0,86.0,1.0,3.28,1.0,,corrido,Peso Pluma,71.0,71.0,,71.0
+2025,54,tito double p,tito double p,False,,,,,,,,,,,,
+2025,55,juice wrld,juice wrld,True,42565036.0,85.0,1.0,3.588571428571428,7.0,,melodic rap,Juice WRLD,82.0,60.857142857142854,,3.0
+2025,56,bailey zimmerman,bailey zimmerman,False,,,,,,,,,,,,
+2025,57,"saja boys: andrew choi, neckwav, danny chung, kevin woo & samuil lee","saja boys: andrew choi, neckwav, danny chung, kevin woo & samuil lee",False,,,,,,,,,,,,
+2025,58,ella langley,ella langley,False,,,,,,,,,,,,
+2025,59,linkin park,linkin park,True,31819030.0,88.0,0.07894736842105263,3.3223684210526314,38.0,,nu metal,Linkin Park,88.0,66.07894736842105,,44.0
+2025,60,fleetwood mac,fleetwood mac,True,13973668.0,83.0,0.0,4.3575,8.0,,classic rock,Fleetwood Mac,86.0,69.75,,53.0
+2025,61,frank ocean,frank ocean,True,20293960.0,84.0,0.6666666666666666,5.028333333333333,6.0,,,Frank Ocean,86.0,68.83333333333333,,2.0
+2025,62,thomas rhett,thomas rhett,True,4984665.0,73.0,0.0,3.793333333333333,3.0,,country,Thomas Rhett,72.0,59.0,,43.0
+2025,63,noah kahan,noah kahan,True,4379868.0,82.0,0.0,3.835,2.0,,,Noah Kahan,84.0,79.5,,75.0
+2025,64,forrest frank,forrest frank,True,2268298.0,77.0,0.0,2.28,1.0,,christian,Forrest Frank,66.0,66.0,,66.0
+2025,65,ravyn lenae,ravyn lenae,True,844558.0,76.0,0.0,3.55,2.0,,alternative r&b,Ravyn Lenae,89.0,86.5,,84.0
+2025,66,rauw alejandro,rauw alejandro,True,31093918.0,88.0,1.0,3.32,1.0,,reggaeton,Rauw Alejandro,78.0,78.0,,78.0
+2025,67,cardi b,cardi b,True,25960760.0,81.0,1.0,3.491818181818182,22.0,5.0,,Cardi B,79.0,64.77272727272727,71.2,44.0
+2025,68,neton vega,neton vega,False,,,,,,,,,,,,
+2025,69,stray kids,stray kids,False,,,,,,,,,,,,
+2025,70,coldplay,coldplay,True,60830643.0,88.0,0.0,4.307435897435898,39.0,,,Coldplay,90.0,67.2051282051282,,37.0
+2025,71,lil wayne,lil wayne,True,17938214.0,86.0,0.75,4.33,8.0,,rap,Lil Wayne,78.0,36.625,,0.0
+2025,72,sam barber,sam barber,False,,,,,,,,,,,,
+2025,73,gigi perez,gigi perez,True,1643950.0,75.0,0.0,3.53,2.0,1.0,,Gigi Perez,86.0,45.5,86.0,5.0
+2025,74,mariah carey,mariah carey,True,11913071.0,79.0,0.0,4.02,2.0,,christmas,Mariah Carey,81.0,79.5,,78.0
+2025,75,gunna,gunna,True,10353625.0,85.0,1.0,2.717,10.0,2.0,melodic rap,Gunna,80.0,56.3,71.0,0.0
+2025,76,michael jackson,michael jackson,True,37462708.0,85.0,0.0,4.552380952380953,21.0,,,Michael Jackson,85.0,69.04761904761905,,49.0
+2025,77,eminem,eminem,True,104584370.0,88.0,0.9850746268656716,4.441940298507464,67.0,,rap,Eminem,87.0,56.25373134328358,,10.0
+2025,78,beyonce,beyonce,False,,,,,,,,,,,,
+2025,79,don toliver,don toliver,True,7473754.0,85.0,0.5,3.41,4.0,1.0,,Don Toliver,83.0,60.25,83.0,0.0
+2025,80,summer walker,summer walker,True,8013600.0,76.0,0.75,3.3674999999999997,4.0,,r&b,Summer Walker,78.0,55.75,,0.0
+2025,81,jimin,jimin,True,10844512.0,79.0,0.0,3.1849999999999996,2.0,,k-pop,Jimin,86.0,80.0,,74.0
+2025,82,mariah the scientist,mariah the scientist,True,1180085.0,73.0,0.3333333333333333,3.14,3.0,2.0,alternative r&b,Mariah the Scientist,72.0,70.33333333333333,70.5,69.0
+2025,83,rihanna,rihanna,True,69050055.0,90.0,0.3269230769230769,3.88,52.0,,pop,Rihanna,87.0,65.57692307692308,,0.0
+2025,84,sleep token,sleep token,True,2822145.0,78.0,0.0,3.75,1.0,,progressive metal,Sleep Token,71.0,71.0,,71.0
+2025,85,elton john,elton john,True,15545907.0,80.0,0.0,3.5980000000000003,5.0,,,Elton John,80.0,67.4,,53.0
+2025,86,cody johnson,cody johnson,True,1943383.0,73.0,0.0,3.29,1.0,,texas country,Cody Johnson,75.0,75.0,,75.0
+2025,87,tucker wetmore,tucker wetmore,False,,,,,,,,,,,,
+2025,88,metro boomin,metro boomin,True,11687489.0,84.0,1.0,3.3155555555555556,9.0,1.0,,Metro Boomin,83.0,75.0,69.0,62.0
+2025,89,lainey wilson,lainey wilson,True,1538992.0,73.0,0.0,3.76,1.0,1.0,country,Lainey Wilson,69.0,69.0,69.0,69.0
+2025,90,nat king cole,nat king cole,False,,,,,,,,,,,,
+2025,91,brenda lee,brenda lee,False,,,,,,,,,,,,
+2025,92,kane brown,kane brown,True,5778418.0,71.0,0.0,3.2,4.0,,country,Kane Brown,68.0,58.75,,51.0
+2025,93,eagles,eagles,True,12152190.0,75.0,0.0,6.52,1.0,,classic rock,Eagles,52.0,52.0,,52.0
+2025,94,ye,ye,False,,,,,,,,,,,,
+2025,95,wham!,wham!,False,,,,,,,,,,,,
+2025,96,lil tecca,lil tecca,True,10172903.0,79.0,1.0,2.5833333333333335,3.0,,melodic rap,Lil Tecca,82.0,72.66666666666667,,58.0
+2025,97,bobby helms,bobby helms,False,,,,,,,,,,,,
+2025,98,michael buble,michael buble,False,,,,,,,,,,,,
+2025,99,creedence clearwater revival,creedence clearwater revival,True,7945600.0,77.0,0.0,2.865,2.0,,classic rock,Creedence Clearwater Revival,85.0,72.5,,60.0
+2025,100,creed,creed,True,4303697.0,73.0,0.0,4.91,1.0,,post-grunge,Creed,76.0,76.0,,76.0
