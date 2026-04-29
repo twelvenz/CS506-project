@@ -8,17 +8,7 @@ from math import pi
 df = pd.read_csv('final_training_dataset.csv')
 sns.set_theme(style="whitegrid")
 
-# 1. CLASS IMBALANCE
-# Shows how rare Super Bowl performers are compared with non-performers.
-# This helps explain why accuracy alone can be misleading for this project.
-plt.figure(figsize=(6, 6))
-counts = df['is_superbowl_performer'].value_counts()
-plt.pie(counts, labels=['Non-Performers', 'Performers'], autopct='%1.1f%%', 
-        colors=['lightgrey', '#ff9999'], startangle=90, explode=(0, 0.1))
-plt.title('How Rare are Super Bowl Performers?')
-plt.show()
-
-# 2. FEATURE CORRELATION HEATMAP
+# 1. FEATURE CORRELATION HEATMAP
 # Compares numeric features to see which ones move together.
 # The upper triangle is hidden to avoid showing duplicate correlations.
 plt.figure(figsize=(12, 8))
@@ -30,7 +20,7 @@ sns.heatmap(corr_matrix, mask=mask, annot=False, cmap='coolwarm', center=0)
 plt.title("Updated Feature Correlation (Cleaned)")
 plt.show()
 
-# 3. POPULARITY COMPARISON
+# 2. POPULARITY COMPARISON
 # Compares track popularity distributions for performers vs. non-performers.
 # This checks whether Super Bowl artists tend to have more popular songs.
 plt.figure(figsize=(8, 6))
@@ -39,7 +29,7 @@ plt.xticks([0, 1], ['Non-Performers', 'Performers'])
 plt.title("Popularity Edge: Super Bowl vs. Regular Artists")
 plt.show()
 
-# 4. AUDIO FEATURE RADAR CHART
+# 3. AUDIO FEATURE RADAR CHART
 # Summarizes average audio-feature profiles for performers and non-performers.
 # The radar chart is useful for visual comparison, not direct model training.
 categories = ['danceability', 'energy', 'valence', 'acousticness']
