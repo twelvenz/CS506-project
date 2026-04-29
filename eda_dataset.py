@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from math import pi
 
 # Load the model-ready dataset used by the XGBoost pipeline.
 df = pd.read_csv('final_training_dataset.csv')
@@ -29,30 +28,29 @@ plt.xticks([0, 1], ['Non-Performers', 'Performers'])
 plt.title("Popularity Edge: Super Bowl vs. Regular Artists")
 plt.show()
 
-# 3. AUDIO FEATURE RADAR CHART
-# Summarizes average audio-feature profiles for performers and non-performers.
-# The radar chart is useful for visual comparison, not direct model training.
+# 3. AUDIO FEATURE BAR CHART
+# Grouped bars compare mean Spotify audio features for performers vs non-performers.
 categories = ['danceability', 'energy', 'valence', 'acousticness']
-N = len(categories)
+perf_mean = df[df['is_superbowl_performer'] == 1][categories].mean()
+non_perf_mean = df[df['is_superbowl_performer'] == 0][categories].mean()
 
-# Average each audio feature within the two label groups.
-perf_means = df[df['is_superbowl_performer'] == 1][categories].mean().tolist()
-non_perf_means = df[df['is_superbowl_performer'] == 0][categories].mean().tolist()
+plot_df = pd.DataFrame({
+    "feature": list(categories) + list(categories),
+    "group": ["Non-Performers"] * len(categories) + ["Performers"] * len(categories),
+    "mean": list(non_perf_mean.values) + list(perf_mean.values),
+})
 
-# Repeat the first point at the end so the radar chart closes cleanly.
-perf_means += perf_means[:1]
-non_perf_means += non_perf_means[:1]
-angles = [n / float(N) * 2 * pi for n in range(N)]
-angles += angles[:1]
-
-# Draw both group profiles on the same polar chart.
-fig, ax = plt.subplots(figsize=(6, 6), subplot_kw=dict(polar=True))
-plt.xticks(angles[:-1], categories)
-ax.plot(angles, non_perf_means, linewidth=1, label='Non-Performers')
-ax.fill(angles, non_perf_means, alpha=0.1)
-ax.plot(angles, perf_means, linewidth=2, label='Performers', color='red')
-ax.fill(angles, perf_means, color='red', alpha=0.2)
-
-plt.title('The Mathematical Signature of a Performer')
-plt.legend(loc='upper right', bbox_to_anchor=(1.1, 1.1))
+plt.figure(figsize=(10, 6))
+sns.barplot(
+    data=plot_df,
+    x="feature",
+    y="mean",
+    hue="group",
+    palette=["#66c2a5", "#fc8d62"],
+)
+plt.xlabel("Audio feature")
+plt.ylabel("Mean value (Spotify 0–1 scale)")
+plt.title("Mean Audio Features: Performers vs Non-Performers")
+plt.legend(title="")
+plt.tight_layout()
 plt.show()
