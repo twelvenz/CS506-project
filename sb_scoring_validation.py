@@ -600,9 +600,15 @@ print(f"""
   from the candidate pool, confirming it extracts genuine signal from the data.
 
   Changes vs initial model:
-    - Legacy act scale floor added: if is_legacy_act=1, scale score is
-      floored at pool median to prevent thin Spotify data tanking legacy
-      artists (Dr. Dre, Mary J. Blige, Shakira, JLo)
+    - Replaced binary legacy flag with continuous exponential recency decay:
+      recency_weighted_score = song_cumulative_score x 0.85^(years_since_chart)
+      floored at 0.15 so pre-2017 legacy acts are discounted but not zeroed out
+    - Removed hard 40% recency penalty -- decay now handles relevance smoothly
+    - Removed hardcoded DECEASED_ARTISTS list -- deceased artists naturally
+      score near 0 via recency decay with no recent chart activity
+    - Added east coast proximity tier to home ground bonus (mirrors west coast)
+    - Home ground weights updated: hometown=10pts, region=6pts, coast=3pts
+    - Audio profile weight reduced to 5pts (from 10pts) due to ~38% missingness
     - NF folds (Kendrick 2025) kept in CSV but excluded from MRR/Recall
       with pessimistic MRR also reported as lower bound
 
