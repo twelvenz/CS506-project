@@ -3,8 +3,8 @@
 # How to build and run:
 
 - `make install` — installs dependencies from `requirements.txt`
-- `make run` — full model: `python xgboost_model.py` (tuning + backtest + ranking; slow)
-- `make run-eda` — `python eda_dataset.py` (static matplotlib EDA windows)
+- `make run` — full model: `python xgboost_model.py` (tuning + backtest + ranking)
+- `make run-eda` — `python eda_dataset.py` (EDA windows)
 - `make run-viz` — `python xgboost_visuals.py` (PNG plots under `xgboost_visuals/`)
 
 # Proposal:
