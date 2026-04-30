@@ -1,5 +1,7 @@
 # CS506-project
 
+Video Link: https://youtu.be/nFlHSmt1U3I
+
 # How to build and run:
 
 - `make install` — installs dependencies from `requirements.txt`
