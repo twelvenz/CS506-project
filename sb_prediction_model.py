@@ -4,32 +4,32 @@ sb_scoring_model.py
 Roc Nation Super Bowl Halftime Performer Scoring System
 ------------------------------------------------------------------------------
 
-APPROACH:
+Approach:
   Transparent weighted composite scoring system inspired by Schmitz (2020).
   No black-box ML -- every score is explainable and auditable.
 
-SCORING COMPONENTS (total = 100 points):
+Scoring Components/Weights (total = 100 points; arbitrarily set):
   1. Billboard Dominance    (25pts) -- peak song rank + cumulative hit score
-  2. Artist Scale           (20pts) -- followers (log) + Spotify popularity
+  2. Artist Scale/Influence (20pts) -- followers (log) + Spotify popularity
   3. Career Longevity       (15pts) -- combined years on both Billboard charts
   4. Legacy & Relevance     (15pts) -- legacy flag x recency-adjusted score
   5. Audio Profile Match    (10pts) -- danceability + speechiness vs SB avg
   6. Catalog Strength       (10pts) -- avg + peak track popularity
-  7. Home Ground Bonus      ( 5pts) -- city/state tie to SB host location
+  7. Hometown Advantage     (max 5pts) -- city/state tie to SB host location
 
-BONUS (additive, outside the 100pt base):
+Bonus (additive, outside the 100pt base):
   Guest Alumni Bonus: artists who previously guested at a Roc Nation SB
   receive +5 pts. Pattern supported by Bad Bunny (guest 2020 -> headliner 2026)
   and Kendrick Lamar (guest 2022 -> headliner 2025).
 
-FILTERS:
-  - Past HEADLINERS are permanently excluded (no artist has ever headlined twice)
+Filters:
+  - Past headliners are permanently excluded (no artist has ever headlined twice)
   - Deceased artists are excluded
   - Artists inactive for >RECENCY_WINDOW years AND not a legacy act: -40% penalty
 
-HOME GROUND:
+Hometown Advantage:
   Computed dynamically from artists_hometown.csv vs superbowl_halftime_locations.csv
-  Tiers: hometown (+5), region/same state (+3), west coast (+1.5), national (0)
+  Tiers: hometown (+10), region/same state (+6), coast/west or east (+3), national (0)
 
 INPUTS:
   training_table.csv
@@ -56,9 +56,8 @@ import warnings
 import re
 warnings.filterwarnings('ignore')
 
-# ------------------------------------------------------------------------------
-#  CONFIGURATION
-# ------------------------------------------------------------------------------
+
+# Configs.
 TRAINING_FILE    = 'training_table.csv'
 PERFORMERS_FILE  = 'data/superbowl_halftime_shows/superbowl_halftime_performers.csv'
 HOMETOWN_FILE    = 'data/artists_hometown/artists_hometown.csv'
@@ -69,25 +68,29 @@ RECENCY_WINDOW   = 5      # years without charting = recency penalty (unless leg
 RECENCY_PENALTY  = 0.40   # fraction score reduction for inactive non-legacy artists
 GUEST_BONUS      = 5.0    # additive pts for past guest alumni
 
-# Score component weights (must sum to 100)
+# Score component weights (sum to 100)
 WEIGHTS = {
     'billboard_dominance' : 25,
     'artist_scale'        : 20,
     'career_longevity'    : 15,
     'legacy_relevance'    : 15,
-    'audio_profile'       : 10,
     'catalog_strength'    : 10,
-    'home_ground_bonus'   :  5,
+    'home_ground_bonus'   : 10,
+    'audio_profile'       : 5,
 }
 assert sum(WEIGHTS.values()) == 100
 
+# Tier values are fractions [0, 1] -- multiplied by WEIGHTS['home_ground_bonus']
+# in Section 4 to produce final component score within the 10pt budget.
+# hometown = full 10pts, region = 6pts, coast = 3pts, national = 0pts
 HOME_GROUND_TIERS = {
-    'hometown'  : 5.0,
-    'region'    : 3.0,
-    'westcoast' : 1.5,
-    'national'  : 0.0,
+    'hometown'  : 1.0,    # -> 10.0 pts
+    'region'    : 0.6,    # ->  6.0 pts
+    'coast'     : 0.3,    # ->  3.0 pts
+    'national'  : 0.0,    # ->  0.0 pts
 }
 WEST_COAST_STATES = {'CA', 'OR', 'WA', 'NV', 'AZ'}
+EAST_COAST_STATES = {'MA', 'RI', 'CT', 'NY', 'PA', 'NJ'}
 
 DECEASED_ARTISTS = {
     '2pac', 'xxxtentacion', 'juice wrld', 'mac miller',
@@ -185,12 +188,21 @@ def compute_home_ground_tier(artist_state, artist_city, sb_state, sb_city):
         return 'hometown'
     if a_state == s_state:
         return 'region'
-    if s_state == 'CA' and a_state in WEST_COAST_STATES:
-        return 'westcoast'
+    # West coast proximity -- when SB is in a west coast state
+    if s_state in WEST_COAST_STATES and a_state in WEST_COAST_STATES:
+        return 'coast'
+    # East coast proximity -- when SB is in an east coast state
+    if s_state in EAST_COAST_STATES and a_state in EAST_COAST_STATES:
+        return 'coast'
+    # NV (Las Vegas): give coast credit to CA/AZ/UT/OR/WA
     if s_state == 'NV' and a_state in {'CA', 'AZ', 'UT', 'OR', 'WA'}:
-        return 'westcoast'
+        return 'coast'
+    # GA (Atlanta): give coast credit to nearby SE states
     if s_state == 'GA' and a_state in {'FL', 'SC', 'NC', 'TN', 'AL'}:
-        return 'westcoast'
+        return 'coast'
+    # LA (New Orleans): give coast credit to nearby Gulf/SE states
+    if s_state == 'LA' and a_state in {'MS', 'TX', 'AR', 'TN', 'FL'}:
+        return 'coast'
     return 'national'
 
 
@@ -266,14 +278,20 @@ print(f"  Guest alumni in pool        : {len(guest_alumni)}")
 print(f"    {sorted([a.title() for a in guest_alumni])}")
 print(f"  Eligible candidates         : {len(df_eligible)}")
 
-# Recency flag
+# Eligibility gate: artist must have a non-trivial recency_weighted_score
+# OR have charted within RECENCY_WINDOW years.
+# This naturally excludes deceased artists (no recent chart activity, no legacy score)
+# without needing a hardcoded list. The RECENCY_FLOOR (0.15) in build_training_table.py
+# means artists with ANY chart history retain a small score, so they stay in the pool
+# but rank near the bottom -- only truly absent artists score near 0.
 df_eligible['last_chart_year']    = df_eligible['last_billboard_year'].fillna(0)
 df_eligible['is_recently_active'] = (
     (PREDICT_YEAR - df_eligible['last_chart_year'] <= RECENCY_WINDOW) |
-    (df_eligible['is_legacy_act'] == 1)
+    (df_eligible['recency_weighted_score'].fillna(0) > 0)
 ).astype(int)
 inactive = (~df_eligible['is_recently_active'].astype(bool)).sum()
-print(f"  Inactive artists (will be penalized) : {inactive}")
+print(f"  Artists with no chart history (fully inactive) : {inactive}")
+print(f"  Note: deceased/inactive artists naturally score near 0 via recency decay")
 
 # ------------------------------------------------------------------------------
 #  SECTION 3 -- JOIN HOMETOWN DATA
@@ -301,6 +319,7 @@ else:
 
 df_eligible['comp_home_ground'] = (
     df_eligible['home_ground_tier'].map(HOME_GROUND_TIERS).fillna(0.0)
+    * WEIGHTS['home_ground_bonus']
 )
 
 print(f"\n  Home ground tier distribution:")
@@ -340,10 +359,16 @@ df['comp_career_longevity'] = (
     minmax_scale(df['total_chart_years']) * WEIGHTS['career_longevity']
 )
 
-# Component 4: Legacy & Relevance (15 pts)
+# Component 4: Recency-Weighted Relevance (15 pts)
+# Uses exponential recency decay applied to cumulative song score.
+# recency_weighted_score = song_cumulative_score * 0.85^(years_since_last_chart)
+# floored at 0.15 so pre-2017 legacy acts are discounted but not zeroed out.
+# This replaces the binary legacy flag with a continuous relevance signal:
+#   - Recent dominant artist  -> high recency_weighted_score
+#   - Past dominant artist    -> moderate score (historical weight discounted)
+#   - Never charted / unknown -> near-zero score
 df['comp_legacy_relevance'] = (
-    0.60 * minmax_scale(df['legacy_adjusted_recency'].fillna(0)) +
-    0.40 * df['is_legacy_act'].fillna(0)
+    minmax_scale(df['recency_weighted_score'].fillna(0))
 ) * WEIGHTS['legacy_relevance']
 
 # Component 5: Audio Profile Match (10 pts)
@@ -369,13 +394,11 @@ score_cols = [
 ]
 df['base_score'] = df[score_cols].sum(axis=1)
 
-# Recency penalty
+# No hard recency penalty -- decay is already baked into comp_legacy_relevance
+# via recency_weighted_score. Artists with no chart history score near 0 on that
+# component naturally. We keep recency_penalty_applied as a flag for transparency.
 df['recency_penalty_applied'] = (~df['is_recently_active'].astype(bool)).astype(int)
-df['penalized_score'] = df.apply(
-    lambda r: r['base_score'] * (1 - RECENCY_PENALTY)
-    if r['recency_penalty_applied'] == 1 else r['base_score'],
-    axis=1
-)
+df['penalized_score'] = df['base_score']  # no additional penalty applied
 
 # Guest alumni bonus (+5 pts additive -- outside the 100pt base)
 df['comp_guest_bonus'] = df['is_past_guest'].apply(
@@ -452,7 +475,7 @@ for i, row in df_ranked.head(30).iterrows():
 section(f"Section 7: Home Ground Analysis -- {SB_CITY}, {SB_STATE}")
 
 local = df_ranked[
-    df_ranked['home_ground_tier'].isin(['hometown','region','westcoast'])
+    df_ranked['home_ground_tier'].isin(['hometown', 'region', 'coast'])
 ].head(60)
 print(f"\n  {'Artist':<25} {'Tier':<12} {'Rank':>5} {'Score':>7} "
       f"{'City':<20} {'State'}")
@@ -468,6 +491,9 @@ for _, row in local.iterrows():
 if SB_STATE == 'CA':
     print(f"\n  NOTE: SB LVI (2022) was also at SoFi Stadium with west coast hip-hop theme.")
     print(f"  Roc Nation will likely pursue a DIFFERENT cultural angle for LXI.")
+    print(f"  Coast bonus (+3pts) applied to all West Coast state artists (CA/OR/WA/NV/AZ).")
+elif SB_STATE in {'NY','NJ','CT','PA','MA'}:
+    print(f"\n  NOTE: SB in east coast state -- coast bonus applied to {', '.join(EAST_COAST_STATES)} artists.")
 
 # ------------------------------------------------------------------------------
 #  SECTION 8 -- SAVE OUTPUTS
@@ -481,7 +507,7 @@ out_cols = [
     'comp_legacy_relevance','comp_audio_profile','comp_catalog_strength',
     'comp_home_ground','home_ground_tier','hometown_state','hometown_city',
     'years_on_billboard','peak_song_rank','song_cumulative_score',
-    'is_legacy_act','is_recently_active','is_past_guest','legacy_adjusted_recency',
+    'is_legacy_act','is_recently_active','is_past_guest','recency_weighted_score','legacy_adjusted_recency',
     'artist_popularity','artist_followers',
     'avg_track_popularity','peak_track_popularity',
     'avg_danceability','avg_speechiness',
@@ -491,8 +517,10 @@ df_ranked[out_cols].to_csv('sb_lxi_scores.csv', index=False)
 print(f"  Saved: sb_lxi_scores.csv")
 
 color_map = {
-    'hometown':'#E63946','region':'#F4A261',
-    'westcoast':'#2A9D8F','national':'#457B9D'
+    'hometown' : '#E63946',
+    'region'   : '#F4A261',
+    'coast'    : '#2A9D8F',   # west coast or east coast
+    'national' : '#457B9D',
 }
 
 # Top 20 bar chart
@@ -516,7 +544,7 @@ ax.set_title(f'Top 20 Predicted Candidates -- SB LXI\n'
 patches = [
     mpatches.Patch(color='#E63946', label=f'Hometown ({SB_CITY})'),
     mpatches.Patch(color='#F4A261', label=f'Same State ({SB_STATE})'),
-    mpatches.Patch(color='#2A9D8F', label='West Coast'),
+    mpatches.Patch(color='#2A9D8F', label='Coast (West or East)'),
     mpatches.Patch(color='#457B9D', label='National/Intl'),
 ]
 ax.legend(handles=patches, loc='lower right', fontsize=9)
@@ -531,7 +559,7 @@ comp_map = {
     'comp_billboard_dominance':'BB Dominance',
     'comp_artist_scale':'Artist Scale',
     'comp_career_longevity':'Career Longevity',
-    'comp_legacy_relevance':'Legacy & Relevance',
+    'comp_legacy_relevance':'Recency-Weighted Relevance',
     'comp_audio_profile':'Audio Profile',
     'comp_catalog_strength':'Catalog Strength',
     'comp_home_ground':'Home Ground',
@@ -620,12 +648,20 @@ lines = [
     f"{' | Guest Alumni' if r['comp_guest_bonus']>0 else ''}"
     for i, r in df_ranked.head(15).iterrows()
 ] + [
+    "", "RECENCY DECAY MODEL:",
+    f"  Decay factor    : {0.85} per year of inactivity",
+    f"  Decay floor     : {0.15} (minimum multiplier -- no artist fully disappears)",
+    "  Formula         : recency_weighted_score = song_cumulative_score x 0.85^(years_since_chart)",
+    "  Effect          : recent dominant artists score highest; pre-2017 legacy acts",
+    "                    are discounted but retain partial credit via the floor",
     "", "LIMITATIONS:",
     "  - Spotify scores are current snapshots (documented leakage)",
-    "  - Audio features missing ~38% of artists (assigned median score)",
+    "  - Audio features missing ~38% of artists (assigned neutral 0.5 score)",
+    "  - Billboard data covers 2017-2025 only; pre-2017 chart years not captured",
+    "    (legacy acts like Dr. Dre may be undercounted despite the recency floor)",
     "  - SB LVI 2022 also in LA -- Roc Nation may avoid west coast hip-hop repeat",
     "  - Model cannot capture Roc Nation internal criteria or business relationships",
-    "  - Guest bonus is fixed at +5pts; actual predictive weight is uncertain",
+    "  - Guest bonus is fixed at +5pts; actual predictive weight uncertain",
 ]
 
 summary_text = '\n'.join(lines)

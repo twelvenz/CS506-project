@@ -5,7 +5,9 @@ import seaborn as sns
 from datetime import datetime
 
 # Configs.
-SPOTIFY_FILE        = 'cleaned_Spotify_dataset.csv'
+SPOTIFY_FILE        = 'cleaned_Spotify_dataset.csv' # basically just the uncleaned_Spotify_dataset.csv + filtered for top 
+                                                    # artists (i.e. top 100 or with a top 100 song) + filling in 
+                                                    # release_year using MusicBrainz Database
 SUPERBOWL_FILE      = 'data/superbowl_halftime_shows/superbowl_halftime_performers.csv'
 ROC_NATION_START    = 2019   # when Roc Nation took over
 
@@ -107,6 +109,26 @@ df['release_year'] = pd.to_datetime(df['release_date'], errors='coerce').dt.year
 
 data_quality_report(df, "Initial Load")
 
+'''
+Key observations:
+    - Considerable amount of missing values: 36,997 cells out of 123,417 total cells (~29.97% of data)
+        - stream_count: 99.0% of missing data
+        - valence, speechiness, acoustiness, liveness:                          50.0%
+        - loudness, danceability, energy, duration_ms, tempo, instrumentalness: 49.0%
+        - artist_popularity, artist_followers:                                  12.5%
+        - release_year:                                                         9.5%
+        - is_superbowl_performer:                                               0.9%
+        - years_on_billboard:                                                   0.9%
+    - Potentially try to fill in the missing Spotify song features with Spotify Web API/some other database
+        - Spotify Web API is problematic; cannot access without Spotify Premium account and cannot extract Spotify
+        song features (depracated features)
+            - More specifically, it is not possible to do large-bulk endpoints on fetching track/song features and
+            artist info.
+        - Soundcharts API could be a paid solution
+            - Allows users to extract "audio" features through "spotify" platform and spotify_track_id identifier
+            - Very limiting on the free aspect --> only 1,000 free API calls
+'''
+
 
 # Section 2: Checking for missing values
 section("Section 2: Audio Feature Missingness Analysis")
@@ -141,9 +163,17 @@ plt.close()
 print("\n  Saved: spotify_missing_heatmap.png")
 '''
 
+'''
+Key Observations:
+    - Only 50.0% of tracks/songs (2,938 entries) with ALL audio/song features
+    - 1.0% of tracks/songs (59 entries) with SOME audio/song features
+    - 49.0% of tracks/songs (2,880 entries) with NO audio/song features
+
+    - A heavy limitation to data modeling, especially when relying on Spotify song features as points of analysis
+'''
 
 # Section 3: Looking at data distribution
-section("Section 3: Dataset Overview — Key Distributions")
+section("Section 3: Dataset Overview -- Key Distributions")
 
 # 3a. Track popularity distribution
 fig, axes = plt.subplots(1, 2, figsize=(14, 5))
@@ -164,6 +194,12 @@ plt.tight_layout()
 plt.savefig('spotify_popularity_distributions.png', dpi=150)
 plt.close()
 print("  Saved: spotify_popularity_distributions.png")
+'''
+
+'''
+Key Observations:
+    - Since the cleaned_Spotify_dataset.csv is a filtered dataset for top artists (i.e. ranking or song), it is expected 
+    that the song popularity score and (especially) the artist popularity score is on the higher end 
 '''
 
 # 3b. Release year distribution (volume over time)
@@ -227,6 +263,12 @@ plt.close()
 print("  Saved: spotify_correlation_matrix.png")
 '''
 
+'''
+Key Observations:
+    - Interestingly, there is a high correlation between energy and loudness. Similarly, there is a high uncorrelation
+    between energy and acousticness.
+'''
+
 # 3e. Top artists by track count in the dataset
 top_artists = df['artist_name'].value_counts().head(20)
 fig, ax = plt.subplots(figsize=(10, 6))
@@ -244,19 +286,23 @@ print("  Saved: spotify_top_artists_track_count.png")
 # Section 4: Label Superbowl Membership 
 section("Section 4: Label Superbowl Membership")
 
-all_sb, roc_sb = load_sb_performers(SUPERBOWL_FILE)
+_, roc_sb = load_sb_performers(SUPERBOWL_FILE)  # roc_sb: includes headliners + guest performers
 
 # Sanity Check: Validate against existing is_superbowl_performer column
 df['is_sb_roc_nation'] = df['artist_name'].apply(lambda x: flag_sb_membership(x, roc_sb))
 
 # Cross-check: how many tracks in dataset belong to Roc Nation-era SB performers?
-sb_track_count     = df['is_superbowl_performer'].sum()
 roc_track_count    = df['is_sb_roc_nation'].sum()
 total_tracks       = len(df)
 
 print(f"  Total tracks                          : {total_tracks:,}")
-print(f"  Tracks by any SB performer            : {int(sb_track_count):,} ({sb_track_count/total_tracks*100:.1f}%)")
 print(f"  Tracks by Roc Nation SB performer     : {int(roc_track_count):,} ({roc_track_count/total_tracks*100:.1f}%)")
+
+'''
+Key Observations:
+    - Tracks by Roc Nation SB performer (i.e. 2019-current): 541 (9.2%)
+        - Only a small percentage of songs/tracks came from Superbowl performers
+'''
 
 
 # Section 5: ROC NATION-ERA: SB vs NON-SB
@@ -293,7 +339,8 @@ df_artist = build_artist_summary(df, 'is_sb_roc_nation')
 sb_artists     = df_artist[df_artist['is_sb_roc_nation'] == 1]
 non_sb_artists = df_artist[df_artist['is_sb_roc_nation'] == 0]
 
-print(f"\n  Roc Nation SB artist profiles    : {len(sb_artists)}")
+print(f"\n  Roc Nation SB artist profiles    : {len(sb_artists)}")  # 19 artists (from headliners + guest performers); does 
+                                                                    # not include Big Boi, H.E.R., Lil Jon, Ricky Martin
 print(f"  Non-SB artist profiles           : {len(non_sb_artists)}")
 
 # ── 5a. Side-by-side median comparison table ──
@@ -315,6 +362,14 @@ comparison['SB Advantage'] = (
 
 print("\n  Median Comparison Table (SB Roc Nation vs Non-SB):")
 print(comparison.to_string())
+
+'''
+Key Observations:
+    - avg_artist_followers: 669.1% SB advantage --> SB performers tend to have bigger fanbase
+    - track_count --> 19.4% SB advantage --> SB performers must have good selection of songs (i.e. no "One-hit Wonder")
+    - avg_danceability: 19.4% SB advantage --> SB performers tend to have more danceable songs
+    - avg_artist_popularity: 17.1% SB advantage --> Using Spotify's popularity metric, SB performers tend to be more popular
+'''
 
 # ── 5b. Violin plots: audio features SB vs non-SB ──
 audio_compare = ['avg_danceability', 'avg_energy', 'avg_valence',
@@ -537,8 +592,8 @@ Output files:
   - spotify_sb_vs_nonsb_scale.png
   - spotify_billboard_longevity_vs_spotify_popularity.png
   - spotify_top20_candidates.png
-  - spotify_top_candidates.csv       ← top 30 ranked non-SB candidates
-  - cleaned_Spotify_dataset_enriched.csv  ← input for modeling
+  - spotify_top_candidates.csv (top 30 ranked non-SB candidates)
+  - cleaned_Spotify_dataset_enriched.csv (input for modeling)
 """
 
 

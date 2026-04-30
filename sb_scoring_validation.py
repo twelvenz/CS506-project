@@ -54,7 +54,7 @@ HOMETOWN_FILE   = 'data/artists_hometown/artists_hometown.csv'
 SB_LOCS_FILE    = 'data/superbowl_halftime_shows/superbowl_halftime_locations.csv'
 
 RECENCY_WINDOW  = 5
-RECENCY_PENALTY = 0.40
+RECENCY_PENALTY = 0.40   # kept for backward compat -- no longer applied; decay handles it
 GUEST_BONUS     = 5.0
 
 WEIGHTS = {
@@ -62,13 +62,15 @@ WEIGHTS = {
     'artist_scale'        : 20,
     'career_longevity'    : 15,
     'legacy_relevance'    : 15,
-    'audio_profile'       : 10,
     'catalog_strength'    : 10,
-    'home_ground_bonus'   :  5,
+    'home_ground_bonus'   : 10,
+    'audio_profile'       :  5,
 }
 
-HOME_GROUND_TIERS  = {'hometown':5.0, 'region':3.0, 'westcoast':1.5, 'national':0.0}
+# Tier values are fractions [0,1] multiplied by WEIGHTS['home_ground_bonus']
+HOME_GROUND_TIERS  = {'hometown':1.0, 'region':0.6, 'coast':0.3, 'national':0.0}
 WEST_COAST_STATES  = {'CA','OR','WA','NV','AZ'}
+EAST_COAST_STATES  = {'MA','RI','CT','NY','PA','NJ'}
 
 DECEASED_ARTISTS = {
     '2pac','xxxtentacion','juice wrld','mac miller',
@@ -137,12 +139,21 @@ def compute_home_ground_tier(artist_state, artist_city, sb_state, sb_city):
         return 'hometown'
     if a_state == s_state:
         return 'region'
-    if s_state == 'CA' and a_state in WEST_COAST_STATES:
-        return 'westcoast'
+    # West coast proximity
+    if s_state in WEST_COAST_STATES and a_state in WEST_COAST_STATES:
+        return 'coast'
+    # East coast proximity
+    if s_state in EAST_COAST_STATES and a_state in EAST_COAST_STATES:
+        return 'coast'
+    # NV (Las Vegas): give coast credit to nearby states
     if s_state == 'NV' and a_state in {'CA','AZ','UT','OR','WA'}:
-        return 'westcoast'
+        return 'coast'
+    # GA (Atlanta): give coast credit to nearby SE states
     if s_state == 'GA' and a_state in {'FL','SC','NC','TN','AL'}:
-        return 'westcoast'
+        return 'coast'
+    # LA (New Orleans): give coast credit to nearby Gulf/SE states
+    if s_state == 'LA' and a_state in {'MS','TX','AR','TN','FL'}:
+        return 'coast'
     return 'national'
 
 
@@ -176,12 +187,12 @@ def score_candidates(df_slice, df_hometown, sb_state, sb_city,
 
     df['is_past_guest'] = df['artist_name'].isin(past_guests)
 
-    # Recency flag
+    # Eligibility gate: active if charted within window OR has any recency_weighted_score
     cutoff_year = df_slice['sb_year'].iloc[0]
     df['last_chart_year']    = df['last_billboard_year'].fillna(0)
     df['is_recently_active'] = (
         (cutoff_year - df['last_chart_year'] <= RECENCY_WINDOW) |
-        (df['is_legacy_act'] == 1)
+        (df['recency_weighted_score'].fillna(0) > 0)
     ).astype(int)
 
     # Hometown join
@@ -198,7 +209,7 @@ def score_candidates(df_slice, df_hometown, sb_state, sb_city,
         )
     else:
         df['home_ground_tier'] = 'national'
-    df['comp_home_ground'] = df['home_ground_tier'].map(HOME_GROUND_TIERS).fillna(0.0)
+    df['comp_home_ground'] = df['home_ground_tier'].map(HOME_GROUND_TIERS).fillna(0.0) * WEIGHTS['home_ground_bonus']
 
     # Score components
     df['song_peak_inv'] = df['peak_song_rank'].apply(
@@ -226,9 +237,10 @@ def score_candidates(df_slice, df_hometown, sb_state, sb_city,
         minmax_scale(df['total_chart_years']) * WEIGHTS['career_longevity']
     )
 
+    # Recency-weighted relevance: continuous exponential decay signal
+    # recency_weighted_score already encodes both chart dominance and recency
     df['comp_legacy_relevance'] = (
-        0.60*minmax_scale(df['legacy_adjusted_recency'].fillna(0)) +
-        0.40*df['is_legacy_act'].fillna(0)
+        minmax_scale(df['recency_weighted_score'].fillna(0))
     ) * WEIGHTS['legacy_relevance']
 
     df['comp_audio_profile'] = df.apply(
@@ -248,11 +260,9 @@ def score_candidates(df_slice, df_hometown, sb_state, sb_city,
     ]
     df['base_score'] = df[score_cols].sum(axis=1)
 
+    # No hard penalty -- recency decay is already baked into comp_legacy_relevance
     df['recency_penalty_applied'] = (~df['is_recently_active'].astype(bool)).astype(int)
-    df['penalized_score'] = df.apply(
-        lambda r: r['base_score']*(1-RECENCY_PENALTY)
-        if r['recency_penalty_applied']==1 else r['base_score'], axis=1
-    )
+    df['penalized_score'] = df['base_score']
 
     df['comp_guest_bonus'] = df['is_past_guest'].apply(
         lambda x: GUEST_BONUS if x else 0.0

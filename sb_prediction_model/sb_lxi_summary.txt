@@ -9,9 +9,9 @@ SCORING WEIGHTS (base 100pts):
   artist_scale                 20 pts
   career_longevity             15 pts
   legacy_relevance             15 pts
-  audio_profile                10 pts
   catalog_strength             10 pts
-  home_ground_bonus            5 pts
+  home_ground_bonus            10 pts
+  audio_profile                5 pts
   guest_alumni_bonus           +5.0 pts (additive)
 
 AUDIO BENCHMARK (recalibrated from headliner data):
@@ -26,28 +26,37 @@ EXCLUDED (past headliners):
 GUEST ALUMNI (bonus applied):
   50 Cent, Alicia Keys, Big Boi, H.E.R., J Balvin, Lady Gaga, Lil Jon, Ricky Martin, Sza, Travis Scott, Will.I.Am
 
-RECENCY PENALTY: -40% for artists inactive >5 yrs (140 artists)
+RECENCY PENALTY: -40% for artists inactive >5 yrs (35 artists)
 
 TOP 15 CANDIDATES:
-   1. Drake                  Score: 89.58 | Legacy | Recent | National
-   2. Taylor Swift           Score: 83.59 | Legacy | Recent | National
-   3. Ariana Grande          Score: 81.44 | Legacy | Recent | National
-   4. Chris Brown            Score: 81.31 | Legacy | Recent | National
-   5. Lady Gaga              Score: 80.87 | Legacy | Recent | National | Guest Alumni
-   6. Bruno Mars             Score: 79.89 | Legacy | Recent | National
-   7. Justin Bieber          Score: 78.47 | Legacy | Recent | National
-   8. Billie Eilish          Score: 77.15 | Legacy | Recent | Region
-   9. Travis Scott           Score: 76.81 | Legacy | Recent | National | Guest Alumni
-  10. Post Malone            Score: 76.24 | Legacy | Recent | National
-  11. Sza                    Score: 76.23 | Legacy | Recent | National | Guest Alumni
-  12. Ed Sheeran             Score: 74.97 | Legacy | Recent | National
-  13. Doja Cat               Score: 71.43 | Legacy | Recent | Region
-  14. Morgan Wallen          Score: 71.27 | Legacy | Recent | National
-  15. Lil Wayne              Score: 70.71 | Legacy | Recent | National
+   1. Drake                  Score: 85.10 | Legacy | Recent | National
+   2. Taylor Swift           Score: 74.45 | Legacy | Recent | National
+   3. Chris Brown            Score: 69.17 | Legacy | Recent | National
+   4. Bruno Mars             Score: 68.31 | Legacy | Recent | National
+   5. Ariana Grande          Score: 68.01 | Legacy | Recent | National
+   6. Lady Gaga              Score: 67.14 | Legacy | Recent | National | Guest Alumni
+   7. Justin Bieber          Score: 66.26 | Legacy | Recent | National
+   8. Post Malone            Score: 64.50 | Legacy | Recent | National
+   9. Billie Eilish          Score: 63.73 | Legacy | Recent | Region
+  10. Sza                    Score: 62.52 | Legacy | Recent | National | Guest Alumni
+  11. Katy Perry             Score: 60.75 | Legacy | Recent | Region
+  12. Ed Sheeran             Score: 59.89 | Legacy | Recent | National
+  13. Travis Scott           Score: 59.62 | Legacy | Recent | National | Guest Alumni
+  14. Morgan Wallen          Score: 59.50 | Legacy | Recent | National
+  15. Lil Wayne              Score: 59.39 | Legacy | Recent | National
+
+RECENCY DECAY MODEL:
+  Decay factor    : 0.85 per year of inactivity
+  Decay floor     : 0.15 (minimum multiplier -- no artist fully disappears)
+  Formula         : recency_weighted_score = song_cumulative_score x 0.85^(years_since_chart)
+  Effect          : recent dominant artists score highest; pre-2017 legacy acts
+                    are discounted but retain partial credit via the floor
 
 LIMITATIONS:
   - Spotify scores are current snapshots (documented leakage)
-  - Audio features missing ~38% of artists (assigned median score)
+  - Audio features missing ~38% of artists (assigned neutral 0.5 score)
+  - Billboard data covers 2017-2025 only; pre-2017 chart years not captured
+    (legacy acts like Dr. Dre may be undercounted despite the recency floor)
   - SB LVI 2022 also in LA -- Roc Nation may avoid west coast hip-hop repeat
   - Model cannot capture Roc Nation internal criteria or business relationships
-  - Guest bonus is fixed at +5pts; actual predictive weight is uncertain
+  - Guest bonus is fixed at +5pts; actual predictive weight uncertain
