@@ -1,0 +1,53 @@
+SB LXI Halftime Prediction -- Scoring System Summary
+============================================================
+
+Host: Inglewood, CA | SoFi Stadium | Feb 14, 2027
+Candidates evaluated: 585
+
+SCORING WEIGHTS (base 100pts):
+  billboard_dominance          25 pts
+  artist_scale                 20 pts
+  career_longevity             15 pts
+  legacy_relevance             15 pts
+  audio_profile                10 pts
+  catalog_strength             10 pts
+  home_ground_bonus            5 pts
+  guest_alumni_bonus           +5.0 pts (additive)
+
+AUDIO BENCHMARK (recalibrated from headliner data):
+  Danceability : 0.7247
+  Speechiness  : 0.1273
+  Derived from : Bad Bunny, Dr. Dre, Eminem, Jennifer Lopez, Kendrick Lamar, Mary J. Blige, Shakira, Snoop Dogg, The Weeknd
+  Missing data : Rihanna, Usher, Maroon 5 (no audio in dataset)
+
+EXCLUDED (past headliners):
+  Bad Bunny, Dr. Dre, Eminem, Jennifer Lopez, Kendrick Lamar, Maroon 5, Mary J. Blige, Rihanna, Shakira, Snoop Dogg, The Weeknd, Usher
+
+GUEST ALUMNI (bonus applied):
+  50 Cent, Alicia Keys, Big Boi, H.E.R., J Balvin, Lady Gaga, Lil Jon, Ricky Martin, Sza, Travis Scott, Will.I.Am
+
+RECENCY PENALTY: -40% for artists inactive >5 yrs (140 artists)
+
+TOP 15 CANDIDATES:
+   1. Drake                  Score: 89.58 | Legacy | Recent | National
+   2. Taylor Swift           Score: 83.59 | Legacy | Recent | National
+   3. Ariana Grande          Score: 81.44 | Legacy | Recent | National
+   4. Chris Brown            Score: 81.31 | Legacy | Recent | National
+   5. Lady Gaga              Score: 80.87 | Legacy | Recent | National | Guest Alumni
+   6. Bruno Mars             Score: 79.89 | Legacy | Recent | National
+   7. Justin Bieber          Score: 78.47 | Legacy | Recent | National
+   8. Billie Eilish          Score: 77.15 | Legacy | Recent | Region
+   9. Travis Scott           Score: 76.81 | Legacy | Recent | National | Guest Alumni
+  10. Post Malone            Score: 76.24 | Legacy | Recent | National
+  11. Sza                    Score: 76.23 | Legacy | Recent | National | Guest Alumni
+  12. Ed Sheeran             Score: 74.97 | Legacy | Recent | National
+  13. Doja Cat               Score: 71.43 | Legacy | Recent | Region
+  14. Morgan Wallen          Score: 71.27 | Legacy | Recent | National
+  15. Lil Wayne              Score: 70.71 | Legacy | Recent | National
+
+LIMITATIONS:
+  - Spotify scores are current snapshots (documented leakage)
+  - Audio features missing ~38% of artists (assigned median score)
+  - SB LVI 2022 also in LA -- Roc Nation may avoid west coast hip-hop repeat
+  - Model cannot capture Roc Nation internal criteria or business relationships
+  - Guest bonus is fixed at +5pts; actual predictive weight is uncertain

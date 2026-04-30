@@ -1,0 +1,18 @@
+# Environment variables - never commit these
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output/large data files you don't want in the repo
+*.csv
+soundcharts_audio_cache.json
