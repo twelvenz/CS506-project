@@ -1,9 +1,19 @@
 # CS506-project
 
+# How to build and run:
+
+- `make install` — installs dependencies from `requirements.txt`
+- `make run` — full model: `python xgboost_model.py` (tuning + backtest + ranking; slow)
+- `make run-eda` — `python eda_dataset.py` (static matplotlib EDA windows)
+- `make run-viz` — `python xgboost_visuals.py` (PNG plots under `xgboost_visuals/`)
+- `make build` — same as `make install`
+
 # Proposal:
+
 This project aims to build a system that predicts the ranks of the most likely artist(s) to perform at next year's Super Bowl halftime show. Our goal is to identify artists who best fit the measurable profile of past halftime headliners using music industry metrics. Using historical halftime performer data combined with Billboard chart history and Spotify streaming statistics, the project will produce a ranked shortlist of candidates for a given year. Our focus will be primarily on Billboard data and Spotify data as the core sources for driving these rankings.
 
 # Project timeline:
+
 Week 1-2: Data collection and cleaning
 
 - Download and explore Kaggle datasets (Top Spotify Artists, Past Super Bowl Performers)
@@ -33,6 +43,7 @@ Week 7: Model refinement and visualization
 Week 8: Final report and presentation preparation
 
 # Project Goals:
+
 Develop a model that ranks potential Super Bowl halftime performers for a given year using historical and contemporary music-industry data.
 - Build a labeled dataset of past Super Bowl halftime performers (post-2019 because thats when Roc Nation took over) with associated artist-level features, treating all top-charting artists each year as candidates
 - Train a model that ranks the true performer within the top 5 predictions for at least X% of withheld test years
@@ -40,6 +51,7 @@ Develop a model that ranks potential Super Bowl halftime performers for a given 
 - (Extra) Create a responsive time-series data interface to predict the top 5 most likely Super Bowl performers with up-to-date Spotify information 
 
 # Data Collection Plan:
+
 The project will rely on two primary datasets:
 1. Historical Super Bowl Halftime Performer Data (i.e. "TV, Halftime Shows, and the Big Game"): A dataset containing past Super Bowl halftime performers and event metadata (e.g., year, artist, special guests). This data will be used to label which artists were selected in each year. We limit this to post-2019 Super Bowls to exclude the marching band era and non-Roc Nation era to focus on mainstream headliners.
 2. Spotify Most-Listened Artist Data (i.e. "Spotify Global Music Dataset (2009-2025)"): A publicly available Kaggle dataset containing Spotify streaming statistics such as total streams, popularity scores, and artist-level metadata. This dataset will show artist popularity and mainstream relevance.
@@ -57,18 +69,25 @@ Data Collection Methods
 - Billboard masters are `billboard_songs_master.csv`, `billboard_albums_master.csv`, `billboard_artists_master.csv`; headliners in `data/superbowl_halftime_shows/superbowl_halftime_performers.csv`; track-level training table `final_training_dataset.csv`; Spotify inputs under `data/spotify_music_dataset/`. 
 
 # Modeling Approach:
+
 We use XGBoost to have one row per artist (aggregated from `final_training_dataset.csv`), positives = confirmed headliners only. Features mix Spotify aggregates and Billboard stats. The printed score blends XGBoost probability with hand-built popularity and legacy signals plus a small penalty for very weak Billboard history; weights are tuned on a year-by-year backtest.
 
-What `xgboost_model.py` does: reads past headliners from `data/superbowl_halftime_shows/superbowl_halftime_performers.csv`; rolls up `final_training_dataset.csv` from tracks to one row per artist; merges Billboard summaries from the `billboard_*_master.csv` files (with optional year cutoffs so backtests do not peek at future chart years); builds `popularity_signal` and `legacy_signal` for the blend; trains `XGBClassifier` with imbalance handling (`scale_pos_weight`) and monotonic constraints on most features; combines the model probability with those two signals (weak-legacy penalty for artists with almost no top-10 Billboard history); runs `tune_model()` over a small grid using the year-by-year backtest; then retrains on all history and prints a ranked shortlist excluding artists already listed as headliners. Run: `python xgboost_model.py`.
+What `xgboost_model.py` does: reads past headliners from `data/superbowl_halftime_shows/superbowl_halftime_performers.csv`; rolls up `final_training_dataset.csv` from tracks to one row per artist; merges Billboard summaries from the `billboard_*_master.csv` files (with optional year cutoffs so backtests do not peek at future chart years); builds `popularity_signal` and `legacy_signal` for the blend; trains `XGBClassifier` with imbalance handling (`scale_pos_weight`) and monotonic constraints on most features; combines the model probability with those two signals (weak-legacy penalty for artists with almost no top-10 Billboard history); runs `tune_model()` over a small grid using the year-by-year backtest; then retrains on all history and prints a ranked shortlist excluding artists already listed as headliners. Run: `python xgboost_model.py` or `make run`.
 
 # Data Visualization Plan:
+
 We have planned time-series plots to examine artist popularity trends over time and summary charts to compare characteristics of past performers.
 
-What `eda_dataset.py` does: loads `final_training_dataset.csv` and only explores the data (no training or predictions). It shows (1) a numeric correlation heatmap, (2) a boxplot of track popularity by performer vs non-performer label, and (3) a grouped bar chart of mean audio features (danceability, energy, valence, acousticness) for the two groups. Run: `python eda_dataset.py`.
+What `eda_dataset.py` does: loads `final_training_dataset.csv` and only explores the data (no training or predictions). It shows (1) a numeric correlation heatmap, (2) a boxplot of track popularity by performer vs non-performer label, and (3) a grouped bar chart of mean audio features (danceability, energy, valence, acousticness) for the two groups. Run: `python eda_dataset.py` or `make run-eda`.
 
-Model-focused charts (top candidates, feature importance, score blend breakdown, backtest hit plot) are generated by `xgboost_visuals.py`; PNGs are written under `xgboost_visuals/`. Run: `python xgboost_visuals.py` (optional: `python xgboost_visuals.py --tune` to match the full tuning step from `xgboost_model.py`).
+Model-focused charts (top candidates, feature importance, score blend breakdown, backtest hit plot) are generated by `xgboost_visuals.py`; PNGs are written under `xgboost_visuals/`. Run: `python xgboost_visuals.py` or `make run-viz` (optional: `python xgboost_visuals.py --tune` to match the full tuning step from `xgboost_model.py`).
 
 # Test Plan:
+
 Data from earlier Super Bowl years will be used for training, while a subset of more recent years will be withheld for testing. The model will be scored on how well it ranks the correct halftime performer near the top.
 
 We implemented this as a year-by-year backtest in `xgboost_model.py`: for each Super Bowl year, only prior headliners are positives and only data through the previous year is used, then we check hit@5 / hit@10 / hit@20 and best rank.
+
+# Results:
+
+Success is measured with ranking-style metrics from that backtest (hit@5, hit@10, hit@20, best rank), not raw accuracy, because headliners are rare. Console output from `make run` and `xgboost_visuals/backtest_hits.png` from `make run-viz` summarize performance. The blend of XGBoost with popularity and legacy signals was kept because it improved top-of-list behavior versus XGBoost probability alone in our backtests.
